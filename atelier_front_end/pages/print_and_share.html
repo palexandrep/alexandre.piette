@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Badge-toi !</title>
+    <link href="../styles/styles.min.css" rel="stylesheet">
+</head>
+<body class="body_print-and-share">
+     <header class="header_print-and-share">  <!--blur-->
+         <a href="badge_creation.html"><img src="../images/arrow-left.svg"></a>
+         <a href="../index.html" class="btn_finish marge">Terminer</a>
+         <h1><img src="../images/logo-cepegra.svg" alt="Logo du Centre de Compétences Cepegra" class="logo"></h1>
+     </header>
+
+     <aside>
+        <div class="badge__finished badge__finished_print hidden">
+
+        </div>
+
+     </aside>
+
+     <main>
+         <!-- container principal -->
+         <div class="container_print-and-share"><!--blur-->
+
+         <div class="badge__finished"></div>
+
+            <ul class="container_btn-print-and-share">
+                <div class="container_print">
+                    <p class="text__pink">presse pour imprimer</p>
+                    <a href="#" class="btn-storage btn_print btn_share print"></a> <!--1-->
+                </div>
+                <a href="#" class="btn-storage btn_mail btn_share mail"></a><!--1-->
+                <a id="shareBtn" href="#" class="btn-storage btn_facebook btn_share face"></a><!--1-->
+            </ul>
+         </div>
+         <!-- fin container principal -->
+         <!-- container pop up -->
+         <div class="container_print-and-share__fade-in"  >
+             <div class="popup_print-and-share bop">
+            <p class="text_pop_title text_pop">Félicitations!</p>
+            <!-- texte à insérer en js -->
+            <div>
+                <p class="text_pop text_pop_action"></p>
+                <p class="text_pop text_pop_option"></p>
+                <ul class="container_btn-print-and-share">
+            <!-- boutons à générer en js -->
+                    <li class="li_pop li_pop_1 print"><a href="#" class="btn-storage btn_pop btn_print-pop">print</a></li><!--1-->
+                    <li class="li_pop li_pop_2 mail"><a href="#" class="btn-storage btn_pop btn_mail-pop">send</a></li><!--1-->
+                    <li class="li_pop li_pop_3 face"><a href="#" class="btn-storage btn_pop btn_facebook-pop">share</a></li><!--1-->
+                </ul>
+            </div>
+            <div>
+            <a href="../index.html" class="btn_finish">Terminer</a>
+         </div>
+             </div>
+         </div>
+     </main>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="../scripts/vendor/dragend.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../scripts/scripts.min.js"></script>
+    <script src="../scripts/admin.min.js"></script>
+</body>
+</html>
+
