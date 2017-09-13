@@ -1,0 +1,132 @@
+@import "rouages.scss";
+@import "button.scss";
+@import "robot.scss";
+
+
+// #191919
+// #4D4D4D
+
+body{
+	
+
+	color: #F1EDF7;
+	font-family: 'Paytone One', sans-serif;
+	//font-family: 'Special Elite', cursive;
+	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
+
+}
+
+h2{
+	font-size: 2rem;
+}
+h1, h2, footer{
+	text-align: center;
+}
+
+header{
+	width: 100%;
+	margin: auto;
+}
+
+button:focus {outline:0;}
+
+
+.conatiner_portrait{
+	position: relative;
+	margin: 0 0  8rem 0;
+	text-align: center;
+
+
+}
+
+.container_nav{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15vh;
+}
+
+.img_portrait{
+	border-radius: 500px;
+	max-width: 10rem;
+	margin-top: 13rem;
+	position: relative;
+	z-index: 2;
+	border: solid 4px black;
+	width: 10rem; // 5
+	height: 10rem;  // 5
+	border-radius: 500px;
+	background-color: white;
+
+	opacity: 0;
+}
+.image_portrait_fade-in{
+		animation-name: fade-in_portrait;
+	animation-duration: 0.6s;
+	animation-timming-fonction: ease-in;
+	animation-fill-mode: forwards;
+	animation-delay: 4.5s;
+}
+@keyframes fade-in_portrait{
+	0%{
+		opacity: 0;
+	}
+		100%{
+		opacity: 1;
+	}
+}
+
+//-----------------------------------------------svg
+
+#manche_g{
+	width: 46rem;
+	position: absolute;
+	top: 37rem;
+	left: 40%;
+	transform: translateX(-100%);
+	display: none;
+}
+#manche_d{
+	width: 70rem;
+	position: absolute;
+	top: 37rem;
+	left: 40%;
+	display: none;
+}
+
+
+#canvas{
+	position: absolute;
+	top: -25rem;
+	opacity: 0.7;
+}
+
+.robot_active{
+	animation-name: robot-fade-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timming-function: ease-out;
+
+}
+@keyframes robot-fade-in{
+	from{
+		top: -25rem;
+	}
+	to{
+		top: -5rem;
+	}
+}
+#rouage_portrait{
+	position: absolute;
+	width: 27rem;
+	top: 3rem;
+	left: 50%;
+	transform-x: -50%;
+	transform: translateX(-50%);
+}
+.machine_container{
+	position: absolute;
+}
+
+footer{
+	margin: 7rem;
+}
