@@ -28,7 +28,7 @@
 
 		$('.push_btn').addClass('push_btn_disable');
 
-		$('#canvas').addClass("robot_active");
+		$('#machine').addClass("robot_active");
 
 
 	})

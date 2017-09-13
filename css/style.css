@@ -190,8 +190,8 @@
     -webkit-transform: rotate(-100deg);
     transform: rotate(-100deg);
     opacity: 0; }
-  70% {
-    opacity: 0.2; }
+  60% {
+    opacity: 0; }
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -202,8 +202,8 @@
     -webkit-transform: rotate(-100deg);
     transform: rotate(-100deg);
     opacity: 0; }
-  70% {
-    opacity: 0.2; }
+  60% {
+    opacity: 0; }
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -221,29 +221,30 @@
   transform: translateX(-0.5rem);
   -webkit-animation-duration: 3.7s;
   animation-duration: 3.7s;
-  fill: #131114; }
+  fill: #131114;
+  position: relative; }
 
 @-webkit-keyframes rotate7 {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(-290deg);
-    transform: rotate(-290deg); }
-  70% {
-    opacity: 0.3; }
+    -webkit-transform: rotate(-190deg);
+    transform: rotate(-190deg); }
+  90% {
+    opacity: 0; }
   100% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
 
 @keyframes rotate7 {
   0% {
     opacity: 0;
-    -webkit-transform: rotate(-290deg);
-    transform: rotate(-290deg); }
-  70% {
-    opacity: 0.3; }
+    -webkit-transform: rotate(-190deg);
+    transform: rotate(-190deg); }
+  90% {
+    opacity: 0; }
   100% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
 
@@ -264,7 +265,7 @@
     transform: rotate(-360deg);
     opacity: 0; }
   70% {
-    opacity: 0.3; }
+    opacity: 0.2; }
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -276,7 +277,7 @@
     transform: rotate(-360deg);
     opacity: 0; }
   70% {
-    opacity: 0.3; }
+    opacity: 0.2; }
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -715,27 +716,18 @@
 #machine {
   width: 35rem;
   position: absolute;
-  top: -5rem;
+  top: -25rem;
   left: -5rem; }
 
-#bras {
-  -webkit-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  -webkit-transform: rotate(50deg);
-  -ms-transform: rotate(50deg);
-  transform: rotate(50deg); }
-
-#avant_bras_pince {
-  -webkit-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right; }
-
-#bras_epaule {
-  outline: 1px solid red;
-  -webkit-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right; }
+@media screen and (max-width: 1000px) {
+  #machine {
+    display: none; }
+  .push_btn {
+    left: calc(50vw - 140.469px / 2);
+    top: 18rem; }
+  .clock_animate {
+    width: 5rem;
+    height: 5rem; } }
 
 body {
   color: #F1EDF7;
@@ -744,6 +736,14 @@ body {
   background: -webkit-linear-gradient(top, #383742 0%, #131114 100%);
   background: -o-linear-gradient(top, #383742 0%, #131114 100%);
   background: linear-gradient(to bottom, #383742 0%, #131114 100%); }
+
+nav {
+  height: 4rem;
+  background-color: black;
+  postition: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0; }
 
 h2 {
   font-size: 2rem; }
@@ -789,8 +789,8 @@ button:focus {
 .image_portrait_fade-in {
   -webkit-animation-name: fade-in_portrait;
   animation-name: fade-in_portrait;
-  -webkit-animation-duration: 0.6s;
-  animation-duration: 0.6s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   animation-timming-fonction: ease-in;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -844,13 +844,13 @@ button:focus {
   from {
     top: -25rem; }
   to {
-    top: -5rem; } }
+    top: 0rem; } }
 
 @keyframes robot-fade-in {
   from {
     top: -25rem; }
   to {
-    top: -5rem; } }
+    top: 0rem; } }
 
 #rouage_portrait {
   position: absolute;
