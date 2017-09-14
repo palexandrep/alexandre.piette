@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>calcul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1>Calculatrice</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+		<form action="">
+			
+			<input type="number" id="num-one">
+			<input type="number" id="num-two"><br>
+			<button class="plus">+</button>
+			<button class='moins'>-</button>
+			<button class="multiplie">*</button>
+			<button class="divise">/</button>
+			<div id="resultat">
+				<h2>Résultat</h2>
+				<p></p>
+			</div>
+			
+
+		</form>
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+	var numberOne = document.querySelector('#num-one');
+	var numberTwo = document.querySelector('#num-two');
+	var btnOp = document.querySelectorAll('button');
+	var myResult = document.querySelector('#resultat p')
+
+
+	
+		for(i = 0; i < btnOp.length; i++ ){
+			btnOp[i].addEventListener('click', function(e){
+
+				e.preventDefault();
+				myVal1 = numberOne.value;
+				myVal2 = numberTwo.value;
+				myOperator = this.innerHTML;
+				
+				Calcul(myVal1, myVal2, myOperator);
+
+			});
+		};
+
+		var Calcul = function(val1, val2, operator){
+			
+			val1 = parseFloat(val1);
+			val2 = parseFloat(val2);
+
+			/*if (operator == '+') {
+				total = val1 + val2;
+			}
+			else if (operator == '-') {
+				total = val1 - val2;
+			}
+			else if (operator == '*') {
+				total = val1 * val2;
+			}
+			else {
+				total = val1 / val2;
+			}*/
+
+			switch (operator){
+				case '+' :
+					total = val1 + val2;
+					break;
+				case '-' :
+					total = val1 - val2;
+					break;
+				case '*' :
+					total = val1 * val2;
+					break;
+				default :
+					total = val1 / val2;
+
+			}
+
+			myResult.innerHTML += val1+myOperator+val2+'='+total+'<br>';
+		};
+	
+
+	</script>
+</body>
+</html>

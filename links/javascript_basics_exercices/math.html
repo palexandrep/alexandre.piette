@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>math</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1>Math</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+		<h2>Donnez un chiffre entre 1 et 50</h2>
+
+		<form action="">
+			
+			<input type="number"><br>
+			<button>Tenter sa chance!</button>
+
+		</form>
+
+
+			<div>
+				<h3>Déjà essayé:</h3>
+				<p class="save"></p>
+				<h3></h3>
+			</div>
+			<div>
+				<h3>nombre d'essais</h3>
+				<p class="tests-numbers"></p>
+			</div>
+
+			<div>
+				<h3>Résultat:</h3>
+				<p class="result-alert"></p>
+			</div>
+
+
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+		var nbr = Math.floor(Math.random()*50);
+		console.log(nbr);
+		var myInput = document.querySelector('input');
+		var btnSubmit = document.querySelector('button');
+		var resultMessage = document.querySelector('.result-alert');
+		var keepIt = document.querySelector('.save');
+
+		btnSubmit.addEventListener('click', function(e){
+			e.preventDefault();
+
+			myTest = parseInt( myInput.value );
+
+			keepItInMind();
+
+
+			switch (true) {
+				case  nbr > myTest:
+					resultMessage.innerHTML = "Non, c'est plus grand!";
+					break;
+				case nbr < myTest:
+					resultMessage.innerHTML = "Non, c'est plus petit!";
+					break;
+				case nbr == myTest:
+					resultMessage.innerHTML = "Bravo, vous avez gagné!";
+			}
+
+		});
+
+		function keepItInMind(){
+			keepIt.innerHTML += myTest+'<br>';
+
+		}
+
+	</script>
+</body>
+</html>

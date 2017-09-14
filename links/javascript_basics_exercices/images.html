@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1>Images</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+	<ul>
+		<li><img src="img1.jpg" alt="img1" class="img-small"></li>
+		<li><img src="img2.jpg" alt="img2" class="img-small"></li>
+		<li><img src="img3.jpg" alt="img3" class="img-small"></li>
+	</ul>
+	
+
+	<figure>
+		<img src="" alt="img4" class="img-big">
+		<figcaption></figcaption>
+	</figure>
+	
+		
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+	var myPictureSmall = document.querySelectorAll('.img-small');
+	var myPictureBig = document.querySelector('.img-big');
+	var myPictureSmallSrc = this.src;
+	var myPictureSmallAlt = this.alt;
+	var caption = document.querySelector('figcaption');
+
+	var k = Math.floor((Math.random() * myPictureSmall.length));
+
+
+	myPictureBig.src = myPictureSmall[k].src;
+
+
+
+	for(i = 0; i < myPictureSmall.length; i++){
+		myPictureSmall[i].addEventListener('click', function(){
+			
+			var caption = document.querySelector('figcaption');
+			caption.innerHTML = myPictureSmallAlt;
+			myPictureBig.src =  myPictureSmallSrc;
+			for(j = 0; j < myPictureSmall.length; j++){
+				myPictureSmall[j].classList.remove('opacity-down');
+			};
+			this.classList.add('opacity-down');
+
+		});
+	};
+
+	</script>
+</body>
+</html>

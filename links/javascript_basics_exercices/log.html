@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>Log</title>
+    <style>section{display:none;}</style>
+</head>
+<body>
+	<header>
+
+		<h1>Login</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+		<form action="" id="login">
+			<input type="text" placeholder="login" id="pseudo">
+			<button>Log</button>
+		</form>
+
+		<section>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat quos mollitia quia veniam molestiae hic voluptatum non cum amet sapiente accusamus officiis, vel corporis quibusdam! Dolor necessitatibus optio aliquam?</p>
+		</section>
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+	var myLogBtn = document.querySelector('#login button'); 
+
+	myLogBtn.onclick = function(event){
+
+		event.preventDefault();
+		var myLogField = document.querySelector('#pseudo');
+		var myLog = myLogField.value;
+
+
+		if(myLog == 'admin'){
+			var lorem = document.querySelector('section');
+			lorem.style.display ='block';
+		}
+		else if( myLog == ''){
+			alert('Hey gars, tu vas rentrer quelque chose dis?');
+		}
+		else{
+			alert('Nein Nein Nein! Pas OK!');
+		}
+		
+	};
+
+	//////////////////////---+++++++----->>><<<<<<---+++++++----<<<<<<<>>>>>>>>-----/////////////
+
+	</script>
+</body>
+</html>

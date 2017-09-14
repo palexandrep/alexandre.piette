@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>titre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1>Liste de noms</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+	<form action="">
+		
+		<input type="text" placeholder="Ajoutez votre nom ici">
+		<button id="go">go</button><br>
+		<button id="clear">clear</button>
+		<div>
+			
+			<h2>Votre liste:</h2>
+			<ul>
+				
+			</ul>
+
+		</div>
+
+	</form>
+
+		
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+	var inputName = document.querySelector('input');
+	var submitBtn = document.querySelector('#go');
+	var clearBtn = document.querySelector('#clear');
+	var myNameList = document.querySelector('main ul');
+
+	submitBtn.addEventListener('click', function(e){
+		
+		e.preventDefault();
+		if (inputName.value != '') {
+
+			AddName();
+		}
+
+		ClearInput();
+		
+		inputName.focus();
+	});
+	clearBtn.addEventListener('click', function(e){
+		
+		e.preventDefault();
+		
+		ClearList();
+		
+		inputName.focus();
+	});
+
+	function AddName(){
+		
+		var myName = inputName.value;
+		myNameList.innerHTML += '<li>'+myName+'</li>'+'<br>';
+	}
+
+	function ClearInput(){
+
+		inputName.value = '';
+
+	}
+
+	function ClearList(){
+		myNameList.innerHTML = '';
+	}
+
+	</script>
+</body>
+</html>

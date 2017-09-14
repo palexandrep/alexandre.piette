@@ -1,0 +1,80 @@
+
+    	h1{
+        color: red;
+      }
+
+
+      div{
+    		width: 50px;
+    		height: 50px;
+    		margin: 30px 60px;
+    	}
+    	.div1{
+			background-color: red;
+			color: red;
+    	}
+    	.div2{
+			background-color: blue;
+			color: blue;
+    	}
+    	.div3{
+			background-color: green;
+			color: green;
+    	}
+   
+   .img-small{
+		width: 5rem;
+   }
+   .img-big{
+		width: 20rem;
+   }
+   main{
+   	display: flex;
+   	justify-content: space-around;
+   	align-items: center;
+   }
+   .opacity-down{
+   	opacity: 0.5;
+   	animation-name: fade-out;
+   	animation-duration: 1s;
+   	animation-fill-mode: forwards;
+   }
+
+   @keyframes fade-out{
+   		from{opacity: 1;}
+   		to{opacity: 0.5;}
+   }
+   figcaption{
+      background-color: grey;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+   }
+   figure{
+      margin: 0;
+   }
+   .cross{
+      width: 1rem;
+      height: 1rem;
+      background-color: grey;
+   }
+   .hidden{
+    display: none;
+   }
+
+   .inscrit{
+    color: green;
+   }
+
+   .bad{
+      color: red;
+   }
+   #survol{
+      background-color: yellow;
+   }
+ main li{
+
+   width: 15rem;
+
+   }
+   

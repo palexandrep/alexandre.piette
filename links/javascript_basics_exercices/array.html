@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="descrition" keywords="">
+    <title>array</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+	<header>
+
+		<h1>Array</h1>
+
+		<nav class="nav_top">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</nav>
+		
+	</header>
+
+	<main>
+
+		<div class="div1" data-color="red"></div>
+		<div class="div2" data-color="blue"></div>
+		<div class="div3" data-color="green"></div>
+
+		<h2>Texte</h2>
+		
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<script>
+		
+	/*var myArray = new Array();
+	myArray[0] = 'Alex';
+	myArray[1] = 'Piette';
+	myArray[2] = 'Mlz';
+	myArray[3] = true;
+	
+	
+	for (var i=0; i < myArray.length; i++){
+		console.log(myArray[i]);
+	};*/
+
+	var text = document.querySelector('h2');
+	/*var myBlock = new Array();
+	myBlock[0] = document.querySelector('.div1');
+	myBlock[1] = document.querySelector('.div2');
+	myBlock[2] = document.querySelector('.div3');*/
+	/*var div1 = document.querySelector('.div1');
+	var div2 = document.querySelector('.div2');
+	var div3 = document.querySelector('.div3');
+	var col1 = div1.
+
+	div1.addEventlistener('click',function(){
+		text.style.color = 'red';
+	});
+	div2.addEventlistener('mouseOver',function(){
+		text.style.color = 'blue';
+	});
+	div3.addEventlistener('mouseOver',function(){
+		text.style.color = 'green';
+	});*/
+
+	myDivs = document.querySelectorAll('div');
+	for (var i = 0; i < myDivs.length; i++){
+		myDivs[i].addEventListener('click', function(){
+			var myColor = this.getAttribute('data-color');
+	
+		
+			text.style.color = myColor;
+		});
+	};
+
+
+
+	</script>
+</body>
+</html>
