@@ -283,6 +283,9 @@
     transform: rotate(0deg);
     opacity: 1; } }
 
+.clock {
+  fill: #1C1A1F; }
+
 .circle_9_fade-in {
   -webkit-animation-name: rotate9;
   animation-name: rotate9;
@@ -684,7 +687,7 @@
 
 .push_btn {
   position: absolute;
-  top: 3rem;
+  top: 5rem;
   left: 15rem;
   -webkit-transform: translateX 30px;
   -ms-transform: translateX 30px;
@@ -719,15 +722,28 @@
   top: -25rem;
   left: -5rem; }
 
-@media screen and (max-width: 1000px) {
-  #machine {
-    display: none; }
-  .push_btn {
-    left: calc(50vw - 140.469px / 2);
-    top: 18rem; }
-  .clock_animate {
-    width: 5rem;
-    height: 5rem; } }
+.info_robot-fade-in-out {
+  -webkit-animation-name: info_fade-in;
+  animation-name: info_fade-in;
+  animation-timming-function: ease-in;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+@-webkit-keyframes info_fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes info_fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 body {
   color: #F1EDF7;
@@ -737,13 +753,93 @@ body {
   background: -o-linear-gradient(top, #383742 0%, #131114 100%);
   background: linear-gradient(to bottom, #383742 0%, #131114 100%); }
 
+ul {
+  padding-left: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
 nav {
   height: 4rem;
   background-color: black;
   postition: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0; }
+  z-index: 1000; }
+
+.nav_shadow {
+  -webkit-animation-name: nav_active;
+  animation-name: nav_active;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes nav_active {
+  0% {
+    -webkit-box-shadow: 0px 15px 100px 5px #43424F;
+    box-shadow: 0px 15px 100px 5px #43424F; }
+  10% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  15% {
+    -webkit-box-shadow: 0px 15px 100px 15px #43424F;
+    box-shadow: 0px 15px 100px 15px #43424F; }
+  30% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  40% {
+    -webkit-box-shadow: 0px 10px 100px 15px #43424F;
+    box-shadow: 0px 10px 100px 15px #43424F; }
+  43% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  48% {
+    -webkit-box-shadow: 0px 15px 100px 20px #43424F;
+    box-shadow: 0px 15px 100px 20px #43424F; }
+  60% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  65% {
+    -webkit-box-shadow: 0px 5px 100px 15px #43424F;
+    box-shadow: 0px 5px 100px 15px #43424F; }
+  100% {
+    -webkit-box-shadow: 0px 30px 100px 25px #43424F;
+    box-shadow: 0px 30px 100px 25px #43424F; } }
+
+@keyframes nav_active {
+  0% {
+    -webkit-box-shadow: 0px 15px 100px 5px #43424F;
+    box-shadow: 0px 15px 100px 5px #43424F; }
+  10% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  15% {
+    -webkit-box-shadow: 0px 15px 100px 15px #43424F;
+    box-shadow: 0px 15px 100px 15px #43424F; }
+  30% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  40% {
+    -webkit-box-shadow: 0px 10px 100px 15px #43424F;
+    box-shadow: 0px 10px 100px 15px #43424F; }
+  43% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  48% {
+    -webkit-box-shadow: 0px 15px 100px 20px #43424F;
+    box-shadow: 0px 15px 100px 20px #43424F; }
+  60% {
+    -webkit-box-shadow: 0 0 0 0 #383742;
+    box-shadow: 0 0 0 0 #383742; }
+  65% {
+    -webkit-box-shadow: 0px 5px 100px 15px #43424F;
+    box-shadow: 0px 5px 100px 15px #43424F; }
+  100% {
+    -webkit-box-shadow: 0px 30px 100px 25px #43424F;
+    box-shadow: 0px 30px 100px 25px #43424F; } }
 
 h2 {
   font-size: 2rem; }
@@ -809,6 +905,67 @@ button:focus {
   100% {
     opacity: 1; } }
 
+.info_robot {
+  background-color: #F1EDF7;
+  border-radius: 3px;
+  padding: 0rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 24rem;
+  padding: 0 2rem;
+  opacity: 0; }
+  .info_robot p {
+    text-align: center;
+    color: black;
+    margin: 0.4rem 0rem; }
+
+.info_robot-fade-in {
+  -webkit-animation-name: info_fade-in;
+  animation-name: info_fade-in;
+  animation-timming-function: ease-in;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s; }
+
+@keyframes info_fade-in {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.presentation h3 {
+  text-align: center; }
+
+.presentation ul, .avertissement {
+  width: 60%;
+  margin: auto; }
+
+#comp ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #comp ul li {
+    padding: 4rem; }
+
+.presentation section, .presentation h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 #manche_g {
   width: 46rem;
   position: absolute;
@@ -867,3 +1024,39 @@ button:focus {
 
 footer {
   margin: 7rem; }
+
+@media screen and (min-width: 600px) {
+  .nav_phone section {
+    display: none; } }
+
+@media screen and (max-width: 1000px) {
+  #canvas {
+    display: none; }
+  .push_btn {
+    left: calc(50vw - 140.469px / 2);
+    top: 16.5rem; }
+  .clock_animate {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.2rem; }
+  .info_robot {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .container_nav {
+    display: none; }
+  .nav_phone {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .nav_phone h3 {
+      font-size: 0.9rem;
+      padding-top: 0.4rem; }
+  #comp li {
+    padding: 0rem; }
+  #comp ul {
+    width: 100%; } }

@@ -1,7 +1,7 @@
 @import "rouages.scss";
 @import "button.scss";
 @import "robot.scss";
-@import "media.scss";
+
 
 
 // #191919
@@ -16,13 +16,63 @@ body{
 	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
 
 }
+ul{
+	padding-left: 0;
+}
+li{
+	list-style-type: none;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
 nav{
 	height: 4rem;
 	background-color: black;
 	postition: fixed;
 	z-index: 1000;
-	top: 0;
-	left: 0;
+	
+}
+
+.nav_shadow{
+	animation-name: nav_active;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes nav_active{
+	0%{
+		box-shadow: 0px 15px 100px 5px #43424F;
+	}
+	10%{
+		box-shadow: 0 0 0 0 #383742;
+	}
+	15%{
+		box-shadow: 0px 15px 100px 15px #43424F;
+	}
+	30%{
+		box-shadow: 0 0 0 0 #383742;
+	}
+	40%{
+		box-shadow: 0px 10px 100px 15px #43424F;
+	}
+	43%{
+		box-shadow: 0 0 0 0 #383742;
+	}
+	48%{
+		box-shadow: 0px 15px 100px 20px #43424F;
+	}
+	60%{
+		box-shadow: 0 0 0 0 #383742;
+	}
+	65%{
+		box-shadow: 0px 5px 100px 15px #43424F;
+	}
+	100%{
+		box-shadow: 0px 30px 100px 25px #43424F;
+	}
 }
 
 h2{
@@ -61,8 +111,8 @@ button:focus {outline:0;}
 	position: relative;
 	z-index: 2;
 	border: solid 4px black;
-	width: 10rem; // 5
-	height: 10rem;  // 5
+	width: 10rem; // 5rem;
+	height: 10rem;  // 5rem;
 	border-radius: 500px;
 	background-color: white;
 
@@ -82,6 +132,70 @@ button:focus {outline:0;}
 		100%{
 		opacity: 1;
 	}
+}
+
+.info_robot{
+	background-color: #F1EDF7;
+	border-radius: 3px;
+	padding: 0rem;
+	position: absolute;
+	top: 2.5rem;
+	left: 24rem;
+	padding: 0 2rem;
+	opacity: 0;
+
+	p{
+		text-align: center;
+		color: black;
+		margin: 0.4rem 0rem;
+	}
+};
+.info_robot-fade-in{
+		animation-name: info_fade-in;
+	animation-timming-function: ease-in;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
+}
+
+@keyframes info_fade-in{
+	0%{
+		opacity: 0;
+	}
+	20%{
+		opacity: 1;
+	}
+	80%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+
+.presentation h3{
+	text-align: center;
+}
+.presentation ul,.avertissement{
+	width: 60%;
+	margin: auto;
+}
+
+#comp ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	li{
+		padding: 4rem;
+	}
+
+}
+.presentation section, .presentation h3{
+		
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 //-----------------------------------------------svg
@@ -139,3 +253,5 @@ button:focus {outline:0;}
 footer{
 	margin: 7rem;
 }
+
+@import "media.scss";

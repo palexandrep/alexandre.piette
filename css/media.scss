@@ -1,17 +1,55 @@
+
+@media screen and (min-width: 600px){
+	.nav_phone section{
+	display: none;
+}
+}
+
+
 @media screen and (max-width: 1000px){
 		
-		#machine{
+		#canvas{
+
 			display: none;
 		}
 		.push_btn{
 			left: calc(50vw - 140.469px / 2);
-			top: 18rem;
+
+			top: 16.5rem;
+
 
 		}
 		.clock_animate{
 			width: 5rem;
 			height: 5rem;
 
+			margin-left: 1.2rem;
+
 		}
+		
+		.info_robot{display: none;}
 	
 	}
+
+	@media screen and (max-width: 600px){
+		.container_nav{
+			display: none;
+		}
+		.nav_phone{
+			display: flex;
+			justify-content: space-around;
+			
+			h3{
+				font-size: 0.9rem;
+				padding-top: 0.4rem;
+			}
+		}
+
+		#comp li{
+			padding: 0rem;
+		}
+		#comp ul{
+			width: 100%;
+		}
+	}
+

@@ -21,3 +21,20 @@
 	//transform-origin: top right;
 	//transform: rotate(20deg);
 }
+
+.info_robot-fade-in-out{
+		animation-name: info_fade-in;
+	animation-timming-function: ease-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes info_fade-in{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
