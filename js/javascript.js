@@ -26,14 +26,17 @@
 		$('.circle_9_clock').addClass('active_9');
 		$('.circle_10_clock').addClass('active_10');
 
-		$('.push_btn').addClass('push_btn_disable');
 
-		$('#machine').addClass("robot_active");
+		$('nav').addClass('nav_shadow');
+		$('.push_btn').addClass('push_btn_disable');
+		$('.info_robot').addClass('info_robot-fade-in');
+
+		$('#canvas').addClass("robot_active");
 
 
 	})
 
-/*
+
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
@@ -92,4 +95,3 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-*/
