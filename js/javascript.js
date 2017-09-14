@@ -6,7 +6,7 @@
 		$('.circle_2').addClass("circle_2_fade-in");
 		$('.circle_3').addClass("circle_3_fade-in");
 		$('.circle_4').addClass("circle_4_fade-in");
-		$('.circle_5').addClass("circle_5_fade-in");
+
 		$('.circle_6').addClass("circle_6_fade-in");
 		$('.circle_7').addClass("circle_7_fade-in");
 		$('.circle_8').addClass("circle_8_fade-in");
