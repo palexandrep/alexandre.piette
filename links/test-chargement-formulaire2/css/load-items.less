@@ -1,0 +1,62 @@
+.load-bar--items-box{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: relative;
+	top: -4rem;
+	z-index: -1;
+}
+.load-bar-1--items{
+	height: 0.1rem;
+	margin:0 1rem;
+
+  position: relative;
+  top: -4rem;
+}
+.t-pop1, .t-pop2, .t-pop3, .t-pop4, .t-pop5, .t-pop6{
+  width: 6.5rem;
+	visibility: hidden;
+}
+.t-pop1-2{
+	width: 5rem;
+	position: relative;
+
+	right: 3rem;
+	z-index: -1;
+	opacity: 0.8;
+	visibility: hidden;
+}
+.popdelay{
+	animation-name: popdelay;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+	visibility: visible;
+}
+
+.popitem{
+  animation-name: popitem;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  visibility: visible;
+}
+
+@keyframes popdelay {
+  0%{transform: translateY(1rem); height: 0.1rem; opacity: 0;}
+  0%{transform: translateY(7rem); height: 0.1rem; opacity: 0;}
+  50%{transform: translateY(0.4rem); height: 5rem; opacity: 0.3;}
+  80%{transform: translateY(1rem); height: 4.5rem; opacity: 0.7;}
+  100%{transform: translateY(0.4rem); height: 5rem; opacity: 0.7;}
+}
+
+
+@keyframes popitem {
+  0%{transform: translateY(7rem); height: 0.1rem; opacity: 0;}
+  0%{transform: translateY(7rem); height: 0.1rem; opacity: 0;}
+  50%{transform: translateY(0.5rem); height: 6.5rem; opacity: 0.3;}
+  80%{transform: translateY(1rem); height: 6rem; opacity: 1;}
+  100%{transform: translateY(0.5rem); height: 6.5rem; opacity: 1;}
+}

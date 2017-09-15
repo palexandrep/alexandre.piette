@@ -1,4 +1,4 @@
-
+(function(){
 	$(".push_btn").on("click", function(){
 
 		$('.piston').addClass("piston_dis");
@@ -31,13 +31,36 @@
 
 		$('nav').addClass('nav_shadow');
 		$('.push_btn').addClass('push_btn_disable');
-		$('.info_robot').addClass('info_robot-fade-in');
+		//$('.info_robot').addClass('info_robot-fade-in');
 
 		$('#canvas').addClass("robot_active");
 		$('.machine_container').addClass("machine_container_fixed");
 
 
 	})
+
+	$(document).ready(function(){
+
+
+			var info = $('.over_item_info');
+
+			info.mouseover(function(){
+				if($('#canvas').hasClass("robot_active")){
+
+				var select = $(this);
+				var dataInfo = select.attr("data-info");
+													
+				$('.info_robot p').text(dataInfo);
+				$('.info_robot').fadeTo(200, 1)
+				}
+			})
+			info.mouseout(function(){
+				$('.info_robot').fadeTo(1000, 0)
+			})
+	});
+
+})()
+	
 
 
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;

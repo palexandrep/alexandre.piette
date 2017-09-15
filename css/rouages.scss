@@ -8,12 +8,15 @@
 
 }
 @keyframes dissapear{
-	from{
-
+	0%{
+	opacity: 1;
 	}
-	to{
+	50%{
+		opacity: 0;
+	}
+	100%{
 		transform: scale(0) ;
-		opacity: 0.5;
+		opacity: 0;
 
 
 	}

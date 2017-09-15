@@ -1,0 +1,9 @@
+.load-bars {
+  display: flex;
+}
+.load-bar {
+  width: 5rem;
+  height: 1rem;
+  background-color: red;
+}
+/*# sourceMappingURL=chargement.css.map */

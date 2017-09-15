@@ -41,7 +41,8 @@
 
 #canvas{
 	//opacity: 0.7;
-	transform: scale(0.7) translateY(-4rem) translateX(-6rem);
+	
+	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
 }
 
 .robot_active{
@@ -53,10 +54,11 @@
 }
 @keyframes robot-fade-in{
 	from{
-		top: -25rem;
+		
 	}
 	to{
-		top: -3rem;
+		transform: scale(0.7) translateY(-5.5rem) translateX(-6rem);
+
 	}
 }
 .machine_container{

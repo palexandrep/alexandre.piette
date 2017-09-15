@@ -102,6 +102,8 @@ button:focus {outline:0;}
 	display: flex;
 	justify-content: space-around;
 	margin-top: 15vh;
+	position: relative;
+	z-index: 10000;
 }
 
 .img_portrait{
@@ -139,8 +141,8 @@ button:focus {outline:0;}
 	border-radius: 3px;
 	padding: 0rem;
 	position: absolute;
-	top: 2.5rem;
-	left: 24rem;
+	top: 2rem;
+	left: 18rem;
 	padding: 0 2rem;
 	opacity: 0;
 
@@ -150,8 +152,8 @@ button:focus {outline:0;}
 		margin: 0.4rem 0rem;
 	}
 };
-.info_robot-fade-in{
-		animation-name: info_fade-in;
+/*.info_robot-fade-in{
+	animation-name: info_fade-in;
 	animation-timming-function: ease-in;
 	animation-duration: 10s;
 	animation-fill-mode: forwards;
@@ -171,7 +173,7 @@ button:focus {outline:0;}
 	100%{
 		opacity: 0;
 	}
-}
+}*/
 
 
 
@@ -204,6 +206,14 @@ button:focus {outline:0;}
 	h3{
 		margin-left: 1.5rem;
 	}
+}
+
+
+.present{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 //-----------------------------------------------svg
