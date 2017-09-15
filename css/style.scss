@@ -30,9 +30,11 @@ a{
 
 nav{
 	height: 4rem;
+	width: 100%;
 	background-color: black;
-	postition: fixed;
-	z-index: 100;
+	position: fixed;
+
+	top: 0;
 	
 }
 
