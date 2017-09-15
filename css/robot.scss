@@ -38,3 +38,31 @@
 		opacity: 1;
 	}
 }
+
+#canvas{
+	//opacity: 0.7;
+	transform: scale(0.7) translateY(-4rem) translateX(-6rem);
+}
+
+.robot_active{
+	animation-name: robot-fade-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-timming-function: ease-out;
+
+}
+@keyframes robot-fade-in{
+	from{
+		top: -25rem;
+	}
+	to{
+		top: -3rem;
+	}
+}
+.machine_container{
+	position: absolute;
+}
+
+.machine_container_fixed{
+	position: fixed;
+}

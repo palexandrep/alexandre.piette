@@ -1,3 +1,61 @@
+.piston_dis{
+	animation-name: dissapear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+	animation-delay: 5.5s;
+	transform-origin: 100% 100%;
+
+}
+@keyframes dissapear{
+	from{
+
+	}
+	to{
+		transform: scale(0) ;
+		opacity: 0.5;
+
+
+	}
+}
+.cercle_interne{
+	transform: scale(1.38);
+	transform-origin: 50% 50%;
+}
+.cercle_interne_active{
+	
+	fill:#0F0F0F;
+	animation-name: smaller;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-delay: 5s;
+	//opacity: 0.5;
+
+}
+@keyframes smaller{
+	0%{
+		transform: scale(1.38);
+	}
+	30%{
+		transform: scale(0.98);
+	}
+	40%{
+		transform: scale(1.03);
+	}
+	100%{
+		transform: scale(1);
+
+	}
+}
+
+
+
+.rouage_title{
+	width: 2.5rem;
+
+}
+
 .circle_1_fade-in{
 	animation-name: rotate;
 	animation-fill-mode: forwards;
@@ -212,8 +270,27 @@
 
 //-------------------------------------------------------------------------------- clock
 
+.rotate_cercle_interne{
+	animation-name: clock_intern_rotation;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-delay:8s;
+	fill: #0F0F0F;
+}
+@keyframes clock_intern_rotation{
+	0%{
+		transform: rotate(360deg);
+		
+
+	}
+
+	100%{
+		transform: rotate(0deg);
 
 
+	}
+}
 
 
 .circle_extern_rotate{
@@ -420,7 +497,7 @@
 	60%{
 		transform: rotate(-360deg);
 	}
-		70%{
+	70%{
 		transform: rotate(-200deg);
 	}
 	90%{

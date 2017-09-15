@@ -1,7 +1,7 @@
 
 	$(".push_btn").on("click", function(){
 
-		
+		$('.piston').addClass("piston_dis");
 		$('#circle_1').addClass("circle_1_fade-in");
 		$('.circle_2').addClass("circle_2_fade-in");
 		$('.circle_3').addClass("circle_3_fade-in");
@@ -15,6 +15,8 @@
 		$('.circle_extern').addClass("circle_extern_rotate");
 		$('.img_portrait').addClass("image_portrait_fade-in");
 
+		$('.cercle_interne').addClass('active_cercle_interne');
+		$('.cercle_interne').addClass('rotate_cercle_interne');
 		$('.circle_1_clock').addClass('active_1');
 		$('.circle_2_clock').addClass('active_2');
 		$('.circle_3_clock').addClass('active_3');
@@ -32,6 +34,7 @@
 		$('.info_robot').addClass('info_robot-fade-in');
 
 		$('#canvas').addClass("robot_active");
+		$('.machine_container').addClass("machine_container_fixed");
 
 
 	})
