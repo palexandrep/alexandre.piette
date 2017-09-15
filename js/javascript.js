@@ -59,6 +59,13 @@
 			})
 	});
 
+	$('.img_portrait').mouseover(function(){
+		$(this).attr('src','images/alex_bright.jpg');
+	});
+	$('.img_portrait').mouseout(function(){
+		$(this).attr('src','images/alex.jpg');
+	});
+
 })()
 	
 
