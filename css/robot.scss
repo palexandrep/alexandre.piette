@@ -1,29 +1,6 @@
-#machine{
-	width: 35rem;
-	position: absolute;
-	top: -25rem;
-	left: -5rem;
-
-}
-#bras{
-	//outline: 1px solid red;
-	//transform-origin: top right;
-	//transform: rotate(50deg);
-}
-
-#avant_bras_pince{
-	//outline: 1px solid red;
-	//transform-origin: top right;
-	//transform: rotate(-100deg);
-}
-#bras_epaule{
-
-	//transform-origin: top right;
-	//transform: rotate(20deg);
-}
 
 .info_robot-fade-in-out{
-		animation-name: info_fade-in;
+	animation-name: info_fade-in;
 	animation-timming-function: ease-in;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
@@ -40,8 +17,6 @@
 }
 
 #canvas{
-	//opacity: 0.7;
-	
 	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
 }
 
@@ -63,8 +38,10 @@
 }
 .machine_container{
 	position: absolute;
+	z-index: 25;
 }
 
 .machine_container_fixed{
 	position: fixed;
 }
+

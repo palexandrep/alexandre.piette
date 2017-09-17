@@ -41,7 +41,7 @@
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%; }
 
-.cercle_interne_active {
+.active_cercle_interne {
   fill: #0F0F0F;
   -webkit-animation-name: smaller;
   animation-name: smaller;
@@ -409,24 +409,27 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-  fill: #0F0F0F; }
+  animation-delay: 8s; }
 
 @-webkit-keyframes clock_intern_rotation {
   0% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); }
+    transform: rotate(360deg);
+    fill: #0F0F0F; }
   100% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); } }
+    transform: rotate(0deg);
+    fill: #0F0F0F; } }
 
 @keyframes clock_intern_rotation {
   0% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); }
+    transform: rotate(360deg);
+    fill: #0F0F0F; }
   100% {
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); } }
+    transform: rotate(0deg);
+    fill: #0F0F0F; } }
 
 .circle_extern_rotate {
   -webkit-animation-name: clock_rotation;
@@ -797,12 +800,6 @@
     opacity: 0;
     display: none; } }
 
-#machine {
-  width: 35rem;
-  position: absolute;
-  top: -25rem;
-  left: -5rem; }
-
 .info_robot-fade-in-out {
   -webkit-animation-name: info_fade-in;
   animation-name: info_fade-in;
@@ -853,7 +850,8 @@
     transform: scale(0.7) translateY(-3.5rem) translateX(-6rem); } }
 
 .machine_container {
-  position: absolute; }
+  position: absolute;
+  z-index: 25; }
 
 .machine_container_fixed {
   position: fixed; }
@@ -921,8 +919,8 @@ nav {
     -webkit-box-shadow: 0px 5px 100px 5px #43424F;
     box-shadow: 0px 5px 100px 5px #43424F; }
   100% {
-    -webkit-box-shadow: 0px 15px 100px 15px #43424F;
-    box-shadow: 0px 15px 100px 15px #43424F; } }
+    -webkit-box-shadow: 0px 10px 50px 10px #43424F;
+    box-shadow: 0px 10px 50px 10px #43424F; } }
 
 @keyframes nav_active {
   0% {
@@ -953,8 +951,8 @@ nav {
     -webkit-box-shadow: 0px 5px 100px 5px #43424F;
     box-shadow: 0px 5px 100px 5px #43424F; }
   100% {
-    -webkit-box-shadow: 0px 15px 100px 15px #43424F;
-    box-shadow: 0px 15px 100px 15px #43424F; } }
+    -webkit-box-shadow: 0px 10px 50px 10px #43424F;
+    box-shadow: 0px 10px 50px 10px #43424F; } }
 
 h2 {
   font-size: 2rem; }
@@ -972,7 +970,8 @@ button:focus {
 .conatiner_portrait {
   position: relative;
   margin: 0 0  8rem 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
 
 .container_nav {
   display: -webkit-box;
@@ -984,7 +983,7 @@ button:focus {
   justify-content: space-around;
   margin-top: 15vh;
   position: relative;
-  z-index: 17; }
+  z-index: 27; }
 
 .img_portrait {
   border-radius: 500px;
@@ -1026,12 +1025,13 @@ button:focus {
   background-color: #F1EDF7;
   border-radius: 3px;
   padding: 0rem;
-  position: absolute;
-  top: 2rem;
+  position: relative;
+  top: -23rem;
   left: 18rem;
   padding: 0 2rem;
   opacity: 0;
-  z-index: 20; }
+  z-index: 40;
+  width: 8rem; }
   .info_robot p {
     text-align: center;
     color: black;
@@ -1062,9 +1062,14 @@ button:focus {
 .presentation h3 {
   text-align: center; }
 
-.presentation ul, .avertissement {
+.presentation section > ul, .avertissement {
   width: 55%;
   margin: auto; }
+  .presentation section > ul li, .avertissement li {
+    padding: 1rem 0; }
+
+.avertissement {
+  font-size: 1.5rem; }
 
 #comp ul {
   display: -webkit-box;
@@ -1151,7 +1156,7 @@ footer {
   margin: 7rem; }
 
 @media screen and (min-width: 600px) {
-  .nav_phone section {
+  .nav_phone div {
     display: none; } }
 
 @media screen and (max-width: 1000px) {

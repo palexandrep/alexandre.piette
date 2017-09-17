@@ -25,7 +25,7 @@
 	transform: scale(1.38);
 	transform-origin: 50% 50%;
 }
-.cercle_interne_active{
+.active_cercle_interne{
 	
 	fill:#0F0F0F;
 	animation-name: smaller;
@@ -33,7 +33,6 @@
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
 	animation-delay: 5s;
-	//opacity: 0.5;
 
 }
 @keyframes smaller{
@@ -279,18 +278,18 @@
 	animation-duration: 60s;
 	animation-iteration-count: infinite;
 	animation-delay:8s;
-	fill: #0F0F0F;
+	
 }
 @keyframes clock_intern_rotation{
 	0%{
 		transform: rotate(360deg);
-		
+		fill: #0F0F0F;
 
 	}
 
 	100%{
 		transform: rotate(0deg);
-
+		fill: #0F0F0F;
 
 	}
 }
