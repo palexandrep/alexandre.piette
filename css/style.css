@@ -1226,7 +1226,7 @@ button:focus {
 	background-size: 35rem, 100vw;
 }*/
 main {
-  background-image: url("../images/background-5.png"), url("../images/dechets.svg");
+  background-image: url("../images/background-4.png"), url("../images/dechets.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom left, right bottom;
   background-size: 100vw,55rem; }
