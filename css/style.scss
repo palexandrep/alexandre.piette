@@ -1,11 +1,16 @@
 @import "rouages.scss";
 @import "button.scss";
 @import "robot.scss";
+@import "bob.scss";
 
 
 
 // #191919
 // #4D4D4D
+
+*{
+	box-sizing: border-box;
+}
 
 body{
 	
@@ -89,7 +94,9 @@ header{
 	margin: auto;
 }
 
-button:focus {outline:0;}
+button:focus {
+	outline:0;
+}
 
 
 .conatiner_portrait{
@@ -106,7 +113,7 @@ button:focus {outline:0;}
 	justify-content: space-around;
 	margin-top: 15vh;
 	position: relative;
-	z-index: 27;
+	z-index: 17;
 }
 
 .img_portrait{
@@ -145,8 +152,9 @@ button:focus {outline:0;}
 	padding: 0rem;
 	position: relative;
 	top: -23rem;
-	left: 18rem;
-	padding: 0 2rem;
+	left: 19rem;
+	padding: 0.1rem 1rem;
+	display: none;
 	opacity: 0;
 	z-index: 40;
 	width: 8rem;
@@ -179,7 +187,9 @@ button:focus {outline:0;}
 	}
 }*/
 
-
+.presentation{
+	padding-bottom: 8rem;
+}
 
 .presentation h3{
 	text-align: center;
@@ -193,6 +203,7 @@ button:focus {outline:0;}
 }
 .avertissement{
 	font-size: 1.5rem;
+	padding-bottom: 2rem;
 }
 
 #comp ul{
@@ -201,9 +212,11 @@ button:focus {outline:0;}
 	flex-wrap: wrap;
 	li{
 		padding: 4rem;
+		
 	}
 
 }
+
 .presentation section, .presentation h3{
 		
 	padding-top: 2rem;
@@ -213,6 +226,7 @@ button:focus {outline:0;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 4rem;
 	h3{
 		margin-left: 1.5rem;
 	}
@@ -224,6 +238,21 @@ button:focus {outline:0;}
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.skills li:hover{
+	border: 1px solid white;
+}
+.skills li{
+	box-sizing: border-box;
+	width: 12rem;
+	text-align: center;
+}
+.skills{
+	padding: 0 2rem;
+}
+#links, #diplomes, #exp{
+	padding: 0 11rem;
 }
 
 //-----------------------------------------------svg
@@ -255,9 +284,18 @@ button:focus {outline:0;}
 	transform: translateX(-50%);
 }
 
+.link_icon{
+	width: 1.3rem;
+	float: left;
+	margin-right: 1rem;
+}
 
 footer{
-	margin: 7rem;
+	margin: 0;
+	padding: 2rem;
+	background-color: black;
+	width: 100vw;
+
 }
 
 @import "media.scss";
