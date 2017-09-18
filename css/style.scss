@@ -3,8 +3,6 @@
 @import "robot.scss";
 @import "bob.scss";
 
-
-
 // #191919
 // #4D4D4D
 
@@ -13,8 +11,6 @@
 }
 
 body{
-	
-
 	color: #F1EDF7;
 	font-family: 'Paytone One', sans-serif;
 	//font-family: 'Special Elite', cursive;
@@ -299,12 +295,19 @@ button:focus {
 	width: 0;
 }
 
+/*main{
+	background-image: url("../images/dechets.svg","../images/background.jpg");
+	background-repeat: no-repeat, reapeat;
+	background-position: right bottom, center;
+	background-size: 35rem, 100vw;
+}*/
+
 main{
-	background-image: url("../images/dechets.svg");
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-size: 35rem;
-}
+	background-image: url("../images/background.png");
+	background-repeat: reapeat;
+	background-position: top left;
+	background-size: 100vw;
+}	
 
 .rouage_title{
 	width: 4rem;
@@ -435,6 +438,35 @@ main{
 	width: 1.3rem;
 	float: left;
 	margin-right: 1rem;
+}
+
+#yeux{
+	width: 3rem;
+	position: absolute;
+	right: 10rem;
+	top: 235rem;
+	opacity: 0.8;
+	
+}
+#oeilg, #oeild{
+	transfomr-origin: 50% 50%;
+	animation-name: cligne;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+@keyframes cligne{
+	0%{opacity:1;}
+	1%{opacity: 0.1;}
+	5%{opacity:1;}
+	40%{opacity:1;}
+	43%{opacity: 0;}
+	48%{opacity: 1;}
+	80%{opacity: 1;}
+	85%{opacity: 0;}
+	86%{opacity: 1;}
+	100%{opacity: 1;}
+
 }
 
 footer{
