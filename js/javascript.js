@@ -16,7 +16,7 @@
 		$('.img_portrait').addClass("image_portrait_fade-in");
 
 		$('.cercle_interne').addClass('active_cercle_interne');
-		$('.cercle_interne').addClass('rotate_cercle_interne');
+		
 		$('.circle_1_clock').addClass('active_1');
 		$('.circle_2_clock').addClass('active_2');
 		$('.circle_3_clock').addClass('active_3');
@@ -27,7 +27,11 @@
 		$('.circle_8_clock').addClass('active_8');
 		$('.circle_9_clock').addClass('active_9');
 		$('.circle_10_clock').addClass('active_10');
+		$('.title_1').addClass('title_1_active');
+		$('.title_2').addClass('title_2_active');
+		$('.tige').addClass('tige_active');
 
+		$('.manche-d-roll').addClass('manche-d-roll-down');
 
 		$('nav').addClass('nav_shadow');
 		$('.push_btn').addClass('push_btn_disable');
@@ -38,32 +42,76 @@
 		$('.machine_container').css('z-index', '25');
 	})
 
+	/*function timeoutCircle(){
+		$('.cercle_interne').addClass('rotate_cercle_interne');
+	}
+	$(".push_btn").on("click", function(){
+		 setTimeout(timeoutCircle, 8000);
+	});*/
+
 	$(document).ready(function(){
 
 
 			var info = $('.over_item_info');
 
-			info.mouseover(function(){
+			info.mouseover(function(event){
 				if($('#canvas').hasClass("robot_active")){
-
+					event.stopPropagation();
 				var select = $(this);
 				var dataInfo = select.attr("data-info");
 													
 				$('.info_robot p').text(dataInfo);
-				$('.info_robot').fadeTo(200, 1)
+				$('.info_robot').fadeTo(200, 1);
 				}
 			})
-			info.mouseout(function(){
-				$('.info_robot').fadeTo(1000, 0)
-			})
+			info.mouseout(function(event){
+				event.stopPropagation();
+				$('.info_robot').css('opacity', '0');
+			});
 	});
 
-	$('.img_portrait').mouseover(function(){
+	$('.img_portrait').mouseover(function(event){
+		event.stopPropagation();
 		$(this).attr('src','images/alex_bright.jpg');
 	});
-	$('.img_portrait').mouseout(function(){
+	$('.img_portrait').mouseout(function(event){
+		event.stopPropagation();
 		$(this).attr('src','images/alex.jpg');
 	});
+
+
+
+	var skillsWidth = $('.skills li');
+	
+
+			skillsWidth.mouseover(function(){
+				
+				var select = $(this);
+				var dataWidth = select.attr("data-width");
+				
+				console.log(dataWidth);
+													
+				select.find('.full').animate({
+				    width: dataWidth+'rem'
+				  }, 400,  function() {});
+				var calcWidth = 5-dataWidth;
+				console.log('empty = '+calcWidth);
+				select.find('.empty').animate({
+				    width: calcWidth+'rem'
+				  }, 400,  function() {});
+				
+			});
+			/* skillsWidth.mouseout(function(){
+
+				var select = $(this);
+
+				select.find('.full').animate({
+				    width: '0'
+				  }, 250,  function() {});
+				select.find('.empty').animate({
+				    width: '0'
+				  }, 400,  function() {});
+			});*/
 
 	
 

@@ -7,6 +7,7 @@
 	transform-origin: 100% 100%;
 
 }
+
 @keyframes dissapear{
 	0%{
 	opacity: 1;
@@ -21,6 +22,8 @@
 
 	}
 }
+
+
 .cercle_interne{
 	transform: scale(1.38);
 	transform-origin: 50% 50%;
@@ -209,7 +212,7 @@
 }
 @keyframes rotate8{
 	0%{
-		transform: rotate(-360deg);
+		transform: rotate(-360deg) ;
 		
 		opacity: 0;
 	}
@@ -217,7 +220,7 @@
 		opacity: 0.2;
 	}
 	100%{
-		transform: rotate(0deg);
+		transform: rotate(0deg) ;
 		opacity: 1;
 
 	}
@@ -277,18 +280,18 @@
 	animation-timing-function: linear;
 	animation-duration: 60s;
 	animation-iteration-count: infinite;
-	animation-delay:8s;
+	animation-delay:1s;
 	
 }
 @keyframes clock_intern_rotation{
 	0%{
-		transform: rotate(360deg);
+		transform: rotate(360deg) scale(1);
 		fill: #0F0F0F;
 
 	}
 
 	100%{
-		transform: rotate(0deg);
+		transform: rotate(0deg) scale(1);
 		fill: #0F0F0F;
 
 	}
