@@ -303,10 +303,10 @@ button:focus {
 }*/
 
 main{
-	background-image: url("../images/background.png");
-	background-repeat: reapeat;
-	background-position: top left;
-	background-size: 100vw;
+	background-image: url("../images/background-5.png"),url("../images/dechets.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-position:  bottom left, right bottom;
+	background-size: 100vw,55rem;
 }	
 
 .rouage_title{
@@ -441,12 +441,10 @@ main{
 }
 
 #yeux{
-	width: 3rem;
-	position: absolute;
-	right: 10rem;
-	top: 235rem;
-	opacity: 0.8;
-	
+	width: 6rem;
+	position: relative;
+	right: -38rem;
+	top: -7rem;
 }
 #oeilg, #oeild{
 	transfomr-origin: 50% 50%;
@@ -471,9 +469,10 @@ main{
 
 footer{
 	margin: 0;
-	padding: 2rem;
+	padding-top: 2rem;
 	background-color: black;
-	width: 100vw;
+	width: 100%;
+	ovev-rflow: hidden;
 
 }
 
