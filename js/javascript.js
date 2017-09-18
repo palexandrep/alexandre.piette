@@ -35,8 +35,7 @@
 
 		$('#canvas').addClass("robot_active");
 		$('.machine_container').addClass("machine_container_fixed");
-
-
+		$('.machine_container').css('z-index', '25');
 	})
 
 	$(document).ready(function(){
@@ -66,105 +65,13 @@
 		$(this).attr('src','images/alex.jpg');
 	});
 
+	
+
 
 
 //---------------------------------------------------------- matter chain ------
 
-var Example = Example || {};
 
-Example.chains = function() {
-    var Engine = Matter.Engine,
-        Render = Matter.Render,
-        Runner = Matter.Runner,
-        Body = Matter.Body,
-        Composite = Matter.Composite,
-        Composites = Matter.Composites,
-        Constraint = Matter.Constraint,
-        MouseConstraint = Matter.MouseConstraint,
-        Mouse = Matter.Mouse,
-        World = Matter.World,
-        Bodies = Matter.Bodies;
-
-    // create engine
-    var engine = Engine.create(),
-        world = engine.world;
-
-    // create renderer
-    var render = Render.create({
-        element: document.getElementById("chain"),
-        engine: engine,
-        options: {
-            width: 800,
-            height: 600,
-            showAngleIndicator: true,
-            showCollisions: true,
-            showVelocity: true
-        }
-    });
-
-    Render.run(render);
-
-    // create runner
-    var runner = Runner.create();
-    Runner.run(runner, engine);
-
-    // add bodies
-    
-    
-    group = Body.nextGroup(true);
-
-    var ropeC = Composites.stack(600, 50, 13, 1, 10, 10, function(x, y) {
-        return Bodies.rectangle(x - 20, y, 50, 20, { collisionFilter: { group: group }, chamfer: 5 });
-    });
-    
-    Composites.chain(ropeC, 0.3, 0, -0.3, 0, { stiffness: 1, length: 0 });
-    Composite.add(ropeC, Constraint.create({ 
-        bodyB: ropeC.bodies[0],
-        pointB: { x: -20, y: 0 },
-        pointA: { x: ropeC.bodies[0].position.x, y: ropeC.bodies[0].position.y },
-        stiffness: 0.5
-    }));
-    
-    World.add(world, [
-        ropeC,
-        Bodies.rectangle(400, 600, 1200, 50.5, { isStatic: true })
-    ]);
-
-    // add mouse control
-    var mouse = Mouse.create(render.canvas),
-        mouseConstraint = MouseConstraint.create(engine, {
-            mouse: mouse,
-            constraint: {
-                stiffness: 0.2,
-                render: {
-                    visible: false
-                }
-            }
-        });
-
-    World.add(world, mouseConstraint);
-
-    // keep the mouse in sync with rendering
-    render.mouse = mouse;
-
-    // fit the render viewport to the scene
-    Render.lookAt(render, {
-        min: { x: 0, y: 0 },
-        max: { x: 700, y: 600 }
-    });
-
-    // context for MatterTools.Demo
-    return {
-        engine: engine,
-        runner: runner,
-        render: render,
-        canvas: render.canvas,
-        stop: function() {
-            Matter.Render.stop(render);
-            Matter.Runner.stop(runner);
-        }
-    };
-};
 
 })()
 	

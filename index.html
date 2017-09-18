@@ -18,7 +18,7 @@
 
 				
 			<div id="animation_container" style="width:550px; height:300px;">
-				<canvas id="canvas" width="550" height="300" ></canvas>
+				<canvas id="canvas" width="550" height="300" class="over_item_info" data-info="Hello user, i am your assistant. Can i help you?"></canvas>
 				<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
 				</div>
 				<div class="info_robot">
@@ -500,19 +500,19 @@
 		<div class="container_nav">
 			
 			<section>
-				<a href="#comp"><h3>SKILLS</h3></a>
+				<a href="#comp"><h3 class="over_item_info" data-info="Do you want me to scroll you to the skills section?">SKILLS</h3></a>
 			</section>
 
 			<section>
-				<a href="#links"><h3>LINKS</h3></a>
+				<a href="#links"><h3 class="over_item_info" data-info="Do you want me to scroll you to the links section?">LINKS</h3></a>
 			</section>
 
 			<section>
-				<a href="#diplomes"><h3 class="over_item_info" data-info="dipplômes">DIPLOMES</h3></a>
+				<a href="#diplomes"><h3 class="over_item_info" data-info="Do you want me to scroll you to the diploma section?">DIPLOMA</h3></a>
 			</section>
 				
 			<section>
-				<a href="#exp"><h3>EXPERIENCES</h3></a>
+				<a href="#exp"><h3 class="over_item_info" data-info="Do you want me to scroll you to the experiences section?">EXPERIENCES</h3></a>
 			</section>
 
 			
@@ -522,7 +522,7 @@
 
 			<section id="comp">
 					<div class="box_title"><img src="images/rouage.svg" alt="rouage" class="rouage_title"><h3>SKILLS</h3></div>
-					<ul>
+					<ul class='skills'>
 						<li>HTML 5</li>
 						<li>CSS 3</li>
 						<li>Js</li>
@@ -530,17 +530,20 @@
 						<li>UX Design</li>
 						<li>PHP</li>
 						<li>AJAX</li>
+						<li>jQuery</li>
 						<li>Vue JS</li>
 						<li>Wordpress</li>
 						<li>Photoshop</li>
 						<li>Illustrator</li>
 						<li>Indesign</li>
 						<li>SASS</li>
-						<li>Drawning</li>
-						<li>Sculpting</li>
 						<li>git</li>
 						<li>npm</li>
 						<li>Responsive Design</li>
+						<li>Drawning</li>
+						<li>Sculpting</li>
+						<li>Bass player</li>
+
 					</ul>
 			</section>
 
@@ -551,16 +554,17 @@
 					<p class="avertissement">Remember, those links are exercises created during my training.</p>
 
 					<ul>
-						<li><a href="https://killer-cepegra.xyz/badges/" target="blank">Front-End Workshop</a>
-							<p>This Web app was made during my Front-End training and it was developed only for Ipad.</p>
+
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
+						<a href="https://killer-cepegra.xyz/badges/" target="blank">Front-End Workshop
+						<p>This Web app was made during my Front-End training and it was developed only for Ipad.</p></a></li>
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob"><a href="https://killer-cepegra.xyz/skills2/zoo/" target="blank">Front End exercice
+						<p>Exercice with wordpress build on a personal theme.</p></a>
 						</li>
-						<li><a href="https://killer-cepegra.xyz/skills2/zoo/" target="blank">Front End exercice</a>
-							<p>Exercice with wordpress build on a personal theme.</p>
-						</li>
-						<li><a href="https://www.behance.net/ALEXANDREPIETTE">Behance</a></li>
-						<li><a href="https://www.linkedin.com/in/alexandre-piette-846684b5/">LinkedIn</a></li>
-						<li><a href="https://codepen.io/Smog/">Codepen</a></li>
-						<li><a href="images/cv-alexandre-piette.pdf" download>Download my CV</a></li>
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob"><a href="https://www.behance.net/ALEXANDREPIETTE" target="blank">Behance</a></li>
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob"><a href="https://www.linkedin.com/in/alexandre-piette-846684b5/" target="blank">LinkedIn</a></li>
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob"><a href="https://codepen.io/Smog/" target="blank">Codepen</a></li>
+						<li><img src="images/link.svg" alt="link icon" class="link_icon hvr-bob"><a href="images/cv-alexandre-piette.pdf" download>Download my CV</a></li>
 
 					</ul>
 
