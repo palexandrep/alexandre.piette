@@ -43,15 +43,13 @@ nav{
 	
 }
 
-.nav_shadow{
+/*.nav_shadow{
 	animation-name: nav_active;
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 
 }
-.nav_phone{
-	z-index: 30;
-}
+
 @keyframes nav_active{
 	0%{
 		box-shadow: 0px 15px 100px 5px #43424F;
@@ -83,7 +81,7 @@ nav{
 	100%{
 		box-shadow: 0px 10px 50px 10px #43424F;
 	}
-}
+}*/
 
 h2{
 	font-size: 2rem;
@@ -99,6 +97,7 @@ header{
 
 button:focus {
 	outline:0;
+	border: solid 2px black;
 }
 
 
@@ -170,6 +169,26 @@ button:focus {
 		margin: 0.4rem 0rem;
 	}
 };
+
+.nav_phone{
+			display: flex;
+			justify-content: space-around;
+			width: 70vw;
+			
+			h3{
+				font-size: 0.9rem;
+				padding-top: 0.4rem;
+			}
+}
+
+.nav_phone h3:hover{
+	border-bottom: solid 1px white;
+}
+
+.nav_phone_container{
+	display: flex;
+	justify-content: flex-end;
+}
 /*.info_robot-fade-in{
 	animation-name: info_fade-in;
 	animation-timming-function: ease-in;
@@ -255,6 +274,7 @@ button:focus {
 	box-sizing: border-box;
 	width: 12rem;
 	text-align: center;
+	border: solid 1px rgba(0,0,0,0);
 }
 .skills{
 	padding: 0 2rem;
@@ -288,7 +308,10 @@ main{
 }
 
 
-
+.rouage_title{
+	width: 4rem;
+	padding: 3rem 0;
+}
 //-----------------------------------------------svg
 
 .container-mechanisme-titre{
