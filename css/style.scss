@@ -257,16 +257,6 @@ button:focus {
 	}
 }
 
-
-.present{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	position: relative;
-	z-index: 5;
-}
-
 .skills li:hover{
 	border: 1px solid white;
 }
@@ -322,14 +312,34 @@ main{
 	overflow: hidden;
 	z-index: -1;
 }
-
-.tige{
-	width: calc(50vw - 120px);
-	position: relative;
-	top: 1rem;
-	transform: translateX(50vw);
+.container_manches {
+	display: flex;
+    width: 100%;
+    position: absolute;
+    flex-flow: row wrap;
+    top: 0px;
+    align-content: center;
 }
-.tige_active{
+.container_manche {
+	position: relative;
+    flex: 1;
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+	&:last-child {
+		justify-content: flex-start;
+	}
+}
+
+.tige--d {
+  
+}
+.tige--g {
+  
+}
+
+/*.tige_active{
 	transform: translateX(50vw);
 	animation-name: tige-active;
 	animation-fill-mode: forwards;
@@ -373,12 +383,29 @@ main{
 		width: calc(50vw - 160px);
 	}
 }
+*/
 
 .title{
 
 	overflow: hidden;
 }
+.title--present {
+	height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.present {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+	h1, h2{
+		margin: 0;
+	}
+}
 
+/*
 .title_1{
 	transform: translateX(25rem);
 
@@ -421,7 +448,7 @@ main{
 		transform: translateX(0);
 	}
 }
-
+*/
 #rouage_portrait{
 	position: absolute;
 	width: 27rem;
