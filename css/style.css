@@ -937,10 +937,59 @@ main {
   z-index: -1;
 }
 
+.title--present {
+  height: 80px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title--present:last-child {
+  justify-content: flex-start;
+}
+
+.Present {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+}
+
+.Present h1, .Present h2 {
+  margin: 0;
+}
+
+.Present-row {
+  display: flex;
+}
+
+.Present-row:first-child .container_manche:after {
+  content: "";
+  height: 10px;
+  width: 100%;
+  top: 3px;
+  background: #0f0f0f;
+  position: relative;
+}
+
+.Present-row:last-child .container_manche:before {
+  content: "";
+  height: 10px;
+  width: 100%;
+  top: 3px;
+  background: #0f0f0f;
+  position: relative;
+}
+
+.Present-row:last-child .container_manche {
+  justify-content: flex-end;
+}
+
 .container_manches {
   display: flex;
-  width: 100%;
-  position: absolute;
+  flex: 1;
+  position: relative;
   flex-flow: row wrap;
   top: 0px;
   align-content: center;
@@ -1006,24 +1055,6 @@ main {
 */
 .title {
   overflow: hidden;
-}
-
-.title--present {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.present {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 5;
-}
-
-.present h1, .present h2 {
-  margin: 0;
 }
 
 /*

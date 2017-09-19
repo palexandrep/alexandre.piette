@@ -312,10 +312,57 @@ main{
 	overflow: hidden;
 	z-index: -1;
 }
+
+.title--present {
+	height: 80px;
+	display: flex;
+	flex: 1;
+    justify-content: flex-end;
+	align-items: center;
+	&:last-child {
+		justify-content: flex-start;
+	}
+}
+.Present {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+	h1, h2{
+		margin: 0;
+	}
+}
+.Present-row {
+	display: flex;
+	&:first-child {
+		& .container_manche:after {
+			content: "";
+			height: 10px;
+			width: 100%;
+			top: 3px;
+			background: #0f0f0f;
+			position: relative;
+		}
+	}
+	&:last-child {
+		& .container_manche:before {
+			content: "";
+			height: 10px;
+			width: 100%;
+			top: 3px;
+			background: #0f0f0f;
+			position: relative;
+		}
+		.container_manche {
+			justify-content: flex-end;
+		}
+	}
+
+}
 .container_manches {
 	display: flex;
-    width: 100%;
-    position: absolute;
+    flex: 1;
+    position: relative;
     flex-flow: row wrap;
     top: 0px;
     align-content: center;
@@ -330,13 +377,6 @@ main{
 	&:last-child {
 		justify-content: flex-start;
 	}
-}
-
-.tige--d {
-  
-}
-.tige--g {
-  
 }
 
 /*.tige_active{
@@ -388,21 +428,6 @@ main{
 .title{
 
 	overflow: hidden;
-}
-.title--present {
-	height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.present {
-	display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 5;
-	h1, h2{
-		margin: 0;
-	}
 }
 
 /*
