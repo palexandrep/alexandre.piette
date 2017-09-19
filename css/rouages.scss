@@ -74,6 +74,7 @@
  .circle_7, .circle_8, .circle_9,
  .circle_10{
 	opacity: 0;
+	fill: #0F0F0F;
 }
 
 @keyframes rotate{
@@ -95,7 +96,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3.5s;
-	fill: #131114;
+	//fill: #131114;
 }
 @keyframes rotate2{
 	0%{
@@ -116,7 +117,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
-	fill: #131114;
+	//fill: #131114;
 }
 @keyframes rotate3{
 	0%{
@@ -137,7 +138,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 2s;
-	fill: #1F1B21;
+	//fill: #1F1B21;
 }
 @keyframes rotate4{
 	0%{
@@ -157,7 +158,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 2s;
-	fill: #1C1A1F;
+	//fill: #1C1A1F;
 }
 @keyframes rotate6{
 	0%{
@@ -181,7 +182,7 @@
 	animation-timing-function: ease-out;
 	transform: translateX(-0.5rem);
 	animation-duration: 3.7s;
-	fill: #131114;
+	//fill: #131114;
 	position: relative;
 
 
@@ -208,7 +209,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3.5s;
-	fill: #0F0F0F;
+	//fill: #0F0F0F;
 }
 @keyframes rotate8{
 	0%{
@@ -226,14 +227,14 @@
 	}
 }
 .clock{
-	fill: #1C1A1F;
+	//fill: #1C1A1F;
 }
 .circle_9_fade-in{
 	animation-name: rotate9;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
-	fill: #0F0F0F;
+	//fill: #0F0F0F;
 }
 @keyframes rotate9{
 	0%{
@@ -257,7 +258,7 @@
 
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
-	fill: #0F0F0F;
+	//fill: #0F0F0F;
 }
 @keyframes rotate10{
 	0%{

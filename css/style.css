@@ -99,7 +99,8 @@
 .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6,
 .circle_7, .circle_8, .circle_9,
 .circle_10 {
-  opacity: 0; }
+  opacity: 0;
+  fill: #0F0F0F; }
 
 @-webkit-keyframes rotate {
   0% {
@@ -125,8 +126,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 3.5s;
-  animation-duration: 3.5s;
-  fill: #131114; }
+  animation-duration: 3.5s; }
 
 @-webkit-keyframes rotate2 {
   0% {
@@ -152,8 +152,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  fill: #131114; }
+  animation-duration: 3s; }
 
 @-webkit-keyframes rotate3 {
   0% {
@@ -179,8 +178,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  fill: #1F1B21; }
+  animation-duration: 2s; }
 
 @-webkit-keyframes rotate4 {
   0% {
@@ -206,8 +204,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  fill: #1C1A1F; }
+  animation-duration: 2s; }
 
 @-webkit-keyframes rotate6 {
   0% {
@@ -237,7 +234,6 @@
   transform: translateX(-0.5rem);
   -webkit-animation-duration: 3.7s;
   animation-duration: 3.7s;
-  fill: #131114;
   position: relative; }
 
 @-webkit-keyframes rotate7 {
@@ -264,8 +260,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 3.5s;
-  animation-duration: 3.5s;
-  fill: #0F0F0F; }
+  animation-duration: 3.5s; }
 
 @-webkit-keyframes rotate8 {
   0% {
@@ -283,9 +278,6 @@
   100% {
     opacity: 1; } }
 
-.clock {
-  fill: #1C1A1F; }
-
 .circle_9_fade-in {
   -webkit-animation-name: rotate9;
   animation-name: rotate9;
@@ -294,8 +286,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  fill: #0F0F0F; }
+  animation-duration: 3s; }
 
 @-webkit-keyframes rotate9 {
   0% {
@@ -320,8 +311,7 @@
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
   -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  fill: #0F0F0F; }
+  animation-duration: 3s; }
 
 @-webkit-keyframes rotate10 {
   0% {
@@ -790,7 +780,8 @@
     transform: scale(0.7) translateY(-3.5rem) translateX(-6rem); } }
 
 .machine_container {
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
 
 .machine_container_fixed {
   position: fixed; }
@@ -881,6 +872,29 @@ nav {
   position: fixed;
   z-index: 19;
   top: 0; }
+  nav a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: no-wrap;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    nav a h3 {
+      padding-right: 1rem; }
+    nav a .svg_nav {
+      width: 1.8rem; }
+    nav a .svg_nav-xp {
+      width: 1.4rem; }
 
 /*.nav_shadow{
 	animation-name: nav_active;
@@ -920,7 +934,7 @@ nav {
 	100%{
 		box-shadow: 0px 10px 50px 10px #43424F;
 	}
-}*/
+	}*/
 h2 {
   font-size: 2rem; }
 
@@ -928,7 +942,7 @@ h1, h2, footer {
   text-align: center; }
 
 header {
-  width: 100%;
+  width: 100vw;
   margin: auto; }
 
 button:focus {
@@ -996,14 +1010,15 @@ button:focus {
   background-color: #F1EDF7;
   border-radius: 3px;
   padding: 0rem;
-  position: relative;
-  top: -23rem;
+  position: fixed;
+  top: 3rem;
   left: 19rem;
   padding: 0.1rem 1rem;
   display: none;
   opacity: 0;
   z-index: 40;
-  width: 8rem; }
+  width: 8rem;
+  z-index: 25; }
   .info_robot p {
     text-align: center;
     color: black;
@@ -1056,7 +1071,7 @@ button:focus {
 	100%{
 		opacity: 0;
 	}
-}*/
+	}*/
 .presentation {
   padding-bottom: 8rem; }
 
@@ -1164,7 +1179,7 @@ button:focus {
 	background-repeat: no-repeat, reapeat;
 	background-position: right bottom, center;
 	background-size: 35rem, 100vw;
-}*/
+	}*/
 main {
   background-image: url("../images/background-4.png"), url("../images/dechets.svg");
   background-repeat: no-repeat, no-repeat;
@@ -1461,7 +1476,10 @@ footer {
     display: flex;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: 100%; }
+    .nav_phone img {
+      display: none; }
     .nav_phone h3 {
       font-size: 0.9rem;
       padding-top: 0.4rem; }
@@ -1470,4 +1488,11 @@ footer {
   #comp ul {
     width: 100%; }
   .presentation section > ul, .avertissement {
-    width: 100%; } }
+    width: 100%;
+    margin: 0; }
+  .info_robot {
+    display: none; }
+  section {
+    margin: 0; }
+  section > ul {
+    margin: 0 !important; } }

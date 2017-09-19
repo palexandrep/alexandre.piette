@@ -39,7 +39,7 @@
 
 		$('#canvas').addClass("robot_active");
 		$('.machine_container').addClass("machine_container_fixed");
-		$('.machine_container').css('z-index', '25');
+
 	})
 
 	/*function timeoutCircle(){
