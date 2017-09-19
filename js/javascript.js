@@ -63,7 +63,7 @@
 				$('.info_robot p').text(dataInfo);
 				$('.info_robot').fadeTo(200, 1);
 				}
-			})
+			});
 			info.mouseout(function(event){
 				event.stopPropagation();
 				$('.info_robot').css('opacity', '0');
