@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>kechoix</title>
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Fredericka+the+Great|Racing+Sans+One|Righteous|Seaweed+Script" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+	<header>
+			
+			
+
+				<div>
+					
+					<ul class="burger paneltoggle" data-target="#panel">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					
+					
+					<a href="../index.html" class="logo">
+
+						<img src="../images/svg/logo.svg" id="logo" alt="logo kechoix">
+						<h1>Kéchoix</h1>
+
+					</a>
+
+				</div>
+
+			<nav id="panel" class="disable">
+				<ul>
+					<li>
+						<a href="../index.html">	
+							<h3>Acceuil</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="jeu-start.html">	
+							<h3>Jeu</h3>	
+						</a>
+					</li>
+
+					<li>
+						<a href="../index.html#destinations">
+							<h3>Randonnée</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="../index.html#radio">
+							<h3>Ma radio</h3>		
+						</a>
+					</li>
+					<li>
+
+						<button class="paneltoggle btn" data-target="#panel">	
+								Fermer
+						</button>
+					</li>
+				</ul>
+			</nav>
+		
+	</header>
+	<main class="jeu-rations" id="scene" data-sceneid="1">
+
+		<img src="../images/slide-left.png" alt="" class="filter" id="left">
+		<img src="../images/slide-right.png" alt="" class="filter " id="right">
+		<div class="particules"></div>
+
+		<p class="jeu-first-para">Cela fait des jours que je n'ai plus mangé. Le rouge de ces baies me donne l'eau à la bouche!</p>
+
+		<svg version="1.1" id="perso-faim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 333 416" style="enable-background:new 0 0 333 416;" xml:space="preserve">
+		<style type="text/css">
+			.st0{fill:#FFFFFF;}
+		</style>
+		<path d="M96.2,148.4c-2.2,3.6-7.5,4.5-12,2c-4.4-2.5-6.3-7.4-4.1-10.9c2.2-3.6,7.5-4.5,12-2C96.5,139.9,98.3,144.8,96.2,148.4z"/>
+		<path d="M105.8,122.8c0,0,4.2,36.4,2.7,45c-1.5,8.6-2.7,19.4,2.7,19.9c5.3,0.5,6.9-0.7,5.4-12.4s-8.3-36-2.6-51.7
+			C119.6,107.9,105.8,122.8,105.8,122.8z"/>
+		<g>
+			<path d="M143.3,233.1l11.8,12.1l9.4-8.5l-39.1-30.8l-9.1,8.6C121,216.6,143.3,233.1,143.3,233.1z"/>
+			<path d="M165.4,231.5c4.9,5.5,4.8,12.2-0.1,15s-12.9,0.6-17.8-4.9c-4.9-5.5-4.8-12.2,0.1-15S160.6,226,165.4,231.5z"/>
+			<path d="M96.6,363.7l-8.7,0.6c0,0,2.4,9.8,0.6,11.8c-1.8,2,1.6,6.7,1.6,6.7s19,14.8,30.3,14.6s19.1-1.2,19.3-4.6
+				c0.2-4-2.3-9.8-15.1-15.7s-17.4-10.5-15.4-17.2C111.2,353.3,96.6,363.7,96.6,363.7z"/>
+			<path d="M86.2,179.9l-14,5.6c0,0,47.3,33.2,49.7,32.5c0.1,0,0.4-0.1,0.7-0.1l4.3-11.2l-0.3-0.1L86.2,179.9z"/>
+			<path d="M102.8,226.7c0,0,10.8,35.2,10.8,49.4c0,14.2-7.3-5.6-25.5,13c-18.3,18.5-7.5-51.1-11.7-56.8S102.8,226.7,102.8,226.7z"/>
+			<path d="M82.1,312.2h17.2c2.6,0,4.8-2.2,4.8-4.8V280c0-2.6-2.2-4.8-4.8-4.8H82.1c-2.6,0-4.8,2.2-4.8,4.8v27.4
+				C77.3,310.1,79.4,312.2,82.1,312.2z"/>
+			<g>
+				<path d="M34.2,368l-5.3,5.1c0,0,1.4,10.2-1.4,12.1s0.9,7,0.9,7s22.7,16.6,37.9,17.2s25.6,0.7,26.7-3.2c0.8-2.9-1.3-10.2-17.3-17.2
+					c-16.1-7-21.4-12-17.4-18.8S34.2,368,34.2,368z"/>
+				<path d="M88.1,123.7c0,0-13.5,8-7.9,11.7c5.6,3.7,14.3,3.7,14.3,3.7s6.4,15.4,6.4,19.1s-1.8,35.1,0,56.1
+					c2.4,28.1-64.5,8.6-64.5,8.6s23.9-32.1,16.7-43.8s-20.7-39.5-16.7-45.7c4-6.2,22.3-16.7,22.3-16.7L88.1,123.7z"/>
+				<ellipse cx="44" cy="147.7" rx="14.7" ry="11.8"/>
+				<path d="M157.5,94.8c0-1.8-0.4-3.4-1.2-4.8c1.3-11.7-2.7-23.1-10.3-32.6c3.3,1.1,6.1,1.2,6.8-0.9c2.1-5.9,1.6-11,1.6-11
+					s-4.7,6.6-13.8,0.1c-9-6.5-17.9-13.3-23.3-11.5c-5.4,1.8-40.8-8.6-44.7-4.2c-4,4.3-9.4,3.6-9.4,3.6s-5.7,5-11.8,5.1
+					c-6.1,0.1-8.2,2.9-8.2,2.9s-4.1,5.2-7.2,7.9c-3.2,2.7-1.5,10-5.9,9.8c-4.4-0.1,4,3.2,4,3.2s-2.6,0.7-6.1,3.2
+					c-2.3,1.6,3,1.3,6.2,1.8c-0.6,1.8-1.1,3.6-1.5,5.4c-3.8,4.1-8.3,9.2-5.1,7.8c1.7-0.8,3.2-1.2,4.3-1c-0.1,2.6,0.1,5.1,0.5,7.6
+					c0,0,0,0,0,0c-1.6,4.4,0,6.6,2,7.8c6.8,19,27,34.4,52.7,37.8c8.2,1.1,16.2,0.9,23.6-0.5c-3.7-1.3-6.2-3.6-5.9-5.9
+					c0.4-3,5.3-4.8,10.8-4c5,0.7,8.8,3.2,9.2,5.8c11-4.5,19.9-11.8,25.5-20.8c-0.2,0-0.4,0-0.7-0.1c-6.9-0.9-12-4.7-11.5-8.5
+					c0-0.3,0.1-0.5,0.2-0.8c0.2,3.5,5.1,6.8,11.5,7.7c0.5,0.1,0.9,0.1,1.3,0.1c0.4-0.7,0.7-1.4,1.1-2.1
+					C155.4,102.1,157.5,98.7,157.5,94.8z M95.6,101.8c-6.1-0.8-10.8-3.8-11.4-7.1c0.5,0.3,1,0.6,1.5,0.8c1.9,2.3,5.7,4.1,10.2,4.7
+					c6.3,0.8,12-1,13.2-4.3c0,0,0,0,0,0c0,0.2,0,0.5,0,0.7C108.5,100.4,102.5,102.7,95.6,101.8z"/>
+				<path d="M49.8,156.5L78,170.9c0,0-16.9,14.1-15.4,18.2c1.5,4.1-29.3-21.6-32.2-38.1S49.8,156.5,49.8,156.5z"/>
+				<path d="M97.9,238.1c-9.5,12.7-28.6,17.9-42.7,11.6c-14.1-6.3-17.9-21.7-8.4-34.5s28.6-17.9,42.7-11.6
+					C103.6,210,107.3,225.4,97.9,238.1z"/>
+				<path d="M41.5,231.1c0,0-9.8,52.4-11.8,58c-2.1,5.6,59.3,6.2,59.3,6.2s-5.1-61.7-12.5-62.9C69,231.1,41.5,231.1,41.5,231.1z"/>
+				<path d="M60.6,313.1l-16.9-2.3c-4-0.6-6.8-3.6-6-6.7l5.8-25.4c0.7-3.1,4.6-5.2,8.6-4.7l16.9,2.3c4,0.6,6.8,3.6,6,6.7l-5.8,25.4
+					C68.6,311.5,64.7,313.6,60.6,313.1z"/>
+				<path d="M37.7,304.1c0,0,2.4,12.7,0,16.4s-3.2,17.3,0,25.2c3.2,7.9-3.1,32-3.1,32h16.6c0,0,7.4-67.9,14.1-68.7
+					C72,308.1,37.7,304.1,37.7,304.1z"/>
+			</g>
+			<path d="M78.8,304.7c0,0,5,10.8,3.7,14.3c-1.2,3.5,1.2,15.6,5.7,22c4.6,6.4,4.6,28.4,4.6,28.4l14.4-2.3c0,0-9-60.3-3.4-61.9
+				C109.5,303.5,78.8,304.7,78.8,304.7z"/>
+			<path d="M155.5,228.8L155.5,228.8c0.9-1.3,2.7-1.6,4-0.8l21,13.4c1.3,0.8,1.7,2.6,0.8,3.8l0,0c-0.9,1.3-2.7,1.6-4,0.8l-21-13.4
+				C155,231.8,154.7,230,155.5,228.8z"/>
+		</g>
+		<ellipse class="st0" cx="96.6" cy="86.1" rx="11.4" ry="8.5"/>
+		<ellipse class="st0" cx="150.7" cy="94.7" rx="8.9" ry="8.5"/>
+		</svg>
+
+		<img src="../images/svg/baies.svg" alt="baies" class="baies">
+
+		<div class="gagne echec st-gagne">
+      		<h3>Ké chef !</h3>
+     		 <img src="../images/svg/logo-perso-ration.svg" alt="dormeur">
+     		 <p class="gagne" id="bulle-echec-reussite">Quelle forme! J'ai l'impression que je pourrais soulever un menhir!</p>
+    	</div>	
+		
+	</main>
+
+	<footer id="footer-shadow">
+		<nav class="bottom">
+			<button class="action-btn"
+			data-target=".action-btn"></button>
+
+			<div class="footer-actions toggle" id="actions_menu">
+
+				<a href="#" data-action="baies" class="btn">Manger les baies</a>
+				<a href="#" data-action="ration" class="btn winn-btn" data-target=".gagne">Manger la ration</a>
+				<a href="jeu-start-suite.html"><img src="../images/svg/logo-fleche-back.svg" alt="retour" class="fleche-back btn btn-last-footer"></a>
+				
+			</div>
+		</nav>
+	</footer>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/javascript.js"></script>
+</body>
+</html>

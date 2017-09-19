@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>kechoix</title>
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Fredericka+the+Great|Racing+Sans+One|Righteous|Seaweed+Script" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body>
+
+	<header>
+			
+			<div>
+					<ul class="burger paneltoggle" data-target="#panel">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				
+					
+				<a href="../index.html" class="logo">
+
+					<img src="../images/svg/logo.svg" id="logo" alt="logo kechoix">
+					<h1>Kéchoix</h1>
+
+				</a>
+
+			</div>
+
+			<nav id="panel" class="disable">
+				<ul>
+					<li>
+						<a href="../index.html">	
+							<h3>Acceuil</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="jeu-start.html">	
+							<h3>Jeu</h3>	
+						</a>
+					</li>
+
+					<li>
+						<a href="../index.html#destinations">
+							<h3>Randonnée</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="../index.html#radio">
+							<h3>Ma radio</h3>		
+						</a>
+					</li>
+					<li>
+
+						<button class="paneltoggle btn" data-target="#panel">	
+								Fermer
+						</button>
+					</li>
+				</ul>
+			</nav>
+		
+	</header>
+
+	<main class="jeu-start" id="scene" data-action="0">
+
+		<img src="../images/slide-left.png" alt="" class="filter" id="left">
+		<img src="../images/slide-right.png" alt="" class="filter " id="right">
+		<div class="particules"></div>
+
+			<p class="jeu-start-para">Je n'aurai jamais cru trouver quelqu'un dans cette maudite forêt. Je me suis égaré, peux-tu m'aider à retrouver le chemin? Cela fait des jours que je suis seul dans ces bois, je n'ai plus de forces. J'ai besoin de me remettre sur pied avant de trouver la sortie.</p>
+
+			<svg version="1.1" id="perso-debut-jeu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 333 416" style="enable-background:new 0 0 333 416;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:#FFFFFF;}
+			</style>
+			<g>
+				<path d="M98.3,120.7c0,0-12.8,8.2-7.5,12c5.3,3.8,13.6,3.8,13.6,3.8s6.1,15.8,6.1,19.6s16.2,42.2,0,57.6
+					c-20.6,19.6-61.4,8.9-61.4,8.9s22.7-32.9,15.9-45s-19.7-40.5-15.9-46.9c3.8-6.3,21.2-17.1,21.2-17.1L98.3,120.7z"/>
+				<ellipse cx="56.3" cy="151.4" rx="14" ry="12.1"/>
+				<path d="M52.9,158.9v31.4c0,0-19.9-7.8-22.8-4.6s5.8-36,18.8-46.4C62,128.8,52.9,158.9,52.9,158.9z"/>
+				<path d="M107.6,238.2c-9,13.1-27.2,18.4-40.7,11.9s-17-22.3-8-35.4s27.2-18.4,40.7-11.9C113.1,209.3,116.6,225.2,107.6,238.2z"/>
+				<path d="M35.5,237.8v17h12l-6.1-49.4l-11.9,0.3C31.3,210.4,35.5,237.8,35.5,237.8z"/>
+				<path d="M52.9,158.9l-10.1-10.7c0,0-14.1,55.8-12.6,57.8c0.1,0.1,0.2,0.3,0.3,0.6l11.9-0.3l0-0.3L52.9,158.9z"/>
+				<path d="M112.3,226.5c0,0,10.3,36.2,10.3,50.7c0,14.6-6.9-5.7-24.3,13.3s-7.2-52.5-11.1-58.3C83.3,226.5,112.3,226.5,112.3,226.5z"
+					/>
+				<path d="M54,231c0,0-9.3,53.8-11.3,59.5s56.4,6.3,56.4,6.3s-4.9-63.3-11.9-64.6C80.2,231,54,231,54,231z"/>
+				<path d="M56,254.4c4.6,5.6,4.6,12.5-0.1,15.4s-12.3,0.6-16.9-5s-4.6-12.5,0.1-15.4C43.8,246.5,51.3,248.8,56,254.4z"/>
+				<path d="M101.9,142.9l48-17.8c0,0,10.7,26.2,0,26.2c-11.1,0-41.9-1.4-45.2,12.3C101.5,177.4,101.9,142.9,101.9,142.9z"/>
+				<path d="M135.4,137.1l26.4-11.9c0,0,8.3,8,6.1,11.9c-2.3,3.9-41.1,9-41.1,9L135.4,137.1z"/>
+				<path d="M186.8,69.5c-5.5-0.4-9.3-7.3-8.4-15.2c0.9-8,6-14.1,11.5-13.7s9.3,7.3,8.4,15.2S192.3,69.9,186.8,69.5z"/>
+				<path d="M161.8,125.1c0,0,3-12.9,10.6-26S183,67,183,67l8.3,0.6c0,0-9.9,64.2-14.8,65.5c-4.9,1.3-8.7,3.9-8.7,3.9L161.8,125.1z"/>
+				<path d="M187.4,46.2h-5.7c-0.5,0-0.9-0.4-0.9-0.9V23.4c0-0.5,0.4-0.9,0.9-0.9h5.7c0.5,0,0.9,0.4,0.9,0.9v21.8
+					C188.3,45.7,187.9,46.2,187.4,46.2z"/>
+				<ellipse cx="182.1" cy="57.2" rx="9.8" ry="8.4"/>
+				<path d="M72.2,315.2l-16-2.4c-3.8-0.6-6.4-3.7-5.7-6.9l5.5-26.1c0.7-3.2,4.4-5.4,8.2-4.8l16,2.4c3.8,0.6,6.4,3.7,5.7,6.9l-5.5,26.1
+					C79.7,313.6,76,315.8,72.2,315.2z"/>
+				<path d="M91.2,314.3h19.1c1.8,0,3.2-1.4,3.2-3.2v-31.6c0-1.8-1.4-3.2-3.2-3.2H91.2c-1.8,0-3.2,1.4-3.2,3.2v31.6
+					C88,312.9,89.5,314.3,91.2,314.3z"/>
+				<path d="M50.4,305.9c0,0,2.3,13,0,16.8c-2.3,3.8-3,17.8,0,25.9c3,8.1-2.9,32.9-2.9,32.9h15.8c0,0,7.1-69.7,13.4-70.6
+					S50.4,305.9,50.4,305.9z"/>
+				<path d="M89.5,306.6c0,0,4.7,11.1,3.5,14.7c-1.2,3.6,1.1,16,5.4,22.6s4.4,29.1,4.4,29.1l13.7-2.3c0,0-8.5-61.9-3.2-63.6
+					S89.5,306.6,89.5,306.6z"/>
+				<path d="M50.5,373l-7.8,2.8c0,0,1.2,10.1-1.3,12c-2.5,1.9,0.8,7,0.8,7s19.7,16.5,32.9,17.1c13.1,0.6,23.2,0.4,23.2-3.2
+					c-0.1-2.7-1.1-10.1-15-17.1S64.7,379.7,68.2,373C71.6,366.3,50.5,373,50.5,373z"/>
+				<path d="M107.5,368.4l-7.5,0.6c0,0,2.1,9.7,0.5,11.7s1.4,6.7,1.4,6.7s16.5,14.7,26.3,14.5s15.8-1.7,16.7-4.5
+					c1.1-3.4-2-9.7-13.1-15.6c-11.1-5.9-15.1-10.4-13.4-17.1C120.2,358,107.5,368.4,107.5,368.4z"/>
+				<path d="M146,76c0-3.6-1.5-6.9-3.8-9.1c-1.6-10-6.4-19.1-13.7-26.4c3.3,0.7,5.9,0.4,6.3-1.8c1.1-6.3,0-11.4,0-11.4s-3.6,7.4-12.9,2
+					c-9.4-5.4-18.7-11.1-23.6-8.6c-4.8,2.6-39.6-3.2-42.7,1.8c-3.1,5-8.4,5-8.4,5s-4.7,5.9-10.4,6.8c-5.7,0.9-7.3,4.1-7.3,4.1
+					s-3.1,5.9-5.7,9s0,10.4-4.2,10.8s4.2,2.7,4.2,2.7s-2.3,1-5.3,4.1c-1.9,2,3,0.9,6.1,1c-0.3,1.9-0.6,3.8-0.6,5.7
+					c-3,4.7-6.6,10.5-3.7,8.6c1.5-1,2.8-1.7,3.9-1.6c0.3,2.6,0.8,5.2,1.5,7.7c0,0,0,0,0,0c-0.9,4.7,0.9,6.7,3,7.7
+					c9,18.4,30.2,31.3,54.8,31.3c7.9,0,15.3-1.3,22.2-3.7c-3.7-0.8-6.3-2.8-6.3-5.2c0-3.1,4.3-5.6,9.6-5.6c4.8,0,8.8,2,9.5,4.7
+					c11.2-7,19.4-17.3,22.8-29.2C144.1,83.9,146,80.2,146,76z M87.2,92.4c-6.6,0-12-3.1-12-7c0-0.3,0-0.5,0.1-0.8
+					c0.7,3.5,5.8,6.1,11.9,6.1c6.2,0,11.2-2.7,11.9-6.1c0.1,0.3,0.1,0.5,0.1,0.8C99.2,89.3,93.8,92.4,87.2,92.4z"/>
+			</g>
+			<g>
+				<ellipse class="st0 st-yeux" cx="86.9" cy="72.5" rx="11.4" ry="12.5"/>
+			</g>
+			<g>
+				<path class="st0 st-yeux" d="M145.4,79.9c-2.1,4.5-7.7,6.6-12.5,4.7s-7.1-7.1-5-11.6s7.7-6.6,12.5-4.7S147.5,75.4,145.4,79.9z"/>
+			</g>
+			</svg>
+	
+	</main>
+
+	<footer>
+		<nav class="bottom">
+			<button class="action-btn"
+			data-target=".action-btn"></button>
+
+			<div class="footer-actions" >
+				<a href="jeu-rations.html"  class="btn">Chercher à manger</a>
+				<a href="tente.html" class="btn">Chercher un abris</a>
+				<a href="jeu-feu.html" class="btn btn-last-footer">Faire du feu</a>		
+			</div>
+		</nav>
+	</footer>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/javascript.js"></script>
+</body>
+</html>

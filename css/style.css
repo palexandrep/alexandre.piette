@@ -7,8 +7,8 @@
   animation-timing-function: ease-in;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%; }
@@ -977,8 +977,8 @@ button:focus {
   animation-timming-fonction: ease-in;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s; }
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s; }
 
 @-webkit-keyframes fade-in_portrait {
   0% {

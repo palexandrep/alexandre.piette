@@ -1,0 +1,1332 @@
+@import "normalyze.css";
+
+$coul-prim:#edc48a;
+$coul-sec: #2c363d;
+$coul-ter: white;
+$coul-cat: black;
+$coul-five: #D54F41;
+$coul-six: #2A343B;
+
+/*$coul-sec:#1C0500;*/
+
+/* -----------------------------------------------------------------Global */
+
+body{
+	list-style-type: none;
+	box-sizing: border-box;
+
+	ul{
+		padding-left: 0;
+	}
+
+	a{
+		color: $coul-cat;
+		text-decoration: none;
+		font-family: 'Averia Sans Libre', cursive;
+		font-size: 1.3rem;
+	}
+}
+p{
+	font-family: 'Averia Sans Libre', cursive;
+}
+
+/*-------------------------Backgrounds */ 
+
+.jeu-start, .jeu-rations, .scene, .destinations, .jeu-tente{
+		background-size: 80rem;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		height: 30rem;
+}
+		
+
+/*------------------------------------------------------------active */
+
+.burger:active, nav a:active,main button:active,
+button a:active, .burger ul:active,main a:active, header a:active{
+			position: relative;
+			top: 0.2rem;
+			box-shadow: none;
+}
+footer button:active{
+	top: -5rem;
+}
+
+
+.logo:active{
+	position: relative;
+}
+
+.action-btn:active{
+	box-shadow: none;
+	top: -3.8rem;
+}
+
+.burger li, nav a, main button, header button, .btn, nav h3{
+	box-shadow: 0 3px 1px #2A343B;
+}
+
+footer button a{
+	box-shadow: none;
+}
+
+footer button{
+	box-shadow: 0 3px 1px #2A343B;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    box-shadow: 0 0 10px $coul-prim;
+}
+
+input{
+	border: none;
+}
+
+/* --------------------------------------------------------------------svg */
+
+
+
+#perso_standart2, #perso-standart-alt, 
+#perso-debut-jeu, #perso-faim, #perso-froid, #perso-debut-jeu-suite{
+	animation-name: arrive;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	min-width: 6rem;
+	position: relative;
+	left: 4rem;
+	width: 11rem;
+	top: -1.5rem;
+}
+
+@keyframes arrive {
+	from {left: -20rem;}
+	to {left: 6rem;}
+}
+#perso-standart-alt{
+	top: 4rem;
+}
+#perso-carte{
+		position: relative;
+		left: 0;
+		top: 4rem;
+		width: 8rem;
+		margin-right: 1rem;
+}
+
+#perso-froid{
+	width: 10rem;
+	top: 6rem;
+}
+
+#perso-debut-jeu-suite{
+	top: 2.5rem;
+}
+
+#perso-debut-jeu{
+	top: 2.5rem;
+}
+
+#perso-radio{
+	width: 7rem;
+	padding:0 3rem;
+}
+
+#perso-fatigue{
+	width: 20rem;
+	top: 6rem;
+	position: relative;
+	animation-name: arrivefatigue;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+
+#perso-faim{
+	top: 8rem;
+}
+.st-yeux-fatigue{
+	animation-name: yeux;
+	animation-iteration-count: infinite;
+	animation-timming-function: ease-in;
+	animation-delay: 2s;
+	animation-duration: 5s;
+}
+.st-yeux{
+	width: 0rem;
+	animation-name: yeux;
+	animation-iteration-count: infinite;
+	animation-timming-function: ease-in;
+	animation-delay: 5s;
+	animation-duration: 20s;
+}
+
+@keyframes yeux{
+	0%{opacity:1;}
+	1%{opacity: 0.1;}
+	5%{opacity:1;}
+	41%{opacity:1;}
+	43%{opacity: 0;}
+	47%{opacity: 1;}
+	81%{opacity: 1;}
+	85%{opacity: 0;}
+	86%{opacity: 1;}
+	100%{opacity: 1;}
+}
+
+#arbre-mort{
+	width: 30%;
+	min-width: 22rem;
+}
+
+.baies{position: absolute;
+width: 10rem;
+top: 26rem;
+}
+.fermer{
+	height: 2rem;
+}
+
+.show-map-close{
+	border: 0;
+	box-shadow: none;
+	outline: none;
+	background-color: white;
+}
+.fire{
+	width: 30%;
+}
+.fleche-back{
+	width: 4rem;
+	height: 1.5rem;
+}
+.tente-logo{
+	position: absolute;
+	top: 17rem;
+	right: -9rem;
+	width: 20rem;
+
+}
+
+.st1{
+
+	fill:white;
+	animation-name: radio;
+	animation-iteration-count: infinite;
+	animation-timming-function: ease-out;
+	animation-duration: 10s;
+}
+@keyframes radio{
+	0%{fill:white;}
+	1%{fill:$coul-prim;}
+	20%{fill:white;}
+	41%{fill:white;}
+	43%{fill:$coul-prim;}
+	60%{fill:white;}
+	81%{fill:$coul-prim;}
+	85%{fill:white;}
+	86%{fill:$coul-prim;}
+	100%{fill:white;}
+}
+/* -----------------------------------------------------------Header */
+
+.header-destinations{
+	height: 7rem;
+	background-color: $coul-sec;
+}
+
+.header-index{
+	
+	height: 6.5rem;
+	position: fixed;
+	width: 100%;
+
+	nav{
+		position: fixed;
+	}
+
+	.header-index-bar{
+		padding: 1rem 0;
+	}
+
+	>div{
+		background-color: $coul-sec;
+		width: 100%;
+
+		.logo{
+
+			margin-right: 2rem;
+			
+			#logo{
+				width: 15rem;
+				height: 100%;			
+			}
+
+			h1{
+				position: absolute;
+				top: 1rem;
+				z-index: 8;
+				margin: 0;
+				font-size: 3rem;
+				color: $coul-prim;
+				font-family: 'Righteous', cursive;
+			}
+		}
+	}
+	
+	h2{
+		padding: 0.6rem 0;
+		border-top: 0.2rem solid $coul-cat;
+		border-bottom: 0.2rem solid $coul-cat;
+		text-align: center;
+		font-family: 'Averia Sans Libre', cursive;
+		margin: 0;
+
+		width: 100%;
+		font-size: 1.5rem;
+
+		z-index: 7;
+	}	
+}
+
+header{
+	position: relative;
+	z-index: 9;
+
+	>div{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: $coul-sec;
+
+		.logo{
+
+			margin-right: 2rem;
+			display: flex;
+
+			#logo{
+				width: 10rem;
+				height: 100%;
+		
+				.st0-logo{fill:#1D2326;}
+				.st1-logo{fill: $coul-prim;}
+			}
+
+			h1{
+				position: absolute;
+				top: 1.1rem;
+				z-index: 2;
+				margin: 0;
+				font-size: 1.9rem;
+				color: $coul-prim;
+				font-family: 'Righteous', cursive;
+			}
+		}
+	}
+	
+	h2{
+		padding: 0.6rem 0;
+		border-top: 0.4rem solid $coul-cat;
+		border-bottom: 0.4rem solid $coul-cat;
+		text-align: center;
+		font-family: 'Averia Sans Libre', cursive;
+		margin: 0;
+		position: absolute;
+		width: 100%;
+		font-size: 1.5rem;
+		position: relative;
+		z-index: 7;
+		background-color: white;
+	}	
+
+	button, .btn{
+		background: none;
+		border: none;
+		outline: none;
+		font-size: 1.3rem;
+		font-family: 'Averia Sans Libre', cursive;
+	}
+
+	.burger{
+		padding-top: 0.3rem;
+		padding-left: 1rem;
+		padding-right: 1.5rem;
+		li:last-child{
+			margin-bottom: 0;
+		}
+			
+		li{
+			background-color: $coul-prim;
+			width: 3.2rem;
+			height: 0.3rem;
+			margin-bottom: 0.5rem;
+			list-style-type: none;
+			border-radius: 25px;
+		}
+	}
+
+	.disable{
+		animation-name: slide_up;
+		animation-duration: 0.3s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+		padding: 0 2.5rem;
+
+	}
+	@keyframes slide_up{
+		from{
+			height: 37rem;
+		}
+		to{
+			height: 0rem;
+		}
+	}
+	
+	.active{
+		animation-name: slide_down;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+		padding: 2rem 2.5rem;
+	}
+	@keyframes slide_down{
+		0%{}
+		40%{height: 37rem;}
+		50%{height: 31rem;}
+		100%{height: 37rem;}
+	}
+
+	nav{
+		box-sizing: border-box;
+		height: 0rem;
+		width: 100%;
+		overflow: hidden;
+		position: absolute;
+		z-index: 100;
+		background-color: $coul-sec;
+		box-shadow: 0px 5px 15px #404040;
+
+		button{
+			width: 50%;
+			min-width: 12rem;
+		}
+		
+		>ul>li:last-child{
+			
+			margin: auto;
+
+			>ul{
+				display: flex;
+			}			
+		}
+
+		>ul{
+
+			>li{
+				
+				margin-bottom: 1rem;
+				padding: 0 0.8rem;
+				text-align: center;
+				list-style-type: none;		
+			}
+			h3, .btn{
+				background-color: white;
+				padding: 0.6rem 0.3rem;
+				border: 2px solid $coul-prim;
+				border-radius: 10px;
+				font-size: 1.3rem;
+			}
+		}	
+	}
+}
+
+.start{
+	animation-name: hide;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	width: 0%;
+	height:0;
+	background-color: black;
+	position: absolute;
+	top: 6.7rem;
+	z-index: 50;
+	box-shadow: 0 10rem 15rem black;
+}
+
+
+@keyframes hide{
+	0%{opacity: 1; width: 100%; height: 146rem;}
+	35%{opacity: 1; width: 100%; height: 146rem;}
+	100%{opacity: 0; width: 100%; height: 0%;}
+}
+
+/* ---------------------------------------------------------------main */
+
+
+.index{
+	#perso-carte{
+		position: relative;
+		left: 0;
+		top: 0rem;
+		width: 7rem;
+		margin-right: 1rem;
+}
+	section{
+		padding: 3rem 0;
+	}
+	h3{
+		margin: 0;
+		padding: 1rem;
+
+	}
+	.p-index{
+		margin-left: 0;
+	}
+}
+.bulle-echec-reussite{
+	position: absolute;
+	top: -5rem;
+
+}
+#bulle-tente-up{
+	top: -1rem;
+}
+
+.intro{
+	background-color: $coul-sec;
+	padding: 2rem 0 ;
+	position: relative;
+	top: 6.6rem;
+	>div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		>div{
+			display: flex;
+			justify-content: center;
+			
+		}
+		p{
+		background-color: $coul-sec;
+		border: none;
+		color: white;
+		width: 80%;
+		text-align: center;
+
+		}
+		.text-intro-radio{
+			border-left: 2px solid $coul-prim;
+			align-self: flex-end;
+		}
+		.text-intro-jeu{
+			border-left: 2px solid $coul-prim;
+			align-self: flex-end;
+		}
+		.text-intro-map{
+			border-right: 2px solid $coul-prim;
+			align-self: flex-start;
+			padding-left: 0;
+		}
+		
+		>div{
+			display: flex;
+			align-items: center;
+
+			
+			img{
+				width: 5rem;
+				padding-left: 1rem;
+			}
+			.img-map{
+				padding-left: 0;
+			}
+
+			 div{
+				color: white;
+				width: 60%;
+				font-family: 'Averia Sans Libre', cursive;
+				padding: 0.5rem 0.8rem;
+				margin: 1rem 1rem;
+				text-align: center;
+
+				a{
+					color: $coul-prim;
+					}
+				}	
+			}
+	}
+	
+}
+.index-destinations{
+	position: relative;
+	top: 2rem;
+
+	.perso-carte{
+		border-top: 2px solid $coul-prim;
+	}
+}
+.jeu{
+
+	position: relative;
+	top: 4rem;
+	h3{
+		color: $coul-sec;
+	}
+	>div{
+		display: flex;
+		justify-content: center;
+	}
+}
+.jeu img, .show-map img{
+	padding: 0.5rem 0 2rem 0;
+	margin: 0.5rem 1 0 0;
+	border-top: 2px solid $coul-prim;
+	animation-name: btnrotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-duration: 6s;
+	width: 5rem;
+}
+
+@keyframes btnrotate{
+	0%{}
+	10%{transform: rotate(0deg);}
+	15%{transform: rotate(-15deg);}
+	20%{transform: rotate(15deg);}
+	25%{transform: rotate(-10deg);}
+	30%{transform: rotate(7deg);}
+	35%{transform: rotate(0deg);}
+	90%{transform: rotate(0deg);}
+	100%{transform: rotate(0deg);}
+
+}
+.jeu, .index-destinations{
+	background-color: white;
+	title-jeu{
+		color: $coul-sec;
+	}
+	h3{
+		margin-bottom: 2rem;
+	}
+	p{
+		margin: 0 4rem 2rem  1rem ;
+	}
+	div{
+		display: flex;
+		justify-content: space-around;
+		#perso-index-jeu{
+			display: block;
+			width: 10rem;
+			padding-bottom: 2rem;
+			
+		}
+	}
+
+	.filter{
+		top: 6.4rem;
+	}
+	.index-map-perso-button{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		#perso-carte{
+			margin-top: 2rem;
+		}
+		.show-map{
+			box-shadow: none;
+			border: none;
+			border-radius: 0;
+			background-color: rgba(0,0,0,0);
+
+
+			margin: 2rem 0;
+			p{
+				margin: 0;
+				margin-right: 0;
+				padding: 0;
+				border: none;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0);
+			}	
+		}
+	}
+}
+.index-destinations{
+
+	.hide{
+			display: none;
+		}
+
+	background-color:$coul-sec;
+	>ul{
+
+		background-image: url('../images/svg/carte.svg');
+		background-repeat: no-repeat;
+		background-attachment: bottom;
+		background-size: 26.8rem;
+		display: flex;
+		justify-content: flex-start;
+		list-style-type: none;
+		flex-wrap: wrap;
+		text-align: center;
+		padding: 7.5rem 1rem 2rem 0rem;
+		position: relative;
+		z-index: 4;
+		animation-name: sleft-show;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-out;
+		animation-duration: 1.3s;
+		animation-iteration-count: 1;
+
+		li{
+			width: 20%;
+			margin: 0.3rem 1rem;
+			min-width: 8rem;
+			max-width: 15rem;
+			.suivant{
+	 			width: 10%;
+	 			min-width: 3rem;
+	 			min-height: 3rem;
+	 			margin-top: 1rem;
+		 	}
+		 	img:last-child{
+		 		border: none;
+		 	}
+			img{
+				width: 100%;
+				min-width: 8rem;
+				min-height: 7rem;
+				border: 2px solid black;
+				border-radius: 15px;
+			}
+			h4{
+				margin-top: 0.3rem;
+			}
+		}
+	}
+}
+
+.index-radio{
+	background-color: white;
+	h3{
+		color: $coul-sec;
+	}
+	h4{
+			padding: 0.8rem;
+			border: 0.2rem solid $coul-cat;
+			background-color: $coul-ter;
+			width: 60%;
+			max-width: 25rem;
+			z-index: 8;
+			font-size: 1.2rem;
+			border-radius: 25px;
+			font-family: 'Averia Sans Libre', cursive;
+	}
+}
+
+main{
+		background-color: black;
+
+		p, .intro li{	
+		list-style-type: none;	
+		padding: 0.8rem;
+		border: 0.2rem solid $coul-cat;
+		background-color: $coul-ter;
+		width: 60%;
+		max-width: 25rem;
+		z-index: 8;
+		font-size: 1.2rem;
+		border-radius: 25px;
+		font-family: 'Averia Sans Libre', cursive;
+	}
+
+	h3{
+		padding: 3rem 0;
+		text-align: center;
+		color: $coul-prim;
+		font-size: 1.5rem;
+	}
+
+	.filter{
+		width: 100%;
+		height: 30rem;
+		position: absolute;
+		top: 4.2rem;
+		z-index: 25;
+	}
+
+	#left{
+		animation-name: sleft;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+		position: absolute;
+		left: 0rem;
+		z-index: 30;
+
+	}
+		#right{
+		animation-name: sright;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+		position: absolute;
+		left: 0rem;
+		z-index: 30;
+
+	}
+
+	@keyframes sleft{
+		from{transform: translatex(0rem);}
+		to{transform: translatex(-70rem);}
+	}
+		@keyframes sright{
+		0%{transform: translatex(0rem);}
+		100%{transform: translatex(70rem);}
+	}
+
+	.path{
+		position: absolute;
+		top: 10.2rem;
+		left: 1rem;
+		z-index: 5;
+		a{
+			background-color: white;
+			margin-right: 0.5rem;
+			padding: 0.1rem 1rem;
+		}
+	}
+
+	.scene{
+		background-image:
+		url('../images/fond2.png');
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.particules{
+	background-image: url('../images/particules_2.png');
+	background-size: 140rem;
+	background-repeat: repeat;
+	width: 100%;
+	height: 70%;
+	opacity: 0.4;
+	position: absolute;
+	z-index: 1;
+
+	animation: particules 25s linear infinite;
+	}
+	
+	@keyframes particules{
+		from { background-position: 0 0; }
+		to { background-position: 0 413px; }
+	}
+}
+
+/* ------------------------------------------------------------pages */
+.btn-final{
+	position: relative;
+
+}
+
+.destination-page{
+	background-image: url('../images/fond-carte.png')
+
+	p{
+		width: 80%;
+	}
+	h4{
+		color: $coul-prim;
+		font-size: 1.3rem;
+		font-family: 'Averia Sans Libre', cursive;
+		text-align: center;
+	}
+}
+.perso-and-logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 4rem;
+	img{
+		width: 50%;
+	}
+
+}
+
+.destinations-pages{
+
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	top: 4rem;
+	margin-bottom: 4rem;
+	h4{
+		color: $coul-sec;
+		font-size: 1.5rem;
+		font-family: 'Averia Sans Libre', cursive;
+		text-align: center;
+		padding: 1rem 0;
+		background-color: white;
+
+	}
+	.scene-dest-fiche{
+			p{
+				width: 90%;
+			}
+	img{
+		border: 2px solid black;
+		border-radius: 15px;
+		width: 20rem;
+		
+		}
+		
+	}
+}
+
+.destinations{
+	#perso-bulle{
+			p{
+				position: relative;
+				left: 2rem;
+				top: 3rem;
+				animation-name: bulle;
+				animation-duration: 5s;
+				animation-fill-mode: forwards;
+				z-index: 8;
+			}
+		}
+
+		p{
+			padding: 0.8rem;
+			border: 0.2rem solid $coul-cat;
+			background-color: $coul-ter;
+			width: 60%;
+			max-width: 25rem;
+			z-index: 8;
+			font-size: 1.2rem;
+			border-radius: 25px;
+			position: relative;
+		}
+
+	@keyframes bulle{
+		0%{opacity:0;}
+		70%{opacity:0;}
+		100%{opacity:1;}
+	}
+}
+/* -----------------------------Index */
+
+.index{
+
+		p{		
+			padding: 0.8rem;
+			border: 0.2rem solid $coul-cat;
+			background-color: $coul-ter;
+			width: 60%;
+			max-width: 25rem;
+			z-index: 8;
+			font-size: 1.2rem;
+			border-radius: 25px;
+		}
+}
+/* --------------------------radio */
+
+.bloc-radio-perso{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* --------------------------Destinations */
+
+
+.map-retour-suivant{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.destinations{
+		background-image: url('../images/fond-carte.png');
+		.show{
+			display: block;
+		}
+		.hide{
+			display: none;
+		}
+
+	@keyframes sleft-show{
+		from{transform: translatex(-70rem);}
+		to{transform: translatex(0rem);}
+	}
+
+	p{
+		position: relative;
+		z-index: 4;
+		margin: 5rem 0 0rem 2rem;
+		left: -3rem;
+		animation-name: bulle;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+	.perso-bulle{
+		position: absolute;
+		bottom: 12rem;
+		animation-name: arrive;
+		animation-duration: 5s;
+		animation-fill-mode: forwards;
+	}
+	
+	/*.vanish{
+		animation-name: vanish;
+		animation-duration: 2s;
+	}*/
+
+}
+.scene-dest-fiche{
+		display: flex;
+		flex-direction: column;
+		padding: 4rem 1rem 2rem 1rem; 
+		img{
+			margin-left: 0.5rem;
+		}
+	}
+	p{
+		width:100%;
+		top: 0;
+		left: 0;
+	}
+.back a{
+		background-color: white;
+		margin: auto;	
+	}
+/* ------------------Index2 */
+.index2{
+	#perso-bulle{
+		p{
+			left: 5rem;
+			top: -3rem;
+		}
+	}
+}
+/* ------------------Equipement */
+
+.jeu-start{
+		background-image: url('../images/fond2.png');
+		p{
+		position: relative;
+		z-index: 4;
+		margin: 0 0 0 4rem;
+		animation-name: bulle;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+		top: 1rem;
+		}
+}
+
+.jeu-rations{
+	background-image: url('../images/fond-rations.png');
+	p{
+		margin-top: 0;
+		top: 5rem;
+		left: 2rem;
+		position: relative;
+	}	
+}
+.jeu-rations{
+	
+	p:last-child{
+		margin-top: 0;
+		top: 0rem;
+		left: 0rem;
+		position: relative;
+	}	
+}
+.jeu-tente{
+	background-image: url('../images/fond-tente.png');
+	p{
+		margin-top: 0;
+		top: 1rem;
+		left: 2rem;
+		position: relative;
+	}	
+}
+.jeu-feu{
+	background-image: url('../images/fond-feu.png');
+	background-position: bottom right;
+	background-size: 85rem;
+	height: 30rem;
+	p{
+		margin-top: 0;
+		position: relative;
+		top: 0;
+		align-self: center;
+	}	
+}
+.st-gagne{
+	background-color: black;
+}
+
+.echec{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	img{
+		width: 15rem;
+	}
+	background-color: black;
+	height: 31rem;
+	p{
+		padding: 0.8rem;
+		border: 0.2rem solid $coul-cat;
+		background-color: $coul-ter;
+		width: 75%;
+		max-width: 25rem;
+		z-index: 8;
+		font-size: 1.2rem;
+		border-radius: 25px;
+		margin: 0;
+		left: 0;
+		
+		
+	}
+	h3{
+		color: $coul-prim;
+		text-align: center;
+		margin-top: 0;
+		font-family: 'Averia Sans Libre', cursive;
+		font-size: 2rem;
+		position: relative;
+		top: 2rem;
+		padding: 2rem;
+	}
+
+}
+#jeu-feu-main-para{
+	top: 2rem;
+	left: 2rem;
+}
+
+.gagne-block-para{
+	position: relative;
+}
+
+.gagne{
+
+	position: absolute;
+	top: 4rem;
+	background-color: black;
+	z-index: 8;
+	width: 100%;
+	display: none;
+	font-family: 'Averia Sans Libre', cursive;
+	
+	h3{
+		padding: 0;
+	}
+}
+.active-gagne{
+	display: flex;
+	flex-direction: column;
+
+	animation-name: gagne;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+@keyframes gagne{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+/* ----------------------------------------------------------------bottom */
+.btn-final{
+  position: relative;
+  top: -3rem;
+
+}
+.footer-sans-shadow{
+	box-shadow: none;
+}
+
+.up-btn-footer{
+	position: relative;
+	top: -4rem;
+}
+.index-footer{
+	position: relative;
+	z-index: 1;
+	height: 17rem;
+	border-top: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: none;
+	color: $coul-prim;
+	font-size: 1.3rem;
+	font-family: 'Averia Sans Libre', cursive;
+	form{
+		display: flex;
+		flex-direction: column;
+		.envoyer{
+			background-color: white;
+			border-radius: 15px;
+			font-size: 1.3rem;
+			font-family: 'Averia Sans Libre', cursive;
+			border: solid 2px black
+		}
+
+		input{
+			margin: 0.5rem;
+			background-color: white;
+			border-radius: 10px;
+			padding: 0.3rem;	
+		}
+	}
+}
+.btn-desti{
+	position: relative;
+	top: -3rem;
+}
+.footer-actions{
+	
+	display: none;
+	.btn{
+		margin: 0.5rem;
+	}	
+}
+.bottom{
+	display: flex;
+	flex-direction: column;
+	jusfify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+.fleche-nav{
+	width: 2rem;
+}
+.shadow{
+	box-shadow: none;
+}
+
+footer{
+	width: 100%;
+	height: 15rem;
+	position: relative;
+	z-index: 60;
+	box-shadow: 0 -5rem 13rem white;
+	background-color: $coul-sec;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	flex-wrap: wrap;
+	p{
+		text-align: center;
+		font-size: 0.8rem;
+	}
+	
+	.move-btn{
+		
+		animation-name: move;
+		animation-duration: 0.3s;
+		animation-timing-function: ease-in;
+		animation-fill-mode: forwards;
+		box-shadow: 0 0px 0px #000D15; 
+	}
+
+	.up-action-footer{
+		background-color: $coul-sec;
+		position: relative;
+		animation-name: upfooter;
+		animation-duration: 0.4s;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+	}
+	.btn{
+		background-color: white;
+		padding: 0.6rem 0.3rem;
+		border: 2px solid $coul-prim;
+		border-radius: 10px;
+		font-size: 1.3rem;
+		outline: none;
+	}
+	.action-btn{
+		border-radius: 250px;
+		padding: 1.5rem 1.5rem;
+		font-size: 1.3rem;
+		outline: none;
+		border: 2px solid $coul-prim;
+		position: relative;
+		top: -4rem;
+		background-image: url("../images/svg/logo-fleche-2.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 85%;
+		background-color: white;
+
+	}
+	p{
+		margin: 0;
+		padding: 0;
+	}
+	button {
+		font-size: 1.3rem;
+		font-family: 'Averia Sans Libre', cursive;
+	}
+
+	.show-actions-footer{
+		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		animation-name: showfooter;
+		animation-duration: 0.4s;
+		animation-timing-function: ease-in;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes showfooter{
+	from{opacity:0;}
+	to{opacity: 1;}
+}
+@keyframes upfooter{
+	from{top:0;}
+	to{top:-10rem;}
+}
+@keyframes move{
+	from{top: -4rem; }
+	to{top:-1.5rem; transform: rotate(-180deg);}
+}
+
+/* -----------------------------------------------------------Media Queries */
+
+
+@media (min-width: 650px){
+		#perso_standart, #perso-standart-alt, 
+		#perso-debut-jeu, #perso-carte, #perso-faim{
+			left: 22rem;
+	}
+		@keyframes arrive {
+		from {left: -20rem;}
+		to {left: 16rem;}
+	}
+	#perso-bulle{
+		left: 20rem;
+	}
+	#perso-carte{
+		left: 2rem;
+	}
+}
+
+
+
+

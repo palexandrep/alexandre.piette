@@ -1,0 +1,1494 @@
+@import url(normalyze.css);
+/*$coul-sec:#1C0500;*/
+/* -----------------------------------------------------------------Global */
+body {
+  box-sizing: border-box; }
+  body ul {
+    padding-left: 0; }
+  body a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 1.3rem; }
+
+p {
+  font-family: 'Averia Sans Libre', cursive; }
+
+/*-------------------------Backgrounds */
+.jeu-start, .jeu-rations, .scene, .destinations, .jeu-tente {
+  background-size: 80rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 30rem; }
+
+/*------------------------------------------------------------active */
+.burger:active, nav a:active, main button:active,
+button a:active, .burger ul:active, main a:active, header a:active {
+  position: relative;
+  top: 0.2rem;
+  box-shadow: none; }
+
+footer button:active {
+  top: -5rem; }
+
+.logo:active {
+  position: relative; }
+
+.action-btn:active {
+  box-shadow: none;
+  top: -3.8rem; }
+
+.burger li, nav a, main button, header button, .btn, nav h3 {
+  box-shadow: 0 3px 1px #2A343B; }
+
+footer button a {
+  box-shadow: none; }
+
+footer button {
+  box-shadow: 0 3px 1px #2A343B; }
+
+textarea:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #edc48a; }
+
+input {
+  border: none; }
+
+/* --------------------------------------------------------------------svg */
+#perso_standart2, #perso-standart-alt,
+#perso-debut-jeu, #perso-faim, #perso-froid, #perso-debut-jeu-suite {
+  -webkit-animation-name: arrive;
+  animation-name: arrive;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  min-width: 6rem;
+  position: relative;
+  left: 4rem;
+  width: 11rem;
+  top: -1.5rem; }
+
+@-webkit-keyframes arrive {
+  from {
+    left: -20rem; }
+  to {
+    left: 6rem; } }
+
+@keyframes arrive {
+  from {
+    left: -20rem; }
+  to {
+    left: 6rem; } }
+
+#perso-standart-alt {
+  top: 4rem; }
+
+#perso-carte {
+  position: relative;
+  left: 0;
+  top: 4rem;
+  width: 8rem;
+  margin-right: 1rem; }
+
+#perso-froid {
+  width: 10rem;
+  top: 6rem; }
+
+#perso-debut-jeu-suite {
+  top: 2.5rem; }
+
+#perso-debut-jeu {
+  top: 2.5rem; }
+
+#perso-radio {
+  width: 7rem;
+  padding: 0 3rem; }
+
+#perso-fatigue {
+  width: 20rem;
+  top: 6rem;
+  position: relative;
+  -webkit-animation-name: arrivefatigue;
+  animation-name: arrivefatigue;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+#perso-faim {
+  top: 8rem; }
+
+.st-yeux-fatigue {
+  -webkit-animation-name: yeux;
+  animation-name: yeux;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-timming-function: ease-in;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s; }
+
+.st-yeux {
+  width: 0rem;
+  -webkit-animation-name: yeux;
+  animation-name: yeux;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-timming-function: ease-in;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s; }
+
+@-webkit-keyframes yeux {
+  0% {
+    opacity: 1; }
+  1% {
+    opacity: 0.1; }
+  5% {
+    opacity: 1; }
+  41% {
+    opacity: 1; }
+  43% {
+    opacity: 0; }
+  47% {
+    opacity: 1; }
+  81% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  86% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes yeux {
+  0% {
+    opacity: 1; }
+  1% {
+    opacity: 0.1; }
+  5% {
+    opacity: 1; }
+  41% {
+    opacity: 1; }
+  43% {
+    opacity: 0; }
+  47% {
+    opacity: 1; }
+  81% {
+    opacity: 1; }
+  85% {
+    opacity: 0; }
+  86% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+#arbre-mort {
+  width: 30%;
+  min-width: 22rem; }
+
+.baies {
+  position: absolute;
+  width: 10rem;
+  top: 26rem; }
+
+.fermer {
+  height: 2rem; }
+
+.show-map-close {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  background-color: white; }
+
+.fire {
+  width: 30%; }
+
+.fleche-back {
+  width: 4rem;
+  height: 1.5rem; }
+
+.tente-logo {
+  position: absolute;
+  top: 17rem;
+  right: -9rem;
+  width: 20rem; }
+
+.st1 {
+  fill: white;
+  -webkit-animation-name: radio;
+  animation-name: radio;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-timming-function: ease-out;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s; }
+
+@-webkit-keyframes radio {
+  0% {
+    fill: white; }
+  1% {
+    fill: #edc48a; }
+  20% {
+    fill: white; }
+  41% {
+    fill: white; }
+  43% {
+    fill: #edc48a; }
+  60% {
+    fill: white; }
+  81% {
+    fill: #edc48a; }
+  85% {
+    fill: white; }
+  86% {
+    fill: #edc48a; }
+  100% {
+    fill: white; } }
+
+@keyframes radio {
+  0% {
+    fill: white; }
+  1% {
+    fill: #edc48a; }
+  20% {
+    fill: white; }
+  41% {
+    fill: white; }
+  43% {
+    fill: #edc48a; }
+  60% {
+    fill: white; }
+  81% {
+    fill: #edc48a; }
+  85% {
+    fill: white; }
+  86% {
+    fill: #edc48a; }
+  100% {
+    fill: white; } }
+
+/* -----------------------------------------------------------Header */
+.header-destinations {
+  height: 7rem;
+  background-color: #2c363d; }
+
+.header-index {
+  height: 6.5rem;
+  position: fixed;
+  width: 100%; }
+  .header-index nav {
+    position: fixed; }
+  .header-index .header-index-bar {
+    padding: 1rem 0; }
+  .header-index > div {
+    background-color: #2c363d;
+    width: 100%; }
+    .header-index > div .logo {
+      margin-right: 2rem; }
+      .header-index > div .logo #logo {
+        width: 15rem;
+        height: 100%; }
+      .header-index > div .logo h1 {
+        position: absolute;
+        top: 1rem;
+        z-index: 8;
+        margin: 0;
+        font-size: 3rem;
+        color: #edc48a;
+        font-family: 'Righteous', cursive; }
+  .header-index h2 {
+    padding: 0.6rem 0;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    text-align: center;
+    font-family: 'Averia Sans Libre', cursive;
+    margin: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    z-index: 7; }
+
+header {
+  position: relative;
+  z-index: 9; }
+  header > div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #2c363d; }
+    header > div .logo {
+      margin-right: 2rem;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      header > div .logo #logo {
+        width: 10rem;
+        height: 100%; }
+        header > div .logo #logo .st0-logo {
+          fill: #1D2326; }
+        header > div .logo #logo .st1-logo {
+          fill: #edc48a; }
+      header > div .logo h1 {
+        position: absolute;
+        top: 1.1rem;
+        z-index: 2;
+        margin: 0;
+        font-size: 1.9rem;
+        color: #edc48a;
+        font-family: 'Righteous', cursive; }
+  header h2 {
+    padding: 0.6rem 0;
+    border-top: 0.4rem solid black;
+    border-bottom: 0.4rem solid black;
+    text-align: center;
+    font-family: 'Averia Sans Libre', cursive;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 7;
+    background-color: white; }
+  header button, header .btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-family: 'Averia Sans Libre', cursive; }
+  header .burger {
+    padding-top: 0.3rem;
+    padding-left: 1rem;
+    padding-right: 1.5rem; }
+    header .burger li:last-child {
+      margin-bottom: 0; }
+    header .burger li {
+      background-color: #edc48a;
+      width: 3.2rem;
+      height: 0.3rem;
+      margin-bottom: 0.5rem;
+      list-style-type: none;
+      border-radius: 25px; }
+  header .disable {
+    -webkit-animation-name: slide_up;
+    animation-name: slide_up;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    padding: 0 2.5rem; }
+
+@-webkit-keyframes slide_up {
+  from {
+    height: 37rem; }
+  to {
+    height: 0rem; } }
+
+@keyframes slide_up {
+  from {
+    height: 37rem; }
+  to {
+    height: 0rem; } }
+  header .active {
+    -webkit-animation-name: slide_down;
+    animation-name: slide_down;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    padding: 2rem 2.5rem; }
+
+@-webkit-keyframes slide_down {
+  0% { }
+  40% {
+    height: 37rem; }
+  50% {
+    height: 31rem; }
+  100% {
+    height: 37rem; } }
+
+@keyframes slide_down {
+  0% { }
+  40% {
+    height: 37rem; }
+  50% {
+    height: 31rem; }
+  100% {
+    height: 37rem; } }
+  header nav {
+    box-sizing: border-box;
+    height: 0rem;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    background-color: #2c363d;
+    box-shadow: 0px 5px 15px #404040; }
+    header nav button {
+      width: 50%;
+      min-width: 12rem; }
+    header nav > ul > li:last-child {
+      margin: auto; }
+      header nav > ul > li:last-child > ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+    header nav > ul > li {
+      margin-bottom: 1rem;
+      padding: 0 0.8rem;
+      text-align: center;
+      list-style-type: none; }
+    header nav > ul h3, header nav > ul .btn {
+      background-color: white;
+      padding: 0.6rem 0.3rem;
+      border: 2px solid #edc48a;
+      border-radius: 10px;
+      font-size: 1.3rem; }
+
+.start {
+  -webkit-animation-name: hide;
+  animation-name: hide;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  width: 0%;
+  height: 0;
+  background-color: black;
+  position: absolute;
+  top: 6.7rem;
+  z-index: 50;
+  box-shadow: 0 10rem 15rem black; }
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 146rem; }
+  35% {
+    opacity: 1;
+    width: 100%;
+    height: 146rem; }
+  100% {
+    opacity: 0;
+    width: 100%;
+    height: 0%; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 146rem; }
+  35% {
+    opacity: 1;
+    width: 100%;
+    height: 146rem; }
+  100% {
+    opacity: 0;
+    width: 100%;
+    height: 0%; } }
+
+/* ---------------------------------------------------------------main */
+.index #perso-carte {
+  position: relative;
+  left: 0;
+  top: 0rem;
+  width: 7rem;
+  margin-right: 1rem; }
+
+.index section {
+  padding: 3rem 0; }
+
+.index h3 {
+  margin: 0;
+  padding: 1rem; }
+
+.index .p-index {
+  margin-left: 0; }
+
+.bulle-echec-reussite {
+  position: absolute;
+  top: -5rem; }
+
+#bulle-tente-up {
+  top: -1rem; }
+
+.intro {
+  background-color: #2c363d;
+  padding: 2rem 0;
+  position: relative;
+  top: 6.6rem; }
+  .intro > div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .intro > div > div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .intro > div p {
+      background-color: #2c363d;
+      border: none;
+      color: white;
+      width: 80%;
+      text-align: center; }
+    .intro > div .text-intro-radio {
+      border-left: 2px solid #edc48a;
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
+    .intro > div .text-intro-jeu {
+      border-left: 2px solid #edc48a;
+      -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+      align-self: flex-end; }
+    .intro > div .text-intro-map {
+      border-right: 2px solid #edc48a;
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start;
+      padding-left: 0; }
+    .intro > div > div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .intro > div > div img {
+        width: 5rem;
+        padding-left: 1rem; }
+      .intro > div > div .img-map {
+        padding-left: 0; }
+      .intro > div > div div {
+        color: white;
+        width: 60%;
+        font-family: 'Averia Sans Libre', cursive;
+        padding: 0.5rem 0.8rem;
+        margin: 1rem 1rem;
+        text-align: center; }
+        .intro > div > div div a {
+          color: #edc48a; }
+
+.index-destinations {
+  position: relative;
+  top: 2rem; }
+  .index-destinations .perso-carte {
+    border-top: 2px solid #edc48a; }
+
+.jeu {
+  position: relative;
+  top: 4rem; }
+  .jeu h3 {
+    color: #2c363d; }
+  .jeu > div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.jeu img, .show-map img {
+  padding: 0.5rem 0 2rem 0;
+  margin: 0.5rem 1 0 0;
+  border-top: 2px solid #edc48a;
+  -webkit-animation-name: btnrotate;
+  animation-name: btnrotate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  width: 5rem; }
+
+@-webkit-keyframes btnrotate {
+  0% { }
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  25% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  30% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg); }
+  35% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes btnrotate {
+  0% { }
+  10% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  25% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  30% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg); }
+  35% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  90% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+.jeu, .index-destinations {
+  background-color: white; }
+  .jeu title-jeu, .index-destinations title-jeu {
+    color: #2c363d; }
+  .jeu h3, .index-destinations h3 {
+    margin-bottom: 2rem; }
+  .jeu p, .index-destinations p {
+    margin: 0 4rem 2rem  1rem; }
+  .jeu div, .index-destinations div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .jeu div #perso-index-jeu, .index-destinations div #perso-index-jeu {
+      display: block;
+      width: 10rem;
+      padding-bottom: 2rem; }
+  .jeu .filter, .index-destinations .filter {
+    top: 6.4rem; }
+  .jeu .index-map-perso-button, .index-destinations .index-map-perso-button {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .jeu .index-map-perso-button #perso-carte, .index-destinations .index-map-perso-button #perso-carte {
+      margin-top: 2rem; }
+    .jeu .index-map-perso-button .show-map, .index-destinations .index-map-perso-button .show-map {
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      margin: 2rem 0; }
+      .jeu .index-map-perso-button .show-map p, .index-destinations .index-map-perso-button .show-map p {
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent; }
+
+.index-destinations {
+  background-color: #2c363d; }
+  .index-destinations .hide {
+    display: none; }
+  .index-destinations > ul {
+    background-image: url("../images/svg/carte.svg");
+    background-repeat: no-repeat;
+    background-attachment: bottom;
+    background-size: 26.8rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    list-style-type: none;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 7.5rem 1rem 2rem 0rem;
+    position: relative;
+    z-index: 4;
+    -webkit-animation-name: sleft-show;
+    animation-name: sleft-show;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+    .index-destinations > ul li {
+      width: 20%;
+      margin: 0.3rem 1rem;
+      min-width: 8rem;
+      max-width: 15rem; }
+      .index-destinations > ul li .suivant {
+        width: 10%;
+        min-width: 3rem;
+        min-height: 3rem;
+        margin-top: 1rem; }
+      .index-destinations > ul li img:last-child {
+        border: none; }
+      .index-destinations > ul li img {
+        width: 100%;
+        min-width: 8rem;
+        min-height: 7rem;
+        border: 2px solid black;
+        border-radius: 15px; }
+      .index-destinations > ul li h4 {
+        margin-top: 0.3rem; }
+
+.index-radio {
+  background-color: white; }
+  .index-radio h3 {
+    color: #2c363d; }
+  .index-radio h4 {
+    padding: 0.8rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    width: 60%;
+    max-width: 25rem;
+    z-index: 8;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    font-family: 'Averia Sans Libre', cursive; }
+
+main {
+  background-color: black; }
+  main p, main .intro li {
+    list-style-type: none;
+    padding: 0.8rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    width: 60%;
+    max-width: 25rem;
+    z-index: 8;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    font-family: 'Averia Sans Libre', cursive; }
+  main h3 {
+    padding: 3rem 0;
+    text-align: center;
+    color: #edc48a;
+    font-size: 1.5rem; }
+  main .filter {
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 4.2rem;
+    z-index: 25; }
+  main #left {
+    -webkit-animation-name: sleft;
+    animation-name: sleft;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    position: absolute;
+    left: 0rem;
+    z-index: 30; }
+  main #right {
+    -webkit-animation-name: sright;
+    animation-name: sright;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    position: absolute;
+    left: 0rem;
+    z-index: 30; }
+
+@-webkit-keyframes sleft {
+  from {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); }
+  to {
+    -webkit-transform: translatex(-70rem);
+    transform: translatex(-70rem); } }
+
+@keyframes sleft {
+  from {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); }
+  to {
+    -webkit-transform: translatex(-70rem);
+    transform: translatex(-70rem); } }
+
+@-webkit-keyframes sright {
+  0% {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); }
+  100% {
+    -webkit-transform: translatex(70rem);
+    transform: translatex(70rem); } }
+
+@keyframes sright {
+  0% {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); }
+  100% {
+    -webkit-transform: translatex(70rem);
+    transform: translatex(70rem); } }
+  main .path {
+    position: absolute;
+    top: 10.2rem;
+    left: 1rem;
+    z-index: 5; }
+    main .path a {
+      background-color: white;
+      margin-right: 0.5rem;
+      padding: 0.1rem 1rem; }
+  main .scene {
+    background-image: url("../images/fond2.png");
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  main .particules {
+    background-image: url("../images/particules_2.png");
+    background-size: 140rem;
+    background-repeat: repeat;
+    width: 100%;
+    height: 70%;
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1;
+    -webkit-animation: particules 25s linear infinite;
+    animation: particules 25s linear infinite; }
+
+@-webkit-keyframes particules {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 413px; } }
+
+@keyframes particules {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 0 413px; } }
+
+/* ------------------------------------------------------------pages */
+.btn-final {
+  position: relative; }
+
+.destination-page {
+  background-image: url("../images/fond-carte.png") p;
+    background-image-width: 80%; }
+  .destination-page h4 {
+    color: #edc48a;
+    font-size: 1.3rem;
+    font-family: 'Averia Sans Libre', cursive;
+    text-align: center; }
+
+.perso-and-logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 4rem; }
+  .perso-and-logo img {
+    width: 50%; }
+
+.destinations-pages {
+  background-color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+  margin-bottom: 4rem; }
+  .destinations-pages h4 {
+    color: #2c363d;
+    font-size: 1.5rem;
+    font-family: 'Averia Sans Libre', cursive;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: white; }
+  .destinations-pages .scene-dest-fiche p {
+    width: 90%; }
+  .destinations-pages .scene-dest-fiche img {
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 20rem; }
+
+.destinations #perso-bulle p {
+  position: relative;
+  left: 2rem;
+  top: 3rem;
+  -webkit-animation-name: bulle;
+  animation-name: bulle;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: 8; }
+
+.destinations p {
+  padding: 0.8rem;
+  border: 0.2rem solid black;
+  background-color: white;
+  width: 60%;
+  max-width: 25rem;
+  z-index: 8;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  position: relative; }
+
+@-webkit-keyframes bulle {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes bulle {
+  0% {
+    opacity: 0; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* -----------------------------Index */
+.index p {
+  padding: 0.8rem;
+  border: 0.2rem solid black;
+  background-color: white;
+  width: 60%;
+  max-width: 25rem;
+  z-index: 8;
+  font-size: 1.2rem;
+  border-radius: 25px; }
+
+/* --------------------------radio */
+.bloc-radio-perso {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* --------------------------Destinations */
+.map-retour-suivant {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.destinations {
+  background-image: url("../images/fond-carte.png");
+  /*.vanish{
+		animation-name: vanish;
+		animation-duration: 2s;
+	}*/ }
+  .destinations .show {
+    display: block; }
+  .destinations .hide {
+    display: none; }
+
+@-webkit-keyframes sleft-show {
+  from {
+    -webkit-transform: translatex(-70rem);
+    transform: translatex(-70rem); }
+  to {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); } }
+
+@keyframes sleft-show {
+  from {
+    -webkit-transform: translatex(-70rem);
+    transform: translatex(-70rem); }
+  to {
+    -webkit-transform: translatex(0rem);
+    transform: translatex(0rem); } }
+  .destinations p {
+    position: relative;
+    z-index: 4;
+    margin: 5rem 0 0rem 2rem;
+    left: -3rem;
+    -webkit-animation-name: bulle;
+    animation-name: bulle;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  .destinations .perso-bulle {
+    position: absolute;
+    bottom: 12rem;
+    -webkit-animation-name: arrive;
+    animation-name: arrive;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+.scene-dest-fiche {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 4rem 1rem 2rem 1rem; }
+  .scene-dest-fiche img {
+    margin-left: 0.5rem; }
+
+p {
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+.back a {
+  background-color: white;
+  margin: auto; }
+
+/* ------------------Index2 */
+.index2 #perso-bulle p {
+  left: 5rem;
+  top: -3rem; }
+
+/* ------------------Equipement */
+.jeu-start {
+  background-image: url("../images/fond2.png"); }
+  .jeu-start p {
+    position: relative;
+    z-index: 4;
+    margin: 0 0 0 4rem;
+    -webkit-animation-name: bulle;
+    animation-name: bulle;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    top: 1rem; }
+
+.jeu-rations {
+  background-image: url("../images/fond-rations.png"); }
+  .jeu-rations p {
+    margin-top: 0;
+    top: 5rem;
+    left: 2rem;
+    position: relative; }
+
+.jeu-rations p:last-child {
+  margin-top: 0;
+  top: 0rem;
+  left: 0rem;
+  position: relative; }
+
+.jeu-tente {
+  background-image: url("../images/fond-tente.png"); }
+  .jeu-tente p {
+    margin-top: 0;
+    top: 1rem;
+    left: 2rem;
+    position: relative; }
+
+.jeu-feu {
+  background-image: url("../images/fond-feu.png");
+  background-position: bottom right;
+  background-size: 85rem;
+  height: 30rem; }
+  .jeu-feu p {
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+
+.st-gagne {
+  background-color: black; }
+
+.echec {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: black;
+  height: 31rem; }
+  .echec img {
+    width: 15rem; }
+  .echec p {
+    padding: 0.8rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    width: 75%;
+    max-width: 25rem;
+    z-index: 8;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    margin: 0;
+    left: 0; }
+  .echec h3 {
+    color: #edc48a;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 2rem;
+    position: relative;
+    top: 2rem;
+    padding: 2rem; }
+
+#jeu-feu-main-para {
+  top: 2rem;
+  left: 2rem; }
+
+.gagne-block-para {
+  position: relative; }
+
+.gagne {
+  position: absolute;
+  top: 4rem;
+  background-color: black;
+  z-index: 8;
+  width: 100%;
+  display: none;
+  font-family: 'Averia Sans Libre', cursive; }
+  .gagne h3 {
+    padding: 0; }
+
+.active-gagne {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation-name: gagne;
+  animation-name: gagne;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes gagne {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes gagne {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* ----------------------------------------------------------------bottom */
+.btn-final {
+  position: relative;
+  top: -3rem; }
+
+.footer-sans-shadow {
+  box-shadow: none; }
+
+.up-btn-footer {
+  position: relative;
+  top: -4rem; }
+
+.index-footer {
+  position: relative;
+  z-index: 1;
+  height: 17rem;
+  border-top: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-shadow: none;
+  color: #edc48a;
+  font-size: 1.3rem;
+  font-family: 'Averia Sans Libre', cursive; }
+  .index-footer form {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .index-footer form .envoyer {
+      background-color: white;
+      border-radius: 15px;
+      font-size: 1.3rem;
+      font-family: 'Averia Sans Libre', cursive;
+      border: solid 2px black; }
+    .index-footer form input {
+      margin: 0.5rem;
+      background-color: white;
+      border-radius: 10px;
+      padding: 0.3rem; }
+
+.btn-desti {
+  position: relative;
+  top: -3rem; }
+
+.footer-actions {
+  display: none; }
+  .footer-actions .btn {
+    margin: 0.5rem; }
+
+.bottom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  jusfify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+
+.fleche-nav {
+  width: 2rem; }
+
+.shadow {
+  box-shadow: none; }
+
+footer {
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  z-index: 60;
+  box-shadow: 0 -5rem 13rem white;
+  background-color: #2c363d;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  footer p {
+    text-align: center;
+    font-size: 0.8rem; }
+  footer .move-btn {
+    -webkit-animation-name: move;
+    animation-name: move;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0px 0px #000D15; }
+  footer .up-action-footer {
+    background-color: #2c363d;
+    position: relative;
+    -webkit-animation-name: upfooter;
+    animation-name: upfooter;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  footer .btn {
+    background-color: white;
+    padding: 0.6rem 0.3rem;
+    border: 2px solid #edc48a;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    outline: none; }
+  footer .action-btn {
+    border-radius: 250px;
+    padding: 1.5rem 1.5rem;
+    font-size: 1.3rem;
+    outline: none;
+    border: 2px solid #edc48a;
+    position: relative;
+    top: -4rem;
+    background-image: url("../images/svg/logo-fleche-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 85%;
+    background-color: white; }
+  footer p {
+    margin: 0;
+    padding: 0; }
+  footer button {
+    font-size: 1.3rem;
+    font-family: 'Averia Sans Libre', cursive; }
+  footer .show-actions-footer {
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-animation-name: showfooter;
+    animation-name: showfooter;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+@-webkit-keyframes showfooter {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes showfooter {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes upfooter {
+  from {
+    top: 0; }
+  to {
+    top: -10rem; } }
+
+@keyframes upfooter {
+  from {
+    top: 0; }
+  to {
+    top: -10rem; } }
+
+@-webkit-keyframes move {
+  from {
+    top: -4rem; }
+  to {
+    top: -1.5rem;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
+
+@keyframes move {
+  from {
+    top: -4rem; }
+  to {
+    top: -1.5rem;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
+
+/* -----------------------------------------------------------Media Queries */
+@media (min-width: 650px) {
+  #perso_standart, #perso-standart-alt,
+  #perso-debut-jeu, #perso-carte, #perso-faim {
+    left: 22rem; }
+  @-webkit-keyframes arrive {
+    from {
+      left: -20rem; }
+    to {
+      left: 16rem; } }
+  @keyframes arrive {
+    from {
+      left: -20rem; }
+    to {
+      left: 16rem; } }
+  #perso-bulle {
+    left: 20rem; }
+  #perso-carte {
+    left: 2rem; } }

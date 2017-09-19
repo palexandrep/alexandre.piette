@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>kechoix</title>
+	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Fredericka+the+Great|Racing+Sans+One|Righteous|Seaweed+Script" rel="stylesheet">
+	<link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+	<header>		
+				<div>
+					
+					<ul class="burger paneltoggle" data-target="#panel">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					
+					
+					<a href="../index.html" class="logo">
+
+						<img src="../images/svg/logo.svg" id="logo" alt="logo kechoix">
+						<h1>Kéchoix</h1>
+
+					</a>
+
+				</div>
+			
+				<nav id="panel" class="disable">
+				<ul>
+					<li>
+						<a href="../index.html">	
+							<h3>Acceuil</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="jeu-start.html">	
+							<h3>Jeu</h3>	
+						</a>
+					</li>
+
+					<li>
+						<a href="../index.html#destinations">
+							<h3>Randonnée</h3>	
+						</a>
+					</li>
+					<li>
+						<a href="../index.html#radio">
+							<h3>Ma radio</h3>		
+						</a>
+					</li>
+					<li>
+
+						<button class="paneltoggle btn" data-target="#panel">	
+								Fermer
+						</button>
+					</li>
+				</ul>
+			</nav>
+	</header>
+
+	<main class="destinations">
+
+
+
+		<img src="../images/slide-left.png" alt="" class="filter" id="left">
+		<img src="../images/slide-right.png" alt="" class="filter " id="right">
+		<div class="particules"></div>
+
+		
+		<ul id="desti-list" class="hide">
+			<li>
+				<a href="destination-kokiri.html">
+				<img src="../images/foret_Kokiri.jpg" alt="Forêt Kokiri">
+				<h4>Fotêt Kokiri</h4>
+				</a>
+			</li>
+			<li>
+				<a href="destination-aokigahara.html">
+				<img src="../images/aokigahara.jpeg" alt="Forêt d'Aokigahara">
+				<h4>Forêt d'Aokigahara</h4>
+				</a>
+			</li>
+			<li>
+				<a href="destination-sherwood.html">
+				<img src="../images/sherwood.jpg" alt="Forêt de Sherwood">
+				<h4>Forêt de Sherwood</h4>
+				</a>
+			</li>
+			<!--<li>
+				<a href="destination-deadvlei.html">
+				<img src="../images/deadvlei.jpg" alt="Deadvli">
+				<h4>Deadvlei</h4>
+				</a>
+			</li>
+				<a href="destination-boneyard.html">
+				<img src="../images/boneyard.jpg" alt="Boneyard Beatch">
+			<li>
+				<h4>Boneyard Beach</h4>
+				</a>
+			</li> -->
+			<li>
+				
+				<img src="../images/svg/fleche1.svg" alt="suivant" class="suivant">
+				
+			</li>
+		</ul>
+
+		<div class="perso-bulle vanish">
+
+			<p>J’ai pointé sur la carte les derniers lieux où je me suis rendu. Certains sont magnifiques mais tout à fait inhospitaliers. Si tu le souhaites, je peux te fournir des informations utiles sur chacuns de ces endroits.</p>
+
+			<svg version="1.1" id="perso-carte" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 333 416" style="enable-background:new 0 0 333 416;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:#FFFFFF;}
+			</style>
+			<g>
+				<path d="M86.3,110.6c0,0-13.1,4.5-7.7,8.4s13.9,3.9,13.9,3.9s6.2,16.4,6.2,20.4c0,3.9-1.8,37.4,0,59.7c2.4,29.9-62.7,9.2-62.7,9.2
+					s16.8-31.4,9.8-43.8c-7-12.5-3.4-45,0.4-51.6S71,99.3,71,99.3L86.3,110.6z"/>
+				<ellipse cx="43.4" cy="129.4" rx="14.3" ry="12.5"/>
+				<path d="M51.4,144.1l27.6,14.7c0,0-16.1,15.4-14.6,19.7c1.5,4.3-29-22.4-32.2-39.8S51.4,144.1,51.4,144.1z"/>
+				<path d="M95.8,228.3c-9.2,13.5-27.8,19.1-41.5,12.3s-17.4-23.1-8.2-36.7s27.8-19.1,41.5-12.3S105,214.8,95.8,228.3z"/>
+				<path d="M130.1,191.2l21.9,7.5l5-16L90.7,169l-4.5,16C93,184.7,130.1,191.2,130.1,191.2z"/>
+				<path d="M82.8,191.2L72.1,202c0,0,55,15.6,56.9,14c0.1-0.1,0.3-0.2,0.6-0.3l-0.2-12.7l-0.3,0L82.8,191.2z"/>
+				<path d="M100.6,216.1c0,0,10.5,37.5,10.5,52.6c0,15.1-7.1-5.9-24.8,13.8S79,228.1,75,222.1C71,216.1,100.6,216.1,100.6,216.1z"/>
+				<path d="M41.1,220.8c0,0-9.5,55.8-11.5,61.7s57.6,6.6,57.6,6.6s-5-65.7-12.2-67C67.8,220.8,41.1,220.8,41.1,220.8z"/>
+				<path d="M139,199.7c6.8,2.7,10.1,9,7.2,14.1s-10.7,6.9-17.5,4.2c-6.8-2.7-10.1-9-7.2-14.1C124.3,198.9,132.2,197,139,199.7z"/>
+				<path d="M187.5,182.1c6.8,2.7,10.1,9,7.2,14.1s-10.7,6.9-17.5,4.2s-10.1-9-7.2-14.1C172.8,181.2,180.6,179.3,187.5,182.1z"/>
+				<path d="M59.6,308.1l-16.4-2.5c-3.9-0.6-6.6-3.8-5.9-7.1l5.6-27c0.7-3.3,4.5-5.6,8.4-5l16.4,2.5c3.9,0.6,6.6,3.8,5.9,7.1l-5.6,27
+					C67.3,306.4,63.6,308.7,59.6,308.1z"/>
+				<path d="M80.6,307.2H97c2.6,0,4.8-2.2,4.8-4.8v-29.8c0-2.6-2.2-4.8-4.8-4.8H80.6c-2.6,0-4.8,2.2-4.8,4.8v29.8
+					C75.8,305,78,307.2,80.6,307.2z"/>
+				<path d="M37.4,298.5c0,0,2.3,13.5,0,17.4s-3.1,18.4,0,26.8c3.1,8.4-3,34.1-3,34.1h16.2c0,0,7.2-72.2,13.7-73.1
+					C70.7,302.8,37.4,298.5,37.4,298.5z"/>
+				<path d="M77.3,299.1c0,0,4.8,11.5,3.6,15.2s1.1,16.5,5.6,23.4C90.9,344.6,91,368,91,368l14-2.4c0,0-8.7-64.2-3.3-65.9
+					S77.3,299.1,77.3,299.1z"/>
+				<path d="M39.9,370.9H29.6c0,0,1.2,10.5-1.3,12.5c-2.5,2,0.8,7.2,0.8,7.2s20.2,17.1,33.6,17.7c13.4,0.7,21.7,0.1,23.7-3.3
+					c1.6-2.9-1.1-10.5-15.4-17.7c-14.2-7.2-19-12.4-15.4-19.3S39.9,370.9,39.9,370.9z"/>
+				<path d="M95.6,363.3l-7.7,0.7c0,0,2.1,10.1,0.5,12.2c-1.6,2.1,1.5,6.9,1.5,6.9s16.9,15.2,26.9,15s16.9-1.4,17.1-4.7
+					c0.4-6.3-2.1-10.1-13.4-16.2c-11.4-6.1-15.4-10.8-13.7-17.7C108.6,352.5,95.6,363.3,95.6,363.3z"/>
+				<path d="M94.2,132.8c-2.1,3.8-7.3,4.8-11.6,2.2c-4.3-2.6-6.1-7.8-4-11.7c2.1-3.8,7.3-4.8,11.6-2.2C94.5,123.8,96.3,129,94.2,132.8z
+					"/>
+				<g>
+					<path d="M179.5,206.3c0,0-3.5-22.6,10.5-28.3c14.5-5.9,14.5,4.8,22.7,0.5c2.5-1.3,2.7-8-7.4-10.9c-10.1-2.9-29.8-3.1-62.7-24.8
+						c-11.9-7.9,10.7,28.2-35.8,24.5c-5.8-0.5-9.3-0.5-11-0.3C84.5,168.7,164.2,186.8,179.5,206.3z"/>
+					<path d="M74.3,170.1c0,0,18-6.4,26-3.2s75.6,29.8,75.2,32.5c-0.4,2.7,4,7,4,7s4,10.4-7.5,9.9s-28-4.3-31.5-3
+						c-3.5,1.3-63.7-40.9-72.7-37.4S74.3,170.1,74.3,170.1z"/>
+				</g>
+				<path d="M161.8,59.3c-6.6-9.2-13-18.7-18.5-18.4c-5.5,0.3-35.6-20.4-40.5-17c-4.9,3.3-9.8,1-9.8,1s-6.7,3.5-12.5,1.8
+					c-5.7-1.7-8.4,0.6-8.4,0.6s-5.3,4.2-9,6c-3.7,1.8-4.2,9.8-8.3,8.4c-4.1-1.4,2.8,4.4,2.8,4.4S55,46,51,47.6c-2.6,1,2.4,2.2,5.3,3.6
+					c-1.1,1.6-2,3.3-2.9,5.1c-4.7,3.1-10.4,7.1-6.9,6.5c1.8-0.3,3.3-0.3,4.3,0.2c-0.8,2.6-1.4,5.3-1.7,7.9c0,0,0,0,0,0
+					c-2.7,4-1.8,6.8-0.3,8.5c1,21.4,15.5,42.9,38.4,53.7c7.3,3.4,14.8,5.5,22.2,6.2c-3.1-2.4-4.8-5.5-3.8-7.7c1.2-2.9,6.3-3.4,11.2-1
+					c4.5,2.1,7.3,5.8,7,8.6c11.5-1.5,21.9-6.3,29.7-14c-0.2-0.1-0.4-0.2-0.6-0.3c-5.2-2.5-8.7-6.7-8.7-10.1c1.4,5.1,5.1,8.8,9.5,8.8
+					c0.1,0,0.2,0,0.3,0c0.3,0.1,0.5,0.2,0.8,0.3c0.1-0.2,0.3-0.3,0.4-0.5c4.9-0.9,8.6-6.4,8.6-13c0-0.3,0-0.6,0-0.8c0,0,0,0,0,0
+					c4.7-11.8,4.3-24.7-0.2-36.7c2.8,2.1,5.3,3,6.6,1c3.6-5.5,4.6-10.8,4.6-10.8S168.4,68.6,161.8,59.3z M117.9,102.5
+					c-1.6,3.7-7.8,4.3-14,1.4C97.7,101,94,95.7,95.6,92c0.1-0.3,0.2-0.5,0.4-0.7c-0.8,3.6,2.9,8.4,8.6,11.1c5.4,2.5,10.8,2.4,13.2-0.1
+					c0.1,0,0.2,0,0.3,0C118,102.4,117.9,102.4,117.9,102.5z"/>
+			</g>
+			<ellipse class="st0 st-yeux" cx="110.9" cy="89.4" rx="10.2" ry="10.7"/>
+			<ellipse class="st0 st-yeux" cx="156.6" cy="114.6" rx="8.4" ry="8.8"/>
+			</svg>
+
+
+		</div>
+
+		
+
+	</main>
+
+	<footer>
+		<div class="bottom">
+			<button class="show-map btn"  data-target="#desti-list .vanish"><p id="txt">Regarger la carte</p></button>
+		</div>
+	</footer>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/javascript.js"></script>
+</body>
+</html>
