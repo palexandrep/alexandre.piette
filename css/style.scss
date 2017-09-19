@@ -297,7 +297,6 @@ nav{
 
 	.skills li>div:hover{
 
-
 		border: 1px solid white;
 	}
 	.skills li>div{
@@ -359,13 +358,73 @@ nav{
 	z-index: -1;
 }
 
-.tige{
-	width: calc(50vw - 120px);
-	position: relative;
-	top: 1rem;
-	transform: translateX(50vw);
+.title--present {
+	height: 80px;
+	display: flex;
+	flex: 1;
+    justify-content: flex-end;
+	align-items: center;
+	&:last-child {
+		justify-content: flex-start;
+	}
 }
-.tige_active{
+.Present {
+	display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+	h1, h2{
+		margin: 0;
+	}
+}
+.Present-row {
+	display: flex;
+	&:first-child {
+		& .container_manche:after {
+			content: "";
+			height: 10px;
+			width: 100%;
+			top: 3px;
+			background: #0f0f0f;
+			position: relative;
+		}
+	}
+	&:last-child {
+		& .container_manche:before {
+			content: "";
+			height: 10px;
+			width: 100%;
+			top: 3px;
+			background: #0f0f0f;
+			position: relative;
+		}
+		.container_manche {
+			justify-content: flex-end;
+		}
+	}
+
+}
+.container_manches {
+	display: flex;
+    flex: 1;
+    position: relative;
+    flex-flow: row wrap;
+    top: 0px;
+    align-content: center;
+}
+.container_manche {
+	position: relative;
+    flex: 1;
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+	&:last-child {
+		justify-content: flex-start;
+	}
+}
+
+/*.tige_active{
 	transform: translateX(50vw);
 	animation-name: tige-active;
 	animation-fill-mode: forwards;
@@ -409,12 +468,14 @@ nav{
 		width: calc(50vw - 160px);
 	}
 }
+*/
 
 .title{
 
 	overflow: hidden;
 }
 
+/*
 .title_1{
 	transform: translateX(25rem);
 
@@ -457,7 +518,7 @@ nav{
 		transform: translateX(0);
 	}
 }
-
+*/
 #rouage_portrait{
 	position: absolute;
 	width: 27rem;
