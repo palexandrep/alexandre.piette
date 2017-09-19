@@ -3,7 +3,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in;
 	animation-duration: 0.5s;
-	animation-delay: 5.5s;
+	animation-delay: 3.5s;
 	transform-origin: 100% 100%;
 
 }
@@ -35,7 +35,7 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in;
 	animation-duration: 2s;
-	animation-delay: 5s;
+	animation-delay: 3s;
 
 }
 @keyframes smaller{
@@ -78,14 +78,14 @@
 
 @keyframes rotate{
 	0%{
-		transform: rotate(180deg);
+		//transform: rotate(180deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -99,14 +99,14 @@
 }
 @keyframes rotate2{
 	0%{
-		transform: rotate(200deg);
+		//transform: rotate(200deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -120,14 +120,14 @@
 }
 @keyframes rotate3{
 	0%{
-		transform: rotate(100deg);
+		//transform: rotate(100deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -141,7 +141,7 @@
 }
 @keyframes rotate4{
 	0%{
-		transform: rotate(-180deg);
+		//transform: rotate(-180deg);
 		opacity: 0;
 	}
 	90%{
@@ -161,14 +161,14 @@
 }
 @keyframes rotate6{
 	0%{
-		transform: rotate(-100deg);
+		//transform: rotate(-100deg);
 		opacity: 0;
 	}
 	60%{
 		opacity: 0;
 	}
 	100%{
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -189,14 +189,14 @@
 @keyframes rotate7{
 	0%{
 		opacity: 0;
-		transform: rotate(-190deg);
+		//transform: rotate(-190deg);
 	}
 	90%{
 		opacity: 0;
 	}
 	100%{
 		opacity: 0;
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 
 	}
 }
@@ -212,7 +212,7 @@
 }
 @keyframes rotate8{
 	0%{
-		transform: rotate(-360deg) ;
+		//transform: rotate(-360deg) ;
 		
 		opacity: 0;
 	}
@@ -220,7 +220,7 @@
 		opacity: 0.2;
 	}
 	100%{
-		transform: rotate(0deg) ;
+		//transform: rotate(0deg) ;
 		opacity: 1;
 
 	}
@@ -237,7 +237,7 @@
 }
 @keyframes rotate9{
 	0%{
-		transform: rotate(300deg);
+		//transform: rotate(300deg);
 		
 		opacity: 0;
 	}
@@ -245,7 +245,7 @@
 		opacity: 0.3;
 	}
 	100%{
-		transform: rotate(0deg);
+		//transform: rotate(0deg);
 		opacity: 1;
 
 	}
@@ -304,7 +304,7 @@
 	transform-origin: 50% 50%;
 	animation-duration: 120s;
 	animation-iteration-count: infinite;
-	animation-delay: 4.5s;
+	animation-delay: 2.5s;
 	fill: #0F0F0F;
 }
 @keyframes clock_rotation{
@@ -327,7 +327,7 @@
 	animation-timing-function: linear;
 	transform-origin: 50% 50%;
 	animation-iteration-count: infinite;
-	animation-delay: 5.5s;
+	animation-delay: 3.5s;
  } 
 
 
