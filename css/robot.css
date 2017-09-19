@@ -1,0 +1,46 @@
+.info_robot-fade-in-out {
+  animation-name: info_fade-in;
+  animation-timming-function: ease-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+@keyframes info_fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#canvas {
+  transform: scale(0.7) translateY(-30rem) translateX(-6rem);
+}
+
+.robot_active {
+  animation-name: robot-fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timming-function: ease-out;
+}
+
+@keyframes robot-fade-in {
+  from {
+  }
+  to {
+    transform: scale(0.7) translateY(-3.5rem) translateX(-6rem);
+  }
+}
+
+.machine_container {
+  position: absolute;
+}
+
+.machine_container_fixed {
+  position: fixed;
+}
+ 
+
+ /*# sourceMappingURL= robot.css.map */

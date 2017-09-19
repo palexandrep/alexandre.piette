@@ -1,0 +1,484 @@
+.piston_dis {
+  animation-name: dissapear;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+  animation-delay: 5.5s;
+  transform-origin: 100% 100%;
+}
+
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.cercle_interne {
+  transform: scale(1.38);
+  transform-origin: 50% 50%;
+}
+
+.active_cercle_interne {
+  fill: #0F0F0F;
+  animation-name: smaller;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 5s;
+}
+
+@keyframes smaller {
+  0% {
+    transform: scale(1.38);
+  }
+  30% {
+    transform: scale(0.98);
+  }
+  40% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rouage_title {
+  width: 2.5rem;
+}
+
+.circle_1_fade-in {
+  animation-name: rotate;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 4.5s;
+  fill: #131114;
+}
+
+.circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6,
+.circle_7, .circle_8, .circle_9,
+.circle_10 {
+  opacity: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.circle_2_fade-in {
+  animation-name: rotate2;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 3.5s;
+  fill: #131114;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(200deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.circle_3_fade-in {
+  animation-name: rotate3;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  fill: #131114;
+}
+
+@keyframes rotate3 {
+  0% {
+    transform: rotate(100deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.circle_4_fade-in {
+  animation-name: rotate4;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  fill: #1F1B21;
+}
+
+@keyframes rotate4 {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle_6_fade-in {
+  animation-name: rotate6;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  fill: #1C1A1F;
+}
+
+@keyframes rotate6 {
+  0% {
+    transform: rotate(-100deg);
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.circle_7_fade-in {
+  animation-name: rotate7;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform: translateX(-0.5rem);
+  animation-duration: 3.7s;
+  fill: #131114;
+  position: relative;
+}
+
+@keyframes rotate7 {
+  0% {
+    opacity: 0;
+    transform: rotate(-190deg);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.circle_8_fade-in {
+  animation-name: rotate8;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 3.5s;
+  fill: #0F0F0F;
+}
+
+@keyframes rotate8 {
+  0% {
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.clock {
+  fill: #1C1A1F;
+}
+
+.circle_9_fade-in {
+  animation-name: rotate9;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  fill: #0F0F0F;
+}
+
+@keyframes rotate9 {
+  0% {
+    transform: rotate(300deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.circle_10_fade-in {
+  aniation-name: rotate10;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 3s;
+  fill: #0F0F0F;
+}
+
+@keyframes rotate10 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rotate_cercle_interne {
+  animation-name: clock_intern_rotation;
+  animation-timing-function: linear;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes clock_intern_rotation {
+  0% {
+    transform: rotate(360deg) scale(1);
+    fill: #0F0F0F;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    fill: #0F0F0F;
+  }
+}
+
+.circle_extern_rotate {
+  animation-name: clock_rotation;
+  animation-timing-function: steps(60, end);
+  transform-origin: 50% 50%;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-delay: 4.5s;
+  fill: #0F0F0F;
+}
+
+@keyframes clock_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_1, .active_2, .active_3, .active_4, .active_5,
+.active_6, .active_7, .active_8, .active_9, .active_10 {
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-delay: 5.5s;
+}
+
+.active_1 {
+  animation-name: clock_rotation_clock_1;
+  animation-duration: 10s;
+}
+
+@keyframes clock_rotation_clock_1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_2 {
+  animation-name: clock_ratation_clock_2;
+  animation-duration: 15s;
+}
+
+@keyframes clock_ratation_clock_2 {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.active_3 {
+  animation-name: clock_rotation_clock_3;
+  animation-duration: 7s;
+}
+
+@keyframes clock_rotation_clock_3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_4 {
+  animation-name: clock_ratation_clock_4;
+  animation-duration: 8s;
+}
+
+@keyframes clock_ratation_clock_4 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.active_5 {
+  animation-name: clock_ratation_clock_5;
+  animation-duration: 12s;
+}
+
+@keyframes clock_ratation_clock_5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_6 {
+  animation-name: clock_ratation_clock_6;
+  animation-duration: 17s;
+}
+
+@keyframes clock_ratation_clock_6 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.active_7 {
+  animation-name: clock_ratation_clock_7;
+  animation-duration: 13s;
+}
+
+@keyframes clock_ratation_clock_7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_8 {
+  animation-name: clock_ratation_clock_8;
+  animation-duration: 10s;
+}
+
+@keyframes clock_ratation_clock_8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active_9 {
+  animation-name: clock_ratation_clock_9;
+  animation-duration: 18s;
+}
+
+@keyframes clock_ratation_clock_9 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.active_10 {
+  animation-name: clock_ratation_clock_10;
+  animation-duration: 10s;
+}
+
+@keyframes clock_ratation_clock_10 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle_machine {
+  animation-name: clock_rotation_11;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-duration: 25s;
+}
+
+@keyframes clock_rotation_11 {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-300deg);
+  }
+  40% {
+    transform: rotate(-300deg);
+  }
+  60% {
+    transform: rotate(-360deg);
+  }
+  70% {
+    transform: rotate(-200deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+ 
+
+ /*# sourceMappingURL= rouages.css.map */

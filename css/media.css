@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px) {
+  #canvas {
+    display: none;
+  }
+  .push_btn {
+    left: calc(50vw - 145px / 2);
+    top: 12.5rem;
+  }
+  .clock_animate {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 1.2rem;
+  }
+  .info_robot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_nav, .container-mechanisme-titre, .machine_container {
+    display: none;
+  }
+  .nav_phone {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav_phone h3 {
+    font-size: 0.9rem;
+    padding-top: 0.4rem;
+  }
+  #comp li {
+    padding: 0rem;
+  }
+  #comp ul {
+    width: 100%;
+  }
+  .presentation section > ul, .avertissement {
+    width: 100%;
+  }
+}
+ 
+
+ /*# sourceMappingURL= media.css.map */
