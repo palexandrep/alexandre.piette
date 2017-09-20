@@ -9,17 +9,18 @@
 			display: none;
 		}
 		.push_btn{
-			left: calc(50vw - 145px / 2);
+			left: calc(50vw - 78px);
 
-			top: 12.5rem;
+			top: 23rem;
 
 
 		}
 		.clock_animate{
-			width: 5rem;
-			height: 5rem;
+			width: 60px;
+			height: 60px;
+			transform-origin: center;
 
-			margin-left: 1.2rem;
+			//margin-left: 1.2rem;
 
 		}
 		

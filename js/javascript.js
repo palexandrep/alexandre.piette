@@ -49,7 +49,7 @@
 			$('.tige-left').attr('src','images/manche_g.svg');
 			
 		}
-		setTimeout(pinceG, 7350);
+		setTimeout(pinceG, 7500);
 		function pinceD (){
 			$('.tige-right').attr('src','images/manche_d.svg');
 		}

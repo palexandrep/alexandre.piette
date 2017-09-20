@@ -1588,12 +1588,14 @@ footer {
   #canvas {
     display: none; }
   .push_btn {
-    left: calc(50vw - 145px / 2);
-    top: 12.5rem; }
+    left: calc(50vw - 78px);
+    top: 23rem; }
   .clock_animate {
-    width: 5rem;
-    height: 5rem;
-    margin-left: 1.2rem; }
+    width: 60px;
+    height: 60px;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center; }
   .info_robot {
     display: none !important; }
   .presentation section > ul, .avertissement {
