@@ -23,10 +23,31 @@
 	}
 }
 
+.smaller{
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-name: smallerB;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+
+	@keyframes smallerB{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.88);
+
+	}
+}
 
 .cercle_interne{
-	transform: scale(1.38);
+	transform: scale(1.7);
 	transform-origin: 50% 50%;
+	transform-box: fill-box;
+
 }
 .active_cercle_interne{
 	
@@ -40,7 +61,7 @@
 }
 @keyframes smaller{
 	0%{
-		transform: scale(1.38);
+		transform: scale(1.7);
 	}
 	30%{
 		transform: scale(0.98);
@@ -70,10 +91,9 @@
 
 }
 
-.circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6,
- .circle_7, .circle_8, .circle_9,
+.circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_8, .circle_9,
  .circle_10{
-	opacity: 0;
+	//opacity: 0;
 	fill: #0F0F0F;
 }
 
@@ -303,6 +323,7 @@
 	animation-name: clock_rotation;
 	animation-timing-function: steps(60, end);
 	transform-origin: 50% 50%;
+	transform-box: fill-box;
 	animation-duration: 120s;
 	animation-iteration-count: infinite;
 	animation-delay: 2.5s;
@@ -327,8 +348,9 @@
 
 	animation-timing-function: linear;
 	transform-origin: 50% 50%;
+	transform-box: fill-box;
 	animation-iteration-count: infinite;
-	animation-delay: 3.5s;
+	animation-delay: 5.5s;
  } 
 
 
@@ -348,7 +370,7 @@
 
 .active_2{
 	animation-name: clock_ratation_clock_2;
-	animation-duration: 15s;
+	animation-duration: 30s;
 
 }
 @keyframes clock_ratation_clock_2{
@@ -380,15 +402,15 @@
 
 .active_4{
 	animation-name: clock_ratation_clock_4;
-	animation-duration: 8s;
+	animation-duration: 8.5s;
 }
 @keyframes clock_ratation_clock_4{
 	0%{
-		transform: rotate(360deg);	
+		transform: rotate(0deg);	
 	}
 
 	100%{
-		transform: rotate(0deg);
+		transform: rotate(360deg);
 	}
 }
 
@@ -486,6 +508,7 @@
 	animation-name: clock_rotation_11;
 	animation-timing-function: linear;
 	transform-origin: 50% 50%;
+	transform-box: fill-box;
 	animation-iteration-count: infinite;
 	animation-duration: 25s;
 }
@@ -512,5 +535,23 @@
 
 	100%{
 		transform: rotate(100deg);
+	}
+}
+
+.rond-central{
+	animation-name: central-rot;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-timing-function: linear;
+}
+@keyframes central-rot{
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
 	}
 }

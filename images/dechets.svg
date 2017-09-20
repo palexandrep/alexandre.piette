@@ -6,7 +6,8 @@
 	.st0{fill:#0D0D0F;}
 	.st1{fill:none;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
 </style>
-<g>
+
+<g >
 	<g>
 		<path id="XMLID_2_" class="st0" d="M2056.5-190.5c-5-1.8-10.6,0.4-13,5l20,7.1C2064.4-183.4,2061.6-188.6,2056.5-190.5z"/>
 		<path id="XMLID_1_" class="st0" d="M2049.4-170.2c5,1.8,10.6-0.4,13-5l-20-7.1C2041.5-177.2,2044.3-172,2049.4-170.2z"/>

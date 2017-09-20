@@ -23,7 +23,21 @@
 
 		}
 		
-		.info_robot{display: none;}
+		.info_robot{
+			display: none !important;
+		}
+		.presentation section>ul,.avertissement{
+			width: 100%;
+			margin: 0;
+	
+		}
+
+		section{
+			margin: 0;
+		}
+		section>ul{
+			margin: 0 !important;
+		}
 	
 	}
 
@@ -57,7 +71,7 @@
 	
 		}
 		.info_robot{
-			display: none;
+			display: none !important;
 		}
 		section{
 			margin: 0;
