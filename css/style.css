@@ -1519,7 +1519,7 @@ main {
 #yeux {
   width: 6rem;
   position: relative;
-  right: -38rem;
+  left: 32vw;
   top: -8rem; }
 
 #oeilg, #oeild {
