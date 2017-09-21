@@ -47,11 +47,11 @@
 }
 
 .container-manche-g, .title_2{
-	transform: translateX(-85rem);
+	transform: translateX(-70vw);
 	opacity: 0;
 }
 .container-manche-d, .title_1{
-	transform: translateX(85rem);
+	transform: translateX(70vw);
 	opacity: 0;
 }
 
@@ -61,12 +61,14 @@
 	animation-delay: 4.3s;
 	animation-fill-mode: forwards;
 	animation-timming-function: ease-out;
-	opacity: 1;
 }
 
 @keyframes manche-g-active{
 	0%{
 		transform: translateX(-82rem);
+		opacity: 0;
+	}
+	15%{
 		opacity: 1;
 	}
 	54%{
@@ -77,9 +79,12 @@
 		transform: translateX(-11rem);
 
 	}
+	95%{
+		opacity: 1;
+	}
 	99%{
 		transform: translateX(-85rem);
-		opacity: 1;
+		opacity: 0;
 	}
 	100%{
 		transform: translateX(-85rem);
@@ -99,6 +104,11 @@
 @keyframes manche-d-active{
 	0%{
 		transform: translateX(70rem);
+	}
+	1%{
+		transform: translateX(69rem);
+	}
+	15%{
 		opacity: 1;
 	}
 	50%{
@@ -107,11 +117,14 @@
 	}
 	85%{
 		transform: translateX(7rem);
-
 	}
+	95%{
+		opacity:1;
+	}
+	
 	99%{
 		transform: translateX(85rem);
-		opacity:1;
+		opacity:0;
 	}
 	100%{
 		transform: translateX(85rem);
@@ -125,18 +138,21 @@
 	animation-delay: 3.7s;
 	animation-fill-mode: forwards;
 	//animation-timming-function: ease-in;
-	opacity: 1;
 	display: block;
-	
+	opacity: 0;
 }
+
 @keyframes t-g-active{
 	0%{
 		transform: translateX(85rem);
-		
-
+		opacity: 0;
+	}
+	25%{
+		opacity: 1;
 	}
 	100%{
 		transform: translateX(8.5rem);
+		opacity: 1;
 	}
 }
 
@@ -145,16 +161,23 @@
 	animation-duration: 3s;
 	animation-delay: 4.2s;
 	animation-fill-mode: forwards;
+
 	//animation-timming-function: ease-in;
-	opacity: 1;
+	opacity: 0
 }
 
 @keyframes t-d-active{
 	0%{
 		transform: translateX(-85rem);
+		opacity: 0;
 	}
+	25%{
+		opacity: 1;
+	}
+
 	100%{
 		transform: translateX(-12rem);
+		opacity: 1;
 	}
 }
 

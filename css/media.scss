@@ -1,57 +1,59 @@
 
-
-
-
 @media screen and (max-width: 1000px){
 		
 		#canvas{
-
 			display: none;
 		}
+
 		.push_btn{
 			left: calc(50vw - 78px);
-
 			top: 23rem;
-
-
 		}
+
 		.clock_animate{
 			width: 60px;
 			height: 60px;
 			transform-origin: center;
-
 			//margin-left: 1.2rem;
-
 		}
 		
 		.info_robot{
 			display: none !important;
 		}
+
 		.presentation section>ul,.avertissement{
 			width: 100%;
 			margin: 0;
-	
 		}
 
 		section{
 			margin: 0;
 		}
+
 		section>ul{
 			margin: 0 !important;
 		}
-	
-	}
+}
 
-	@media screen and (max-width: 600px){
+
+
+
+@media screen and (max-width: 600px){
+
 		.container_nav, , .container-mechanisme-titre, .machine_container{
 			display: none;
 		}
+
 		.nav_phone{
 			display: flex;
 			justify-content: space-around;
 			width: 100%;
 			img{
 				display: none;
+			}
+
+			.skills_nav{
+				padding-left: 1rem;
 			}
 			
 			h3{
@@ -63,22 +65,141 @@
 		#comp li{
 			padding: 0rem;
 		}
+
 		#comp ul{
 			width: 100%;
 		}
+
 		.presentation section>ul,.avertissement{
 			width: 100%;
 			margin: 0;
 	
 		}
+
 		.info_robot{
 			display: none !important;
 		}
+
 		section{
 			margin: 0;
 		}
+
 		section>ul{
 			margin: 0 !important;
 		}
+
+		#rouage_portrait{
+			//transform: scale(0.8);
+			width: 20rem;
+			top:  4rem;
+		}
+
+		.conatiner_portrait{
+			height: 15rem; 
+		}
+
+		.img_portrait{
+			top: -12.9rem;
+			width: 8rem;
+			height: 8rem;
+		}
+
+		.push_btn{
+			left: calc(50vw - 80px);
+			top: 9.2rem;
+		}
+
+		h1{
+			font-size: 1.3rem;
+		}
+		h2{
+			font-size: 1.5rem;
+		}
+
+		#links, #diplomes, #exp{
+			padding: 0 7vw;
+		}
+
+		#comp ul{
+			justify-content: space-around;
+			li{
+				padding: 2rem;
+		}
+		@keyframes t-d-active{
+
+			100%{
+				transform: translateX(-25vw);
+				opacity: 1;
+			}
+		}
+
+		@keyframes t-g-active{
+
+			100%{
+				transform: translateX(25vw);
+				opacity: 1;
+			}
+		}
+
+		@keyframes manche-d-active{
+			0%{
+				transform: translateX(40rem);
+			}
+			1%{
+				transform: translateX(69rem);
+			}
+			15%{
+				opacity: 1;
+			}
+			40%{
+				transform: translateX(20vw);
+
+			}
+			85%{
+				transform: translateX(20vw);
+			}
+			95%{
+				opacity:1;
+			}
+			
+			99%{
+				transform: translateX(85rem);
+				opacity:0;
+			}
+			100%{
+				transform: translateX(85rem);
+				opacity:0;
+			}
+		}
+
+		@keyframes manche-g-active{
+			0%{
+				transform: translateX(-50rem);
+				opacity: 0;
+			}
+			15%{
+				opacity: 1;
+			}
+			44%{
+				transform: translateX(-20vw);
+
+			}
+			85%{
+				transform: translateX(-20vw);
+
+			}
+			95%{
+				opacity: 1;
+			}
+			99%{
+				transform: translateX(-85rem);
+				opacity: 0;
+			}
+			100%{
+				transform: translateX(-85rem);
+				opacity: 0;
+			}
+		}
 	}
+}
 
