@@ -1090,7 +1090,7 @@
   width: 50vw; }
 
 .box-cache_small {
-  height: 20rem;
+  height: 40vh;
   width: 100%;
   -webkit-transform: translateY(-1rem);
   -ms-transform: translateY(-1rem);
@@ -1876,5 +1876,5 @@ footer {
   #box-cache_small_top {
     height: 3rem; }
   .box-cache_small {
-    height: 50vh;
+    height: 60vh;
     width: 100%; } }
