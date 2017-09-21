@@ -7,14 +7,14 @@
 
 		.push_btn{
 			left: calc(50vw - 78px);
-			top: 23rem;
+			top: 22.3rem;
 		}
 
 		.clock_animate{
-			width: 60px;
-			height: 60px;
+			width: 85px;
+			height: 85px;
 			transform-origin: center;
-			//margin-left: 1.2rem;
+			margin-left: 1.7rem;
 		}
 		
 		.info_robot{
@@ -33,6 +33,12 @@
 		section>ul{
 			margin: 0 !important;
 		}
+		main{
+		background-image: url("../images/background-4.png");
+		background-repeat: no-repeat;
+		background-position:  bottom left;
+		background-size: cover;
+	}
 }
 
 
@@ -104,9 +110,13 @@
 			height: 8rem;
 		}
 
+		.clock_animate{
+			margin-left: 1.9rem;
+		}
+
 		.push_btn{
 			left: calc(50vw - 80px);
-			top: 9.2rem;
+			top: 8.4rem;
 		}
 
 		h1{
@@ -143,10 +153,10 @@
 
 		@keyframes manche-d-active{
 			0%{
-				transform: translateX(40rem);
+				transform: translateX(35rem);
 			}
 			1%{
-				transform: translateX(69rem);
+				transform: translateX(35);
 			}
 			15%{
 				opacity: 1;
@@ -174,7 +184,7 @@
 
 		@keyframes manche-g-active{
 			0%{
-				transform: translateX(-50rem);
+				transform: translateX(-45rem);
 				opacity: 0;
 			}
 			15%{
@@ -200,10 +210,13 @@
 				opacity: 0;
 			}
 		}
+
+
 	}
 
 	.container-cache{
-		height: 22rem; 
+		height: 22rem;
+		width: 10.8rem; 
 	}
 
 	#box-cache_small_top{
@@ -211,9 +224,11 @@
 	}
 
 	.box-cache_small{
-		height: 35%;
+		height: 50vh;
 		width: 100%;
 	}
+
+
 }
 
 

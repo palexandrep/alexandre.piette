@@ -70,6 +70,7 @@ h1, h2, footer{
 
 header{
 	width: 100vw;
+	height: 100vh;
 	margin: auto;
 }
 
@@ -266,10 +267,10 @@ button:focus {
 }
 
 main{
-	background-image: url("../images/dechets2.svg"), url("../images/background-4.png"), url("../images/background-arriere.svg");
+	background-image: url("../images/dechets2.svg"), url("../images/background-4.png");
 	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position:  right bottom, bottom left, right bottom;
-	background-size: 55rem,cover, 100vw;
+	background-position:  right bottom, bottom left;
+	background-size: 55rem,cover;
 }	
 
 .rouage_title{

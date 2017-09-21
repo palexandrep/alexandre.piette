@@ -12,9 +12,6 @@
 	wrap: no-wrap;
 	justify-content: center;
 }
-.sous-container-global-cache{
-
-}
 
 .box-cache{
 	background-color: black;
@@ -22,7 +19,8 @@
 }
 
 .container-cache{
-	height: 50vh;
+	height: 29.7rem;
+	width: 14.3rem;
 }
 
 .box-cache_big{
@@ -31,17 +29,19 @@
 }
 
 .box-cache_small{
-	height: 28%;
+	height: 20rem;
 	width: 100%;
+	transform: translateY(-1rem);
 }
 
-.container-child-cache{
+/*.container-child-cache{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-}
+}*/
 #box-cache_small_top{
 	height: 13.1rem;
+	transform: translateY(1rem);
 }
 
 .sous-container-global-cache-left-active{
@@ -78,3 +78,7 @@
 	height: 100vh;
 }
 
+html {
+ overflow-y: hidden; 
+ overflow-x: hidden;
+} 

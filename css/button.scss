@@ -1,14 +1,18 @@
 .clock_animate{
-	width:  2.5rem;
-	height: 2.5rem;
-	margin: 1rem 0 0 02.6rem;
-	background-color: #F1EDF7;
-	border: none;
-	border-radius: 50px;
+	width:  4rem;
+	margin: 1rem 0 0 1.8rem;
 	position: relative;
 	top: -1rem;
 	left: 0.5rem;
 }
+
+.sti2:active{
+	transform: scale(0.7);
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+
+}
+
 .push_btn{
 	position: absolute;
 	top: 5rem;

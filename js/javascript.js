@@ -1,13 +1,14 @@
 (function(){
 	$(".push_btn").on("click", function(){
 
-		$('nav').removeClass('hidden');
+		$('nav section').removeClass('hidden');
 		$('.sous-container-global-cache-left').addClass("sous-container-global-cache-left-active");
 		$('.sous-container-global-cache-right').addClass("sous-container-global-cache-right-active");
 
 		$('main').removeClass("main-cache");
 		$('.presentation').removeClass("hidden");
 		$('#yeux').removeClass("hidden");
+		$('html').css('overflow-y', 'visible');
 
 		$('#piston').addClass("piston_dis");
 		$('.circle_1').addClass("circle_1_fade-in");
@@ -67,6 +68,11 @@
 			$('.container-global-cache').addClass('hidden');
 		}
 		setTimeout(cacheHide, 7800);
+
+		function pushHidden (){
+			$('.push_btn').addClass('hidden');
+		}
+		setTimeout(pushHidden, 2000);
 
 	});
 
