@@ -13,8 +13,35 @@
 <body onload="init();">
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<main>
-	<div class="border"></div>
+
+<div class="container-global-cache">
+
+			<div class="sous-container-global-cache sous-container-global-cache-left">
+				<div class="box-cache box-cache_big"></div>
+				<div class="container-child-cache">
+
+					<div class="box-cache box-cache_small" id="box-cache_small_top"></div>
+					<img src="images/cache-g.svg" class="container-cache">
+					<div class="box-cache box-cache_small" ></div>
+
+				</div>
+			</div>
+
+			<div class="sous-container-global-cache sous-container-global-cache-right">
+				<div class="container-child-cache">
+
+					<div class="box-cache box-cache_small" id="box-cache_small_top"></div>
+					<img src="images/cache-d.svg" class="container-cache">
+					<div class="box-cache box-cache_small"></div>
+
+				</div>
+				<div class="box-cache box-cache_big"></div>
+			</div>
+
+		</div>
+
+<main class="main-cache">
+		
     <header>
         <div class="machine_container">
 
@@ -29,7 +56,7 @@
 
             </div>
         </div>
-        <nav>
+        <nav class="hidden">
         <div class="info_robot">
             <p>Welcome</p>
         </div>
@@ -564,7 +591,7 @@
         </div>-->
     </header>
 
-    <div class="presentation">
+    <div class="presentation hidden">
 
 
         <section id="comp">
@@ -776,7 +803,7 @@
 
 <footer>
 	<p>@ Alexandre Piette 2017</p>
-	<svg version="1.1" id="yeux" class="over_item_info" data-info="Dont talk to him, he has fully blacked out!" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	<svg version="1.1" id="yeux" class="over_item_info hidden" data-info="Dont talk to him, he has fully blacked out!" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	viewBox="0 0 611 514" style="enable-background:new 0 0 611 514;" xml:space="preserve">
 	<style type="text/css">
 	.stu0{fill:#010202;}
@@ -786,7 +813,7 @@
 	</style>
 	<g id="XMLID_101_">
 		<g id="XMLID_102_">
-			<polygon id="XMLID_159_" class="stu0" points="11.9,375.9 353.6,508 474,195.4 165.7,76.6 		"/>
+			<polygon id="XMLID_159_" class="stu0" points="11.9,375.9 353.6,508 474,195.4 165.7,76.6"/>
 			<g id="XMLID_154_">
 				<path id="XMLID_158_" class="stu0" d="M9.9,383.2c11.4,4.4,22.7,8.8,34.1,13.2c27.1,10.5,54.2,21,81.3,31.4
 				c33,12.7,65.9,25.5,98.9,38.2c28.5,11,57,22,85.5,33c9.3,3.6,18.7,7.2,28,10.8c4.4,1.7,8.8,3.8,13.4,5.2c0.2,0.1,0.4,0.2,0.6,0.2

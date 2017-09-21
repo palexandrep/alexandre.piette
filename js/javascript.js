@@ -1,6 +1,14 @@
 (function(){
 	$(".push_btn").on("click", function(){
 
+		$('nav').removeClass('hidden');
+		$('.sous-container-global-cache-left').addClass("sous-container-global-cache-left-active");
+		$('.sous-container-global-cache-right').addClass("sous-container-global-cache-right-active");
+
+		$('main').removeClass("main-cache");
+		$('.presentation').removeClass("hidden");
+		$('#yeux').removeClass("hidden");
+
 		$('#piston').addClass("piston_dis");
 		$('.circle_1').addClass("circle_1_fade-in");
 		$('.circle_2').addClass("circle_2_fade-in");
@@ -54,6 +62,11 @@
 			$('.tige-right').attr('src','images/manche_d.svg');
 		}
 		setTimeout(pinceD, 7000);
+
+		function cacheHide (){
+			$('.container-global-cache').addClass('hidden');
+		}
+		setTimeout(cacheHide, 7800);
 
 	});
 
@@ -128,7 +141,22 @@
 				  }, 400,  function() {});
 			});*/
 
-	
+	$('a[href^="#"]').click(function(){
+	var the_id = $(this).attr("href");
+
+	$('html, body').animate({
+		scrollTop:$(the_id).offset().top
+	}, 'slow');
+	return false;
+});
+
+	function calcHeight (){
+			var heightMain = $('main').innerHeight();
+			console.log(parseInt(heightMain));
+			var heightCache =$('.container-child-cache').innerHeight();
+			console.log(parseInt(heightCache));
+		}
+		setTimeout(calcHeight, 100);
 
 
 

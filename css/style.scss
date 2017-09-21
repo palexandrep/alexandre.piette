@@ -2,6 +2,7 @@
 	@import "button.scss";
 	@import "robot.scss";
 	@import "bob.scss";
+	@import "cache.scss";
 
 // #191919
 // #4D4D4D
@@ -15,11 +16,12 @@ body{
 	font-family: 'Paytone One', sans-serif;
 	//font-family: 'Special Elite', cursive;
 	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
-
 }
+
 ul{
 	padding-left: 0;
 }
+
 li{
 	list-style-type: none;
 }
@@ -53,6 +55,10 @@ nav{
 			margin-right: 3rem;
 		}
 	}
+}
+
+.hidden{
+	display: none;
 }
 
 h2{
