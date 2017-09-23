@@ -1897,7 +1897,7 @@ footer {
   .info_robot {
     display: block !important;
     left: 3rem;
-    top: 15rem;
+    top: 13rem;
     font-size: 0.7rem; }
   #canvas {
     display: block;
@@ -1927,7 +1927,7 @@ footer {
   #box-cache_small_top {
     height: 2.1rem; }
   .box-cache_small {
-    height: 32vh;
+    height: 12.5rem;
     width: 100%; }
   .push_btn {
     left: calc(50vw - 80px);
