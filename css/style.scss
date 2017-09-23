@@ -268,8 +268,8 @@ button:focus {
 
 main{
 	background-image: url("../images/dechets2.svg"), url("../images/background-4.png");
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-position:  right bottom, bottom left;
+	background-repeat: no-repeat, no-repeat;
+	background-position:  right bottom, top left;
 	background-size: 55rem,cover;
 }	
 
@@ -413,7 +413,7 @@ main{
 
 footer{
 	margin: 0;
-	padding-top: 2rem;
+	padding: 2rem;
 	background-color: black;
 	width: 100%;
 	ovev-rflow: hidden;
