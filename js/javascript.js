@@ -74,6 +74,16 @@
 		}
 		setTimeout(pushHidden, 2000);
 
+
+		function calcHeight (){
+			var heightMain = $('main').innerHeight();
+			var heightMainBig = heightMain+1200;
+			var heightCache =$('.container-child-cache').innerHeight();
+			$('.parallax-container').css('height',parseInt(heightMain)+'px');
+			$('.parallax').css('height',parseInt(heightMainBig)+'px');
+		}
+		setTimeout(calcHeight, 100);
+
 	});
 
 	/*function timeoutCircle(){
@@ -156,14 +166,52 @@
 	return false;
 });
 
-	function calcHeight (){
+	
+
+	$( window ).resize(function() {
+  		function calcHeight (){
 			var heightMain = $('main').innerHeight();
+			var heightMainBig = heightMain+1200;
 			console.log(parseInt(heightMain));
 			var heightCache =$('.container-child-cache').innerHeight();
 			console.log(parseInt(heightCache));
+
+			$('.parallax-container').css('height',parseInt(heightMain)+'px');
+			$('.parallax').css('height',parseInt(heightMainBig)+'px');
 		}
 		setTimeout(calcHeight, 100);
+	});
 
+
+
+var parallaxElements = $('.parallax'),
+    parallaxQuantity = parallaxElements.length;
+
+$(window).on('scroll', function () {
+
+  window.requestAnimationFrame(function () {
+
+    for (var i = 0; i < parallaxQuantity; i++) {
+      var currentElement = parallaxElements.eq(i);
+      var scrolled = $(window).scrollTop();
+
+      $('.tubes1').css({
+        'transform': 'translate3d(0,' + scrolled * -0.1 + 'px, 0)'
+      });
+      $('.tubes2').css({
+        'transform': 'translate3d(0,' + scrolled * -0.2 + 'px, 0)'
+      });
+      $('.tubes3').css({
+        'transform': 'translate3d(0,' + scrolled * -0.4 + 'px, 0)'
+      });
+
+     /* currentElement.css({
+        'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
+      });*/
+    }
+  });
+
+});
 
 //---------------------------------------------------------- matter chain ------
 

@@ -44,7 +44,7 @@ nav{
 		flex-wrap: no-wrap;
 		align-items: center;
 		h3{
-			padding-right: 1rem;
+			margin-right: 1rem;
 		}
 		.svg_nav{
 			width: 1.8rem;
@@ -267,11 +267,51 @@ button:focus {
 }
 
 main{
+	
 	background-image: url("../images/dechets2.svg"), url("../images/background-4.png");
 	background-repeat: no-repeat, no-repeat;
 	background-position:  right bottom, top left;
 	background-size: 55rem,cover;
-}	
+}
+
+.parallax-container {
+  position: absolute;
+  width: 100%;
+  top: 52px;
+  overflow: hidden;
+
+}
+
+.parallax{
+	position: absolute;
+	width: 100%;
+	
+
+}
+.tubes1{
+	background-image:url("../images/tubes1.png");
+	background-repeat:  repeat-y;
+	background-position:  top center;
+	background-size: 100%;
+	z-index:-1;
+}
+
+.tubes2{
+	background-image:url("../images/tubes2.png");
+	background-repeat:  repeat-y;
+	background-position:  top center;
+	background-size: 100%;
+	z-index:-2;
+}
+
+.tubes3{
+	background-image:url("../images/tubes3.png");
+	background-repeat:  repeat-y;
+	background-position:  top center;
+	background-size: 100%;
+	z-index:-3;
+}
+
 
 .rouage_title{
 	width: 4rem;
