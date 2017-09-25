@@ -199,10 +199,10 @@ $(window).on('scroll', function () {
         'transform': 'translate3d(0,' + scrolled * -0.1 + 'px, 0)'
       });
       $('.tubes2').css({
-        'transform': 'translate3d(0,' + scrolled * -0.2 + 'px, 0)'
+        'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
       });
       $('.tubes3').css({
-        'transform': 'translate3d(0,' + scrolled * -0.4 + 'px, 0)'
+        'transform': 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'
       });
 
      /* currentElement.css({
