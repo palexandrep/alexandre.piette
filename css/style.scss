@@ -268,10 +268,19 @@ button:focus {
 
 main{
 	
-	background-image: url("../images/dechets2.svg");
+	background-image: url("../images/dechets2.svg"), url('../images/background-4.png');
 	background-repeat: no-repeat, no-repeat;
 	background-position:  right bottom, top left;
 	background-size: 55rem,cover;
+}
+
+.shadow{
+	width: 25rem;
+	height: 4rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow:  0 10px 300px white;
 }
 
 .parallax-container {
@@ -279,6 +288,7 @@ main{
   width: 100%;
   top: 52px;
   overflow: hidden;
+  z-index: -1;
 
 }
 

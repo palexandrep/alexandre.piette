@@ -7,6 +7,8 @@
 
 		$('main').removeClass("main-cache");
 		$('.presentation').removeClass("hidden");
+		$('.parallax-container').removeClass("hidden");
+
 		$('#yeux').removeClass("hidden");
 		$('html').css('overflow-y', 'visible');
 

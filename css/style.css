@@ -1450,16 +1450,26 @@ button:focus {
   width: 0; }
 
 main {
-  background-image: url("../images/dechets2.svg");
+  background-image: url("../images/dechets2.svg"), url("../images/background-4.png");
   background-repeat: no-repeat, no-repeat;
   background-position: right bottom, top left;
   background-size: 55rem,cover; }
+
+.shadow {
+  width: 25rem;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 10px 300px white;
+  box-shadow: 0 10px 300px white; }
 
 .parallax-container {
   position: absolute;
   width: 100%;
   top: 52px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: -1; }
 
 .parallax {
   position: absolute;
@@ -1699,6 +1709,8 @@ footer {
   ovev-rflow: hidden; }
 
 @media screen and (max-width: 1000px) {
+  .shadow {
+    display: none; }
   #canvas {
     display: none; }
   .push_btn {
