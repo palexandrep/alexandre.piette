@@ -20,10 +20,6 @@
 			transform-origin: center;
 			margin-left: 1.7rem;
 		}
-		
-		.info_robot{
-			display: none !important;
-		}
 
 		.presentation section>ul,.avertissement{
 			width: 100%;
@@ -40,13 +36,16 @@
 		main{
 		background-image: url("../images/background-4.png");
 		background-repeat: no-repeat;
-		background-position:  bottom left;
+		background-position: bottom left;
 		background-size: cover;
 	}
 }
 
-
-
+@media screen and (max-width: 1700px){
+	.info_robot{
+			display: none !important;
+		}
+}
 
 @media screen and (max-width: 600px){
 
@@ -54,8 +53,7 @@
 			height: 85vh;
 		}
 
-
-		#canvas, .container_nav, , .container-mechanisme-titre, .machine_container{
+		#canvas, .container_nav, .container-mechanisme-titre, .machine_container{
 			display: none;
 		}
 
@@ -88,7 +86,6 @@
 		.presentation section>ul,.avertissement{
 			width: 100%;
 			margin: 0;
-	
 		}
 
 		.info_robot{
@@ -104,7 +101,6 @@
 		}
 
 		#rouage_portrait{
-			//transform: scale(0.8);
 			width: 20rem;
 			top:  4rem;
 		}
@@ -145,7 +141,6 @@
 				padding: 2rem;
 		}
 		@keyframes t-d-active{
-
 			100%{
 				transform: translateX(-25vw);
 				opacity: 1;
@@ -153,7 +148,6 @@
 		}
 
 		@keyframes t-g-active{
-
 			100%{
 				transform: translateX(25vw);
 				opacity: 1;
@@ -220,9 +214,6 @@
 			}
 		}
 
-
-	}
-
 	.container-cache{
 		height: 22rem;
 		width: 10.8rem; 
@@ -236,8 +227,6 @@
 		height: 57.2vh;
 		width: 100%;
 	}
-
-
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
@@ -425,6 +414,5 @@
 				opacity: 0;
 			}
 		}
-
+	}
 }
-

@@ -1,21 +1,23 @@
+.container-child-cache{
+	display: flex;
+	flex-direction: column;
+}
 .container-global-cache{
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 40;
 	width: 100vw;
-	//height: 100%;
+	height: 100vh;
 	overflow: hidden;
 }
 .container-global-cache, .sous-container-global-cache{
 	display: flex;
-	wrap: no-wrap;
 	justify-content: center;
 }
 
 .box-cache{
 	background-color: black;
-
 }
 
 .container-cache{
@@ -24,24 +26,19 @@
 }
 
 .box-cache_big{
-	height: 100vh;
 	width: 50vw;
+	overflow: hidden;
 }
 
 .box-cache_small{
-	height: 30.5vh;
 	width: 100%;
-	transform: translateY(-1rem);
+	flex-grow: 1;
 }
 
-/*.container-child-cache{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-}*/
-#box-cache_small_top{
+.box-cache_small_top{
 	height: 13.1rem;
 	transform: translateY(1rem);
+	flex-shrink: 1;
 }
 
 .sous-container-global-cache-left-active{

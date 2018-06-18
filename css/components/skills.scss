@@ -1,0 +1,32 @@
+.skills li:hover{
+	border: 1px solid white;
+}
+.skills li{
+	text-align: center;
+	border: solid 1px rgba(0,0,0,0);
+	padding: 1rem;
+}
+
+.skills{
+	padding: 0 2vw;
+}
+
+#links, #diplomes, #exp{
+	padding: 0 10vw;
+}
+
+.skills li>div:hover{
+	border: 1px solid white;
+}
+
+.skills li>div{
+	margin-top: 1.2rem;
+	border: 1px solid white;
+	width: 5rem;
+}
+
+.full{
+	height: 0.8rem;
+	background-color: white;
+	width: 0;
+}
