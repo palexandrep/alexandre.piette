@@ -62,3 +62,13 @@
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+
+.links_nav:hover #links{
+	border-bottom: solid 1px white;
+}
+
+.link_icon{
+	width: 1.3rem;
+	float: left;
+	margin-right: 1rem;
+}

@@ -1,5 +1,14 @@
 //--------- animation title--------------------------------------
 
+.titles{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+
 .title_1{
 	display: none;
 }

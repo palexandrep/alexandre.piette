@@ -27,7 +27,7 @@
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
-	animation-delay: 7.5s;
+	animation-delay: 5.5s;
 
 }
 @keyframes robot-fade-in{
@@ -35,7 +35,7 @@
 		
 	}
 	to{
-		transform: scale(0.7) translateY(-3.5rem) translateX(-6rem);
+		transform: scale(0.7) translateY(-5rem) translateX(-6rem);
 	}
 }
 

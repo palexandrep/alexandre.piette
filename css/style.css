@@ -62,6 +62,15 @@ nav {
   width: 4rem;
   padding: 3rem 0; }
 
+#rouage_portrait {
+  position: absolute;
+  width: 27rem;
+  top: 14.3rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
 .smaller {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -830,20 +839,20 @@ button:focus {
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
-  -webkit-animation-delay: 7.5s;
-  animation-delay: 7.5s; }
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s; }
 
 @-webkit-keyframes robot-fade-in {
   from { }
   to {
-    -webkit-transform: scale(0.7) translateY(-3.5rem) translateX(-6rem);
-    transform: scale(0.7) translateY(-3.5rem) translateX(-6rem); } }
+    -webkit-transform: scale(0.7) translateY(-5rem) translateX(-6rem);
+    transform: scale(0.7) translateY(-5rem) translateX(-6rem); } }
 
 @keyframes robot-fade-in {
   from { }
   to {
-    -webkit-transform: scale(0.7) translateY(-3.5rem) translateX(-6rem);
-    transform: scale(0.7) translateY(-3.5rem) translateX(-6rem); } }
+    -webkit-transform: scale(0.7) translateY(-5rem) translateX(-6rem);
+    transform: scale(0.7) translateY(-5rem) translateX(-6rem); } }
 
 .machine_container {
   position: absolute;
@@ -908,6 +917,14 @@ button:focus {
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate; }
+
+.links_nav:hover #links {
+  border-bottom: solid 1px white; }
+
+.link_icon {
+  width: 1.3rem;
+  float: left;
+  margin-right: 1rem; }
 
 .container-child-cache {
   display: -webkit-box;
@@ -1448,6 +1465,23 @@ footer {
   background-color: white;
   width: 0; }
 
+.titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 5; }
+
 .title_1 {
   display: none; }
 
@@ -1563,13 +1597,21 @@ h2 {
 
 @keyframes info_fade-in {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
   20% {
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   80% {
-    opacity: 1; }
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1607,6 +1649,12 @@ header {
   height: 100vh;
   margin: auto; }
 
+main {
+  background-image: url("../images/dechets2.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 55rem; }
+
 .presentation {
   padding-bottom: 8rem; }
 
@@ -1618,6 +1666,19 @@ header {
   margin: auto; }
   .presentation section > ul li, .avertissement li {
     padding: 1rem 0; }
+
+.presentation section, .presentation h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+#comp:hover .skills_nav {
+  border-bottom: solid 1px white; }
+
+#diplomes:hover .diploma_nav {
+  border-bottom: solid 1px white; }
+
+#exp:hover .exp_nav_nav {
+  border-bottom: solid 1px white; }
 
 .avertissement {
   font-size: 1.5rem;
@@ -1635,10 +1696,6 @@ header {
   #comp ul li {
     padding: 4rem; }
 
-.presentation section, .presentation h3 {
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-
 .box_title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1652,29 +1709,6 @@ header {
   padding-top: 4rem; }
   .box_title h3 {
     margin-left: 1.5rem; }
-
-.present {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  z-index: 5; }
-
-main {
-  background-image: url("../images/dechets2.svg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 55rem; }
 
 .shadow {
   width: 25rem;
@@ -1699,32 +1733,6 @@ main {
 .exp_title {
   width: 3.3rem;
   padding: 3rem 0; }
-
-.links_nav:hover #links {
-  border-bottom: solid 1px white; }
-
-#comp:hover .skills_nav {
-  border-bottom: solid 1px white; }
-
-#diplomes:hover .diploma_nav {
-  border-bottom: solid 1px white; }
-
-#exp:hover .exp_nav_nav {
-  border-bottom: solid 1px white; }
-
-#rouage_portrait {
-  position: absolute;
-  width: 27rem;
-  top: 14.3rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%); }
-
-.link_icon {
-  width: 1.3rem;
-  float: left;
-  margin-right: 1rem; }
 
 @media screen and (max-width: 1000px) {
   .shadow {

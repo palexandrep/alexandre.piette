@@ -3,6 +3,14 @@
 	padding: 3rem 0;
 }
 
+#rouage_portrait{
+	position: absolute;
+	width: 27rem;
+	top: 14.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .smaller{
 	transform-origin: 50% 50%;
 	transform-box: fill-box;
