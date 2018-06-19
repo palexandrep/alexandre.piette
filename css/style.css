@@ -1465,7 +1465,7 @@ footer {
   background-color: white;
   width: 0; }
 
-.titles {
+.present {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1649,12 +1649,6 @@ header {
   height: 100vh;
   margin: auto; }
 
-main {
-  background-image: url("../images/dechets2.svg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 55rem; }
-
 .presentation {
   padding-bottom: 8rem; }
 
@@ -1709,6 +1703,12 @@ main {
   padding-top: 4rem; }
   .box_title h3 {
     margin-left: 1.5rem; }
+
+main {
+  background-image: url("../images/dechets2.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 55rem; }
 
 .shadow {
   width: 25rem;
