@@ -8,6 +8,7 @@
 		justify-content: flex-start;
 	}
 }
+
 .Present {
 	display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
 		margin: 0;
 	}
 }
+
 .Present-row {
 	display: flex;
 	&:first-child {
@@ -44,6 +46,7 @@
 	}
 
 }
+
 .container_manches {
 	display: flex;
     flex: 1;
@@ -52,6 +55,7 @@
     top: 0px;
     align-content: center;
 }
+
 .container_manche {
 	position: relative;
     flex: 1;
@@ -61,5 +65,119 @@
     align-items: center;
 	&:last-child {
 		justify-content: flex-start;
+	}
+}
+
+.container-manche-g, .title_2{
+	transform: translateX(-70vw);
+	opacity: 0;
+}
+
+.container-manche-d, .title_1{
+	transform: translateX(70vw);
+	opacity: 0;
+}
+
+.container-manche-g-active{
+	animation-name: manche-g-active;
+	animation-duration: 5s;
+	animation-delay: 4.3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes manche-g-active{
+	0%{
+		transform: translateX(-82rem);
+		opacity: 0;
+	}
+	15%{
+		opacity: 1;
+	}
+	54%{
+		transform: translateX(-11rem);
+
+	}
+	85%{
+		transform: translateX(-11rem);
+
+	}
+	95%{
+		opacity: 1;
+	}
+	99%{
+		transform: translateX(-85rem);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(-85rem);
+		opacity: 0;
+	}
+}
+
+.container-manche-d-active{
+	animation-name: manche-d-active;
+	animation-duration: 5s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes manche-d-active{
+	0%{
+		transform: translateX(70rem);
+	}
+	1%{
+		transform: translateX(69rem);
+	}
+	15%{
+		opacity: 1;
+	}
+	50%{
+		transform: translateX(7rem);
+
+	}
+	85%{
+		transform: translateX(7rem);
+	}
+	95%{
+		opacity:1;
+	}
+	
+	99%{
+		transform: translateX(85rem);
+		opacity:0;
+	}
+	100%{
+		transform: translateX(85rem);
+		opacity:0;
+	}
+}
+
+.container_manches{
+	overflow: hidden;
+}
+
+.piston_dis{
+	animation-name: dissapear;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	transform-origin: 100% 100%;
+}
+
+@keyframes dissapear{
+	0%{
+	opacity: 1;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		transform: scale(0) ;
+		opacity: 0;
+
+
 	}
 }

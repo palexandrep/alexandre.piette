@@ -4,6 +4,7 @@
 	left: 32vw;
 	top: -8rem;
 }
+
 #oeilg, #oeild{
 	transform-origin: 50% 50%;
 	animation-name: cligne;
@@ -11,6 +12,7 @@
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in;
 }
+
 @keyframes cligne{
 	0%{opacity:1;}
 	1%{opacity: 0.1;}

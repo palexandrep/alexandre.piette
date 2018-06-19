@@ -3,19 +3,20 @@
 	@import "components/rouages.scss";
 	@import "components/button.scss";
 	@import "components/robot.scss";
-	@import "components/bob.scss";
+	@import "components/links.scss";
 	@import "components/slide.scss";
 	@import "components/portrait.scss";
 	@import "components/footer.scss";
 	@import "components/arms.scss";
 	@import "components/skills.scss";
+	@import "components/title.scss";
+	@import "components/infos.scss";
 
 
 //----- global-----------------------------------------
 
 *{
 	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
 }
 
 body{
@@ -25,7 +26,7 @@ body{
 	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
 }
 
-section{
+.section-container--size{
 	margin-bottom: 150px;
 }
 
@@ -46,13 +47,6 @@ a{
 	display: none;
 }
 
-h2{
-	font-size: 3rem;
-}
-h2{
-	font-family: "Blanka-Regular";
-}
-
 h1, h2, footer{
 	text-align: center;
 }
@@ -61,49 +55,6 @@ header{
 	width: 100vw;
 	height: 100vh;
 	margin: auto;
-}
-
-.info_robot{
-	background-color: #F1EDF7;
-	//border-radius: 3px;
-	padding: 0rem;
-	position: fixed;
-	top: 3rem;
-	left: 20rem;
-	padding: 0.1rem 1rem;
-	display: none;
-	opacity: 0;
-	z-index: 40;
-	width: 8rem;
-	z-index: 25;
-	p{
-		text-align: center;
-		color: black;
-		margin: 0.4rem 0rem;
-	}
-}
-
-.info_robot-fade-in{
-	animation-name: info_fade-in;
-	animation-timing-function: ease-in;
-	animation-duration: 10s;
-	animation-fill-mode: forwards;
-	animation-delay: 5s;
-}
-
-@keyframes info_fade-in{
-	0%{
-		opacity: 0;
-	}
-	20%{
-		opacity: 1;
-	}
-	80%{
-		opacity: 1;
-	}
-	100%{
-		opacity: 0;
-	}
 }
 
 .presentation{
@@ -183,11 +134,6 @@ main{
 
 .expositions-list{
 	margin: 0 15px;
-}
-
-.rouage_title{
-	width: 4rem;
-	padding: 3rem 0;
 }
 
 .exp_title{

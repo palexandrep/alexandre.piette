@@ -1,4 +1,10 @@
 
+//---------------- robot -------------------
+
+#canvas{
+	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
+}
+
 .info_robot-fade-in-out{
 	animation-name: info_fade-in;
 	animation-timing-function: ease-in;
@@ -16,10 +22,6 @@
 	}
 }
 
-#canvas{
-	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
-}
-
 .robot_active{
 	animation-name: robot-fade-in;
 	animation-duration: 2s;
@@ -34,9 +36,9 @@
 	}
 	to{
 		transform: scale(0.7) translateY(-3.5rem) translateX(-6rem);
-
 	}
 }
+
 .machine_container{
 	position: absolute;
 	z-index: 1;
@@ -45,146 +47,4 @@
 
 .machine_container_fixed{
 	position: fixed;
-}
-
-.container-manche-g, .title_2{
-	transform: translateX(-70vw);
-	opacity: 0;
-}
-.container-manche-d, .title_1{
-	transform: translateX(70vw);
-	opacity: 0;
-}
-
-.container-manche-g-active{
-	animation-name: manche-g-active;
-	animation-duration: 5s;
-	animation-delay: 4.3s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
-}
-
-@keyframes manche-g-active{
-	0%{
-		transform: translateX(-82rem);
-		opacity: 0;
-	}
-	15%{
-		opacity: 1;
-	}
-	54%{
-		transform: translateX(-11rem);
-
-	}
-	85%{
-		transform: translateX(-11rem);
-
-	}
-	95%{
-		opacity: 1;
-	}
-	99%{
-		transform: translateX(-85rem);
-		opacity: 0;
-	}
-	100%{
-		transform: translateX(-85rem);
-		opacity: 0;
-	}
-}
-
-.container-manche-d-active{
-	animation-name: manche-d-active;
-	animation-duration: 5s;
-	animation-delay: 4s;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
-
-}
-
-@keyframes manche-d-active{
-	0%{
-		transform: translateX(70rem);
-	}
-	1%{
-		transform: translateX(69rem);
-	}
-	15%{
-		opacity: 1;
-	}
-	50%{
-		transform: translateX(7rem);
-
-	}
-	85%{
-		transform: translateX(7rem);
-	}
-	95%{
-		opacity:1;
-	}
-	
-	99%{
-		transform: translateX(85rem);
-		opacity:0;
-	}
-	100%{
-		transform: translateX(85rem);
-		opacity:0;
-	}
-}
-
-#title_1-active{
-	animation-name: t-g-active;
-	animation-duration: 3s;
-	animation-delay: 3.7s;
-	animation-fill-mode: forwards;
-	//animation-timing-function: ease-in;
-	display: block;
-	opacity: 0;
-}
-
-@keyframes t-g-active{
-	0%{
-		transform: translateX(85rem);
-		opacity: 0;
-	}
-	25%{
-		opacity: 1;
-	}
-	100%{
-		transform: translateX(8.5rem);
-		opacity: 1;
-	}
-}
-
-.title_2-active{
-	animation-name: t-d-active;
-	animation-duration: 3s;
-	animation-delay: 4.2s;
-	animation-fill-mode: forwards;
-
-	//animation-timing-function: ease-in;
-	opacity: 0
-}
-
-@keyframes t-d-active{
-	0%{
-		transform: translateX(-85rem);
-		opacity: 0;
-	}
-	25%{
-		opacity: 1;
-	}
-
-	100%{
-		transform: translateX(-12rem);
-		opacity: 1;
-	}
-}
-
-.container_manches{
-	overflow: hidden;
-}
-.title_1{
-	display: none;
 }

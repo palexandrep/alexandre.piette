@@ -1,26 +1,6 @@
-.piston_dis{
-	animation-name: dissapear;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-in;
-	animation-duration: 0.5s;
-	animation-delay: 2s;
-	transform-origin: 100% 100%;
-
-}
-
-@keyframes dissapear{
-	0%{
-	opacity: 1;
-	}
-	50%{
-		opacity: 0;
-	}
-	100%{
-		transform: scale(0) ;
-		opacity: 0;
-
-
-	}
+.rouage_title{
+	width: 4rem;
+	padding: 3rem 0;
 }
 
 .smaller{
@@ -85,20 +65,18 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 4.5s;
-
-
 }
 
 @keyframes rotate{
 	0%{
-		//transform: rotate(180deg);
+		transform: rotate(180deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		//transform: rotate(0deg);
+		transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -111,14 +89,14 @@
 }
 @keyframes rotate2{
 	0%{
-		//transform: rotate(200deg);
+		transform: rotate(200deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		//transform: rotate(0deg);
+		transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -128,18 +106,18 @@
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
-	//fill: #131114;
+	fill: #131114;
 }
 @keyframes rotate3{
 	0%{
-		//transform: rotate(100deg);
+		transform: rotate(100deg);
 		opacity: 0;
 	}
 		70%{
 		opacity: 0.3;
 	}
 	100%{
-		//transform: rotate(0deg);
+		transform: rotate(0deg);
 		opacity: 1;
 	}
 }
@@ -183,8 +161,6 @@
 	}
 }
 
-
-
 .circle_7_fade-in{
 	animation-name: rotate7;
 	animation-fill-mode: forwards;
@@ -205,8 +181,6 @@
 		//transform: rotate(0deg);
 	}
 }
-
-
 
 .circle_8_fade-in{
 	animation-name: rotate8;
@@ -250,9 +224,8 @@
 }
 
 .circle_10_fade-in{
-	aniation-name: rotate10;
-		animation-fill-mode: forwards;
-
+	animation-name: rotate10;
+	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 	animation-duration: 3s;
 }
@@ -449,6 +422,7 @@
 	animation-name: clock_ratation_clock_9;
 	animation-duration: 18s;
 }
+
 @keyframes clock_ratation_clock_9{
 	0%{
 		transform: rotate(360deg);
@@ -481,6 +455,7 @@
 	transform-box: fill-box;
 	animation-timing-function: linear;
 }
+
 @keyframes central-rot{
 	0%{
 		transform: rotate(360deg);

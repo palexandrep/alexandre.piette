@@ -33,21 +33,13 @@
 		section>ul{
 			margin: 0 !important;
 		}
-		main{
-		background-image: url("../images/background-4.png");
-		background-repeat: no-repeat;
-		background-position: bottom left;
-		background-size: cover;
-	}
-}
-
-@media screen and (max-width: 1700px){
-	.info_robot{
-			display: none !important;
-		}
 }
 
 @media screen and (max-width: 600px){
+
+		main{
+			background-image: none;
+		}
 
 		header{
 			height: 85vh;
@@ -57,7 +49,7 @@
 			display: none;
 		}
 
-		.nav_phone{
+		.menu{
 			display: flex;
 			justify-content: space-around;
 			width: 100%;
@@ -244,7 +236,7 @@
 	}
 
 	.info_robot{
-		display: block !important;
+		display: block;
 		left: 3rem;
 		top: 13rem;
 		font-size: 0.7rem;
@@ -323,10 +315,9 @@
 
 	footer{
 		padding-top: 2rem;
-
 	}
 
-	section>ul, .skills, section>div, section>p{
+	.section>ul, .skills, section>div, section>p{
 		padding-left: 30vw;
 	}
 
@@ -367,7 +358,6 @@
 			}
 			40%{
 				transform: translateX(33vw);
-
 			}
 			85%{
 				transform: translateX(33vw);
@@ -396,11 +386,9 @@
 			}
 			44%{
 				transform: translateX(-15vw);
-
 			}
 			85%{
 				transform: translateX(-15vw);
-
 			}
 			95%{
 				opacity: 1;
@@ -415,4 +403,10 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1700px){
+	.info_robot{
+			display: none !important;
+		}
 }

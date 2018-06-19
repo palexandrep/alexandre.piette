@@ -23,6 +23,7 @@
 .container-cache{
 	height: 29.7rem;
 	width: 14.3rem;
+	min-width: 14.3rem;
 }
 
 .box-cache_big{
@@ -37,7 +38,6 @@
 
 .box-cache_small_top{
 	height: 13.1rem;
-	transform: translateY(1rem);
 	flex-shrink: 1;
 }
 
