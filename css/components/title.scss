@@ -13,15 +13,15 @@
 .title_1{
 	display: none;
 }
+
 .title_2{
     font-weight: 100;
 }
 
 h2{
-	font-size: 3rem;
-}
-h2{
 	font-family: "Blanka-Regular";
+	font-size: 3rem;
+	white-space: nowrap;
 }
 
 #title_1-active{
@@ -52,7 +52,7 @@ h2{
 	animation-duration: 3.2s;
 	animation-delay: 4.2s;
 	animation-fill-mode: forwards;
-	opacity: 0
+	opacity: 0;
 }
 
 @keyframes t-d-active{

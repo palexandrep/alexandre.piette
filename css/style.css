@@ -58,6 +58,15 @@ nav {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
+#comp:hover .skills_nav {
+  border-bottom: solid 1px white; }
+
+#diplomes:hover .diploma_nav {
+  border-bottom: solid 1px white; }
+
+#exp:hover .exp_nav_nav {
+  border-bottom: solid 1px white; }
+
 .rouage_title {
   width: 4rem;
   padding: 3rem 0; }
@@ -958,11 +967,15 @@ button:focus {
 .container-cache {
   height: 29.7rem;
   width: 14.3rem;
-  min-width: 14.3rem; }
+  min-width: 14.3rem;
+  -ms-flex-negative: 1;
+  flex-shrink: 1; }
 
 .box-cache_big {
   width: 50vw;
-  overflow: hidden; }
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 .box-cache_small {
   width: 100%;
@@ -972,6 +985,7 @@ button:focus {
 
 .box-cache_small_top {
   height: 13.1rem;
+  min-height: 13.1rem;
   -ms-flex-negative: 1;
   flex-shrink: 1; }
 
@@ -1489,10 +1503,9 @@ footer {
   font-weight: 100; }
 
 h2 {
-  font-size: 3rem; }
-
-h2 {
-  font-family: "Blanka-Regular"; }
+  font-family: "Blanka-Regular";
+  font-size: 3rem;
+  white-space: nowrap; }
 
 #title_1-active {
   -webkit-animation-name: t-g-active;
@@ -1635,7 +1648,7 @@ li {
   list-style-type: none; }
 
 a {
-  color: white;
+  color: #F1EDF7;
   text-decoration: none; }
 
 .hidden {
@@ -1664,15 +1677,6 @@ header {
 .presentation section, .presentation h3 {
   padding-top: 2rem;
   padding-bottom: 2rem; }
-
-#comp:hover .skills_nav {
-  border-bottom: solid 1px white; }
-
-#diplomes:hover .diploma_nav {
-  border-bottom: solid 1px white; }
-
-#exp:hover .exp_nav_nav {
-  border-bottom: solid 1px white; }
 
 .avertissement {
   font-size: 1.5rem;
@@ -1760,8 +1764,6 @@ main {
 @media screen and (max-width: 600px) {
   main {
     background-image: none; }
-  header {
-    height: 85vh; }
   #canvas, .container_nav, .container-mechanisme-titre, .machine_container {
     display: none; }
   .menu {
@@ -1932,16 +1934,29 @@ main {
       -webkit-transform: translateX(-85rem);
       transform: translateX(-85rem);
       opacity: 0; } }
-    #comp ul .container-cache {
-      height: 22rem;
-      width: 10.8rem; }
-    #comp ul #box-cache_small_top {
-      height: 3rem; }
-    #comp ul .box-cache_small {
-      height: 57.2vh;
-      width: 100%; } }
+  .container-cache {
+    height: 22rem;
+    width: 10.8rem;
+    min-width: 10.8rem; }
+  .box-cache_small_top {
+    height: 3rem;
+    min-height: 3rem; } }
 
-@media only screen and (max-width: 600px) and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  main {
+    background-image: none; }
+  .container-cache {
+    height: 14rem;
+    width: 6.8rem;
+    min-width: 6.8rem; }
+  .box-cache_small_top {
+    height: 2.1rem;
+    min-height: 2.1rem; }
+  .box-cache_small {
+    height: 12.5rem;
+    width: 100%; }
+  .container-global-cache {
+    overflow: hidden; }
   .nav_phone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1980,14 +1995,6 @@ main {
   #animation_container {
     width: 30px;
     left: -5rem; }
-  .container-cache {
-    height: 22rem;
-    width: 10.8rem; }
-  #box-cache_small_top {
-    height: 2.1rem; }
-  .box-cache_small {
-    height: 12.5rem;
-    width: 100%; }
   .push_btn {
     left: calc(50vw - 80px);
     top: 3.5rem; }
@@ -1998,9 +2005,6 @@ main {
   #rouage_portrait {
     width: 13rem;
     top: 2.5rem; }
-  .container-cache {
-    height: 14rem;
-    width: 6.8rem; }
   h1 {
     font-size: 1rem; }
   h2 {

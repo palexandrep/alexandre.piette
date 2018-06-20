@@ -46,7 +46,7 @@
 		$('.title_2').addClass('title_2_active');
 
 		//--------------- arms -------------------
-
+		$('.Present').removeClass('hidden');
 		$('.container-manche-g').addClass('container-manche-g-active');
 		$('.container-manche-d').addClass('container-manche-d-active');
 		$('.title_1').attr('id', 'title_1-active');

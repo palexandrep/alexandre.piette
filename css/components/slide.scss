@@ -24,11 +24,12 @@
 	height: 29.7rem;
 	width: 14.3rem;
 	min-width: 14.3rem;
+	flex-shrink: 1;
 }
 
 .box-cache_big{
 	width: 50vw;
-	overflow: hidden;
+	flex-grow: 1;
 }
 
 .box-cache_small{
@@ -38,6 +39,7 @@
 
 .box-cache_small_top{
 	height: 13.1rem;
+	min-height: 13.1rem;
 	flex-shrink: 1;
 }
 
