@@ -79,6 +79,32 @@ header{
 	padding-bottom: 2rem;
 }
 
+.section--left{
+	overflow: hidden;
+	opacity: 0;
+	transform: translateX(50px);
+	transition: transform 0.5s ease-out;
+}
+
+.section--right{
+	overflow: hidden;
+	opacity: 0;
+	transform: translateX(-50px);
+	transition: transform 0.5s ease-out;
+}
+
+.show--left{
+	opacity: 1;
+	transform: translateX(0px);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show--right{
+	opacity: 1;
+	transform: translateX(0px);
+	transition: transform 0.5s ease-out;
+}
+
 //---------------------------------------------------
 
 .avertissement{

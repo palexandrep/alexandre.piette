@@ -1,4 +1,7 @@
 (function () {
+
+	// next patch --> switch to js
+
 	$(".push_btn").on("click", function () {
 
 		$('nav section').removeClass('hidden');
@@ -145,6 +148,72 @@
 		}, 'slow');
 		return false;
 	});
+
+	//--------------------------- scroll --------------------------------------
+
+		//Scroll--------------
+			//timer du scroll
+
+		var lastTime = 0;
+		var vendors = ['ms', 'moz', 'webkit', 'o'];
+		for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+			window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+			window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+		}
+
+		if ( ! window.requestAnimationFrame ) {
+			window.requestAnimationFrame = function(callback, element) {
+				var currTime = new Date().getTime();
+				var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+				var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+				timeToCall);
+				lastTime = currTime + timeToCall;
+				return id;
+			};
+		}
+
+		if ( ! window.cancelAnimationFrame ) {
+			window.cancelAnimationFrame = function(id) {
+				clearTimeout(id);
+			};
+		}
+
+		//fonction scrolled
+				
+		scrolled = function() {
+
+			var compSectionScrollVal = document.querySelector('#comp').offsetTop-500;
+			var linksSectionScrollVal = document.querySelector('#links').offsetTop-500;
+			var diplomesSectionScrollVal = document.querySelector('#diplomes').offsetTop-500;
+			var expSectionScrollVal = document.querySelector('#exp').offsetTop-500;
+
+			var scrollDocument = window.pageYOffset || document.documentElement.scrollTop;
+
+			if($('#comp').hasClass('unseen') && scrollDocument > compSectionScrollVal){
+				$('#comp').removeClass('unseen').addClass('show--left');
+			}
+			else if($('#links').hasClass('unseen') && scrollDocument > linksSectionScrollVal){
+				$('#links').removeClass('unseen').addClass('show--left');
+			}
+			else if($('#diplomes').hasClass('unseen') && scrollDocument > diplomesSectionScrollVal){
+				$('#diplomes').removeClass('unseen').addClass('show--left');
+			}
+			else if($('#exp').hasClass('unseen') && scrollDocument > expSectionScrollVal){
+				$('#exp').removeClass('unseen').addClass('show--left');
+			}
+		},
+
+		onScrolling = function() {
+			scrolled();
+		};
+			
+		// quand on scroll
+
+		window.addEventListener('scroll', function(){
+				window.requestAnimationFrame( onScrolling );		
+		});
+		// fin fonction Scroll
+
 })()
 
 //------------------------- canvas ---------------------------------
