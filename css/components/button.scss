@@ -41,3 +41,26 @@ button:focus {
 		display: none;
 	}
 }
+
+//------------------- media queries ------------------------------
+
+@media screen and (max-width: 1000px){
+	.push_btn{
+		left: calc(50vw - 78px);
+		top: 22.3rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.push_btn{
+		left: calc(50vw - 80px);
+		top: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.push_btn{
+		left: calc(50vw - 80px);
+		top: 8.4rem;
+	}
+}

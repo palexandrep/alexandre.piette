@@ -1,18 +1,9 @@
 
+
+//------------------------------------ media queries ------------------------------------------------
+
 @media screen and (max-width: 1000px){
 
-	.shadow{
-		display: none;
-	}
-		
-	#canvas{
-		display: none;
-	}
-
-	.push_btn{
-		left: calc(50vw - 78px);
-		top: 22.3rem;
-	}
 
 	.clock_animate{
 		width: 85px;
@@ -33,193 +24,19 @@
 	section>ul{
 		margin: 0 !important;
 	}
-}
 
-//------------------------------------------------------------------------------------
-
-@media screen and (max-width: 600px){
-
-	main{
-		background-image: none;
-	}
-
-	#canvas, .container_nav, .container-mechanisme-titre, .machine_container{
+	.nav_decoration{
 		display: none;
-	}
-
-	.menu{
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-
-		img{
-			display: none;
-		}
-
-		.skills_nav{
-			padding-left: 1rem;
-		}
-			
-		h3{
-			font-size: 0.9rem;
-			padding-top: 0.4rem;
-		}
-	}
-
-	#comp li{
-		padding: 0rem;
-	}
-
-	#comp ul{
-		width: 100%;
-	}
-
-	.presentation section>ul,.avertissement{
-		width: 100%;
-		margin: 0;
-	}
-
-	.info_robot{
-		display: none !important;
-	}
-
-	section{
-		margin: 0;
-	}
-
-	section>ul{
-		margin: 0 !important;
-	}
-
-	#rouage_portrait{
-		width: 20rem;
-		top:  4rem;
-	}
-
-	.conatiner_portrait{
-		height: 14rem; 
-	}
-
-	.img_portrait{
-		top: -12.9rem;
-		width: 8rem;
-		height: 8rem;
-	}
-
-	.clock_animate{
-		margin-left: 1.9rem;
-	}
-
-	.push_btn{
-		left: calc(50vw - 80px);
-		top: 8.4rem;
-	}
-
-	h1{
-		font-size: 1.3rem;
-	}
-
-	h2{
-		font-size: 1.5rem;
-	}
-
-	#links, #diplomes, #exp{
-		padding: 0 7vw;
-	}
-
-	#comp ul{
-		justify-content: space-around;
-
-		li{
-			padding: 2rem;
-		}
-	}
-
-	@keyframes t-d-active{
-		100%{
-			transform: translateX(-25vw);
-			opacity: 1;
-		}
-	}
-
-	@keyframes t-g-active{
-		100%{
-			transform: translateX(25vw);
-			opacity: 1;
-		}
-	}
-
-	@keyframes manche-d-active{
-		0%{
-			transform: translateX(35rem);
-		}
-		1%{
-			transform: translateX(35);
-		}
-		15%{
-			opacity: 1;
-		}
-		40%{
-			transform: translateX(20vw);
-		}
-		85%{
-			transform: translateX(20vw);
-		}
-		95%{
-			opacity:1;
-		}	
-		99%{
-			transform: translateX(85rem);
-			opacity:0;
-		}
-		100%{
-			transform: translateX(85rem);
-			opacity:0;
-		}
-	}
-
-	@keyframes manche-g-active{
-		0%{
-			transform: translateX(-45rem);
-			opacity: 0;
-		}
-		15%{
-			opacity: 1;
-		}
-		44%{
-			transform: translateX(-20vw);
-		}
-		85%{
-			transform: translateX(-20vw);
-		}
-		95%{
-			opacity: 1;
-		}
-		99%{
-			transform: translateX(-85rem);
-			opacity: 0;
-		}
-		100%{
-			transform: translateX(-85rem);
-			opacity: 0;
-		}
-	}
-
-	.container-cache{
-		height: 22rem;
-		width: 10.8rem;
-		min-width: 10.8rem;
-	}
-
-	.box-cache_small_top{
-		height: 3rem;
-		min-height: 3rem;
 	}
 }
 
 //------------------------------------------------------------------------------------
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
+
+	.slide-down-arrow_box{
+		display: none;
+	}
 
 	main{
 		background-image: none;
@@ -257,35 +74,9 @@
 		}
 	}
 
-	.info_robot{
-		display: block;
-		left: 3rem;
-		top: 13rem;
-		font-size: 0.7rem;
-	}
-
-	#canvas{
-		display: block;
-		transform: scale(0.5) translateY(-36rem) translateX(-22rem);
-	}
-
-	@keyframes robot-fade-in{
-		from{
-			transform: scale(0.5) translateY(-36rem) translateX(-22rem)
-		}
-		to{
-			transform: scale(0.5) translateY(-11.5rem) translateX(-22rem);
-		}
-	}
-
 	#animation_container{
 		width: 30px;
 		left: -5rem;
-	}
-
-	.push_btn{
-		left: calc(50vw - 80px);
-		top: 3.5rem;
 	}
 
 	.img_portrait{
@@ -299,11 +90,11 @@
 		top:  2.5rem;
 	}
 
-	h1{
+	.title_1{
 		font-size: 1rem;
 	}
 
-	h2{
+	.title_2{
 		font-size: 1.2rem;
 	}
 
@@ -312,7 +103,7 @@
 	}
 
 	nav{
-		height: 2.9rem;
+		height: 3rem;
 	}
 
 	footer{
@@ -345,68 +136,121 @@
 			opacity: 1;
 		}
 	}
-
-	@keyframes manche-d-active{
-		0%{
-			transform: translateX(35rem);
-		}
-		1%{
-			transform: translateX(35);
-		}
-		15%{
-			opacity: 1;
-		}
-		40%{
-			transform: translateX(33vw);
-		}
-		85%{
-			transform: translateX(33vw);
-		}
-		95%{
-			opacity:1;
-		}		
-		99%{
-			transform: translateX(85rem);
-			opacity:0;
-		}
-		100%{
-			transform: translateX(85rem);
-			opacity:0;
-		}
-	}
-
-	@keyframes manche-g-active{
-		0%{
-			transform: translateX(-45rem);
-			opacity: 0;
-		}
-		15%{
-			opacity: 1;
-		}
-		44%{
-			transform: translateX(-15vw);
-		}
-		85%{
-			transform: translateX(-15vw);
-		}
-		95%{
-			opacity: 1;
-		}
-		99%{
-			transform: translateX(-85rem);
-			opacity: 0;
-		}
-		100%{
-			transform: translateX(-85rem);
-			opacity: 0;
-		}
-	}
 }
 
 //------------------------------------------------------------------------------------
 
-@media screen and (max-width: 1700px){
-	.info_robot{
+@media screen and (max-width: 600px){
+
+	main{
+		background-image: none;
+	}
+
+	#canvas, .container_nav, .container-mechanisme-titre, .machine_container{
+		display: none;
+	}
+
+	.menu{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+
+		img{
 			display: none;
 		}
+
+		.skills_nav{
+			margin-left: 1rem;
+		}
+			
+		h3{
+			font-size: 0.9rem;
+			padding-top: 0.4rem;
+		}
+	}
+
+	#comp li{
+		padding: 0rem;
+	}
+
+	#comp ul{
+		width: 100%;
+	}
+
+	.presentation section>ul,.avertissement{
+		width: 100%;
+		margin: 0;
+	}
+
+	section{
+		margin: 0;
+	}
+
+	section>ul{
+		margin: 0 !important;
+	}
+
+	#rouage_portrait{
+		width: 20rem;
+		top: 4rem;
+	}
+
+	.conatiner_portrait{
+		height: 14rem; 
+	}
+
+	.img_portrait{
+		top: -12.9rem;
+		width: 8rem;
+		height: 8rem;
+	}
+
+	.clock_animate{
+		margin-left: 1.9rem;
+	}
+
+	.title_1{
+		font-size: 1.3rem;
+	}
+
+	.title_2{
+		font-size: 1.5rem;
+	}
+
+	#links, #diplomes, #exp{
+		padding: 0 7vw;
+	}
+
+	#comp ul{
+		justify-content: space-around;
+
+		li{
+			padding: 2rem;
+		}
+	}
+
+	@keyframes t-d-active{
+		100%{
+			transform: translateX(-25vw);
+			opacity: 1;
+		}
+	}
+
+	@keyframes t-g-active{
+		100%{
+			transform: translateX(25vw);
+			opacity: 1;
+		}
+	}
+
+	.container-cache{
+		height: 22rem;
+		width: 10.8rem;
+		min-width: 10.8rem;
+	}
+
+	.box-cache_small_top{
+		height: 3rem;
+		min-height: 3rem;
+	}
 }

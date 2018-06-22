@@ -36,6 +36,10 @@
 
 }
 
+.arms{
+	height: 70px;
+}
+
 .container_manches {
 	display: flex;
     flex: 1;
@@ -163,5 +167,124 @@
 	100%{
 		transform: scale(0) ;
 		opacity: 0;
+	}
+}
+
+//------------------------------------ media queries -------------------------------------------
+
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	@keyframes manche-d-active{
+		0%{
+			transform: translateX(35rem);
+		}
+		1%{
+			transform: translateX(35);
+		}
+		15%{
+			opacity: 1;
+		}
+		40%{
+			transform: translateX(33vw);
+		}
+		85%{
+			transform: translateX(33vw);
+		}
+		95%{
+			opacity:1;
+		}		
+		99%{
+			transform: translateX(85rem);
+			opacity:0;
+		}
+		100%{
+			transform: translateX(85rem);
+			opacity:0;
+		}
+	}
+	
+	@keyframes manche-g-active{
+		0%{
+			transform: translateX(-45rem);
+			opacity: 0;
+		}
+		15%{
+			opacity: 1;
+		}
+		44%{
+			transform: translateX(-15vw);
+		}
+		85%{
+			transform: translateX(-15vw);
+		}
+		95%{
+			opacity: 1;
+		}
+		99%{
+			transform: translateX(-85rem);
+			opacity: 0;
+		}
+		100%{
+			transform: translateX(-85rem);
+			opacity: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	@keyframes manche-d-active{
+		0%{
+			transform: translateX(35rem);
+		}
+		1%{
+			transform: translateX(35);
+		}
+		15%{
+			opacity: 1;
+		}
+		40%{
+			transform: translateX(20vw);
+		}
+		85%{
+			transform: translateX(20vw);
+		}
+		95%{
+			opacity:1;
+		}	
+		99%{
+			transform: translateX(85rem);
+			opacity:0;
+		}
+		100%{
+			transform: translateX(85rem);
+			opacity:0;
+		}
+	}
+	
+	@keyframes manche-g-active{
+		0%{
+			transform: translateX(-45rem);
+			opacity: 0;
+		}
+		15%{
+			opacity: 1;
+		}
+		44%{
+			transform: translateX(-60vw);
+		}
+		86%{
+			transform: translateX(-60vw);
+		}
+		95%{
+			opacity: 1;
+		}
+		99%{
+			transform: translateX(-85rem);
+			opacity: 0;
+		}
+		100%{
+			transform: translateX(-85rem);
+			opacity: 0;
+		}
 	}
 }

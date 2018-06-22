@@ -1,12 +1,12 @@
 (function () {
 
-	// next patch --> switch to js
+	// next patch --> switch to js and change animation method for the robot
 
 	$(".push_btn").on("click", function () {
 
-		$('nav section').removeClass('hidden');
-		$('nav').addClass('nav_shadow');
+		//--------------- nav ----------------------
 
+		$('nav section').removeClass('hidden');
 
 		//--------------- shutters -------------------
 
@@ -16,20 +16,14 @@
 		$('main').removeClass("main-cache");
 		$('.presentation').removeClass("hidden");
 
-		$('#yeux').removeClass("hidden");
+		function cacheHide() {
+			$('.container-global-cache').addClass('hidden');
+		}
+		setTimeout(cacheHide, 7800);
 
 		//--------------- clock -------------------
 
-		$('.circle_1').addClass("circle_1_fade-in");
-		$('.circle_2').addClass("circle_2_fade-in");
-		$('.circle_3').addClass("circle_3_fade-in");
-		$('.circle_4').addClass("circle_4_fade-in");
 
-		$('.circle_6').addClass("circle_6_fade-in");
-		$('.circle_5').addClass("circle_5_fade-in");
-		$('.circle_8').addClass("circle_8_fade-in");
-		$('.circle_9').addClass("circle_9_fade-in");
-		$('.circle_10').addClass("circle_10_fade-in");
 		$('.circle_extern').addClass("circle_extern_rotate");
 		$('.img_portrait').addClass("image_portrait_fade-in");
 
@@ -45,10 +39,9 @@
 		$('.circle_8_clock').addClass('active_8');
 		$('.circle_9_clock').addClass('active_9');
 		$('.circle_10_clock').addClass('active_10');
-		$('.title_1').addClass('title_1_active');
-		$('.title_2').addClass('title_2_active');
 
-		//--------------- arms -------------------
+		//--------------- arms ------------------
+
 		$('.Present').removeClass('hidden');
 		$('.container-manche-g').addClass('container-manche-g-active');
 		$('.container-manche-d').addClass('container-manche-d-active');
@@ -57,40 +50,33 @@
 		$('.manche-d-roll').addClass('manche-d-roll-down');
 		$('#piston').addClass("piston_dis");
 
-		$('.push_btn').addClass('push_btn_disable');
+		function pinceG() {
+			$('.arm-left').attr('src', 'images/manche_g.svg');
+		}
+		setTimeout(pinceG, 7500);
+		function pinceD() {
+			$('.arm-right').attr('src', 'images/manche_d.svg');
+		}
+		setTimeout(pinceD, 7000);
+
+		//---------------- robot -------------------------
 
 		$('#canvas').addClass("robot_active");
 		$('.machine_container').addClass("machine_container_fixed");
 
+
 		$('footer').removeClass('hidden');
 
-		function pinceG() {
-			$('.tige-left').attr('src', 'images/manche_g.svg');
+		//-------------------- btn ------------------
 
-		}
-		setTimeout(pinceG, 7500);
-		function pinceD() {
-			$('.tige-right').attr('src', 'images/manche_d.svg');
-		}
-		setTimeout(pinceD, 7000);
-
-		function cacheHide() {
-			$('.container-global-cache').addClass('hidden');
-		}
-		setTimeout(cacheHide, 7800);
-
+		$('.push_btn').addClass('push_btn_disable');
 		function pushHidden() {
 			$('.push_btn').addClass('hidden');
 		}
 		setTimeout(pushHidden, 2000);
 
-
-		function calcHeight() {
-			var heightMain = $('main').innerHeight();
-			var heightMainBig = heightMain + 1200;
-			var heightCache = $('.container-child-cache').innerHeight();
-		}
-		setTimeout(calcHeight, 100);
+		$('.slide-down-arrow').attr('id','show-arrow');
+		$('#yeux').removeClass("hidden");
 
 	});
 
@@ -110,7 +96,7 @@
 		});
 		info.mouseout(function (event) {
 			event.stopPropagation();
-			$('.info_robot').css('opacity', '0');
+			$('.info_robot').css('display', 'none');
 		});
 	});
 
@@ -182,10 +168,10 @@
 				
 		scrolled = function() {
 
-			var compSectionScrollVal = document.querySelector('#comp').offsetTop-500;
-			var linksSectionScrollVal = document.querySelector('#links').offsetTop-500;
-			var diplomesSectionScrollVal = document.querySelector('#diplomes').offsetTop-500;
-			var expSectionScrollVal = document.querySelector('#exp').offsetTop-500;
+			var compSectionScrollVal = document.querySelector('#comp').offsetTop-600;
+			var linksSectionScrollVal = document.querySelector('#links').offsetTop-600;
+			var diplomesSectionScrollVal = document.querySelector('#diplomes').offsetTop-600;
+			var expSectionScrollVal = document.querySelector('#exp').offsetTop-600;
 
 			var scrollDocument = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -210,7 +196,7 @@
 		// quand on scroll
 
 		window.addEventListener('scroll', function(){
-				window.requestAnimationFrame( onScrolling );		
+			window.requestAnimationFrame( onScrolling );		
 		});
 		// fin fonction Scroll
 
@@ -236,10 +222,14 @@ function handleComplete(evt, comp) {
 	stage = new lib.Stage(canvas);
 	stage.addChild(exportRoot);
 	//Registers the "tick" event listener.
-	fnStartAnimation = function () {
-		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage);
+	var mediaQ = window.innerWidth;
+	if(mediaQ>640){
+		fnStartAnimation = function () {
+			createjs.Ticker.setFPS(lib.properties.fps);
+			createjs.Ticker.addEventListener("tick", stage);
+		}
 	}
+	
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {
 		var lastW, lastH, lastS = 1;

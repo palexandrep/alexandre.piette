@@ -1,8 +1,10 @@
 <svg version="1.1" id="rouage_x5F_portrait" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="151 -35.1 439 911" style="enable-background:new 151 -35.1 448.5 911;" xml:space="preserve">
+	 x="0px" y="0px" viewBox="-1320.5 -178.9 450 900" style="enable-background:new -1320.5 -178.9 450 900;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;fill:none;}
+	.st1{fill:none;}
 </style>
-<path class="st0" d="M701.6,173.8c15.5,10,33.6,15.9,52,17c18.6,1.1,37.2-2.6,55.9-2.4c18.7,0.2,38.7,5.2,50.4,19.7"/>
-<path d="M200.3,420.4C200.3,200,379,21.2,599.5,21.2v-56.3H151v911h448.5v-56.3C379.1,819.5,200.3,640.8,200.3,420.4z"/>
+<path class="st0" d="M441.6-1.2c15.5,10,33.6,15.9,52,17c18.6,1.1,37.2-2.6,55.9-2.4c18.7,0.2,38.7,5.2,50.4,19.7"/>
+<path class="st1" d="M-1763.5,238.2c0-219.6-178-397.6-397.6-397.6v795.2C-1941.5,635.8-1763.5,457.8-1763.5,238.2z"/>
+<path d="M-1268.1,271.1c0-219.6,178-397.6,397.6-397.6v-52.4h-450v900h450v-52.4C-1090.1,668.7-1268.1,490.7-1268.1,271.1z"/>
 </svg>

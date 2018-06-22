@@ -5,21 +5,13 @@
 	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
 }
 
-.info_robot-fade-in-out{
-	animation-name: info_fade-in;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
-	animation-delay: 3s;
-}
-
-@keyframes info_fade-in{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
+.robot-light{
+	width: 25rem;
+	height: 4rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 10px 300px white;
 }
 
 .robot_active{
@@ -48,3 +40,39 @@
 .machine_container_fixed{
 	position: fixed;
 }
+
+//--------------------------- media queries -----------------------------
+
+@media screen and (max-width: 1000px){
+	.robot-light{
+		display: none;
+	}
+		
+	#canvas{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	#canvas{
+		display: block;
+		transform: scale(0.5) translateY(-36rem) translateX(-22rem);
+	}
+	
+	@keyframes robot-fade-in{
+		from{
+			transform: scale(0.5) translateY(-36rem) translateX(-22rem)
+		}
+		to{
+			transform: scale(0.5) translateY(-11.5rem) translateX(-22rem);
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	#canvas, .machine_container{
+		display: none;
+	}
+}
+
+

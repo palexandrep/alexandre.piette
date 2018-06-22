@@ -1,4 +1,39 @@
-/* Bob */
+.slide-down-arrow_box{
+  width:60px;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  margin-top: 30px;
+  .slide-down-arrow{
+
+    width: 20px;
+    opacity: 0;
+
+    animation-name: slide-arrow-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes slide-arrow-animation {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+#show-arrow{
+  opacity: 0.7;
+  transition: opacity 0.5s 7s;
+}
+
+/* animations links */
 @-webkit-keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-8px);
@@ -13,6 +48,7 @@
     transform: translateY(-8px);
   }
 }
+
 @keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-8px);
@@ -27,18 +63,21 @@
     transform: translateY(-8px);
   }
 }
+
 @-webkit-keyframes hvr-bob-float {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 @keyframes hvr-bob-float {
   100% {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
+
 .hvr-bob {
   display: inline-block;
   vertical-align: middle;
@@ -46,6 +85,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
+
 #links li:hover .hvr-bob, .hvr-bob:focus, .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
