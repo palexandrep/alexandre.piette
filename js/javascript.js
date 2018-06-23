@@ -10,16 +10,15 @@
 
 		//--------------- shutters -------------------
 
-		$('.sous-container-global-cache-left').addClass("sous-container-global-cache-left-active");
-		$('.sous-container-global-cache-right').addClass("sous-container-global-cache-right-active");
+		$('.row-shutter--left').addClass("row-shutter--left--active");
+		$('.row-shutter--right').addClass("row-shutter--right--active");
 
-		$('main').removeClass("main-cache");
 		$('.container_main-content').removeClass("hidden");
 
-		function cacheHide() {
-			$('.container-global-cache').addClass('hidden');
+		function shuttersHide() {
+			$('.container_shutters').addClass('hidden');
 		}
-		setTimeout(cacheHide, 7800);
+		setTimeout(shuttersHide, 1500);
 
 		//--------------- clock -------------------
 
@@ -27,7 +26,7 @@
 		$('.img_portrait').addClass("image_portrait_fade-in");
 
 		$('.cercle_interne').addClass('active_cercle_interne');
-		$('#circleexternsmall').addClass('smaller');
+		$('#item_circle-extern--small').addClass('smaller');
 		$('.circle_1_clock').addClass('active_1');
 		$('.circle_2_clock').addClass('active_2');
 		$('.circle_3_clock').addClass('active_3');
@@ -74,11 +73,17 @@
 		}
 		setTimeout(pushHidden, 2000);
 
+		//-------------------- down arrow -------------------
+
 		$('.slide-down-arrow').attr('id','show-arrow');
 
-
+		//-------------------- small robot --------------
 		
 		$('#yeux').removeClass("hidden");
+
+		//------------------- background --------
+
+		$('main').addClass('main-background--active');
 
 	});
 
@@ -105,7 +110,7 @@
 	});
 
 
-
+	//--------------------- portrait swipe ------------------------------
 
 	$('.img_portrait').mouseover(function (event) {
 		event.stopPropagation();
@@ -146,7 +151,7 @@
 
 	//--------------------------- scroll --------------------------------------
 
-		//Scroll--------------
+		//Scroll-------------- js
 			//timer du scroll
 
 		var lastTime = 0;
@@ -207,12 +212,12 @@
 		window.addEventListener('scroll', function(){
 			window.requestAnimationFrame( onScrolling );		
 		});
-		// fin fonction Scroll
 
 })()
 
 //------------------------- canvas ---------------------------------
 
+// to improve performances, it may change in the future
 
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {

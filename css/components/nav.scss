@@ -38,7 +38,7 @@ nav{
 	}
 }
 
-.menu h3:hover{
+.nav_item:hover{
 	border-bottom: solid 1px white;
 }
 
@@ -62,22 +62,12 @@ nav{
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape){
-	.nav_phone{
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-
-		h3{
-			margin-top: 0.5rem;
-		}
-		
-		img{
-			display: none;
-		}
+	.nav_item{
+		font-size: 1rem;
 	}
-
-	nav{
-		height: 3rem;
+		
+	.svg_nav{
+		display: none;
 	}
 }
 
@@ -88,7 +78,7 @@ nav{
 
 	.menu{
 
-		img{
+		.svg_nav{
 			display: none;
 		}
 
@@ -96,7 +86,7 @@ nav{
 			margin-left: 1rem;
 		}
 			
-		h3{
+		.nav_item{
 			font-size: 0.9rem;
 			padding-top: 0.4rem;
 		}

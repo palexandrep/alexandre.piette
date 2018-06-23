@@ -1,8 +1,8 @@
-.container-child-cache{
+.container-child-shutters{
 	display: flex;
 	flex-direction: column;
 }
-.container-global-cache{
+.container_shutters{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -11,16 +11,16 @@
 	height: 100vh;
 	overflow: hidden;
 }
-.container-global-cache, .sous-container-global-cache{
+.container_shutters, .row-shutters{
 	display: flex;
 	justify-content: center;
 }
 
-.box-cache{
+.item_shutter--black{
 	background-color: black;
 }
 
-.container-cache{
+.item_shutter--circle{
 	height: 450px;
 	width: 225px;
 	min-width: 225px;
@@ -29,29 +29,29 @@
 	padding: 0;
 }
 
-.box-cache_big{
+.item_shutter--big{
 	width: 50vw;
 	flex-grow: 1;
 }
 
-.box-cache_small{
+.item_shutter--bottom{
 	width: 100%;
 	flex-grow: 1;
 }
 
-.box-cache_small_top{
+.item_shutter--top{
 	height: 223px;
 	min-height: 223px;
 	flex-shrink: 1;
 }
 
-.sous-container-global-cache-left-active{
-	animation-name: cache-slide-left;
+.row-shutter--left--active{
+	animation-name: shutters-slide-left;
 	animation-duration: 1.2s;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
-@keyframes cache-slide-left{
+@keyframes shutters-slide-left{
 	from{
 		transform: translateX(0vw);
 	}
@@ -60,13 +60,13 @@
 		z-index: -5;
 	}
 }
-.sous-container-global-cache-right-active{
-	animation-name: cache-slide-right;
+.row-shutter--right--active{
+	animation-name: shutters-slide-right;
 	animation-duration: 1.2s;
 	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
 }
-@keyframes cache-slide-right{
+@keyframes shutters-slide-right{
 	from{
 		transform: translateX(0vw);
 	}
@@ -74,48 +74,37 @@
 		transform: translateX(55vw);
 		z-index: -5;
 	}
-}
-.main-cache{
-	height: 100vh;
-}
-
-html {
- overflow-x: hidden;
 } 
 
 //------------------- media queries ------------------------------
 
 
 @media only screen and (max-width: 1000px) and (orientation: landscape){
-	.container-cache{
+	.item_shutter--circle{
 		height: 14rem;
 		width: 6.8rem;
 		min-width: 6.8rem;
 	}
 
-	.box-cache_small_top{
+	.item_shutter--top{
 		height: 2.1rem;
 		min-height: 2.1rem;
 	}
 
-	.box-cache_small{
+	.item_shutter--bottom{
 		height: 12.5rem;
 		width: 100%;
-	}
-
-	.container-global-cache{
-		overflow: hidden;
 	}
 }
 
 @media screen and (max-width: 600px){
-	.container-cache{
+	.item_shutter--circle{
 		height: 22rem;
 		width: 10.8rem;
 		min-width: 10.8rem;
 	}
 
-	.box-cache_small_top{
+	.item_shutter--top{
 		height: 3rem;
 		min-height: 3rem;
 	}

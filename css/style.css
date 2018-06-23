@@ -48,7 +48,7 @@ nav {
       font-size: 1.1rem;
       padding-top: 0.4rem; }
 
-.menu h3:hover {
+.nav_item:hover {
   border-bottom: solid 1px white; }
 
 .menu_container {
@@ -67,30 +67,21 @@ nav {
     display: none; } }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
-  .nav_phone {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    width: 100%; }
-    .nav_phone h3 {
-      margin-top: 0.5rem; }
-    .nav_phone img {
-      display: none; }
-  nav {
-    height: 3rem; } }
+  .nav_item {
+    font-size: 1rem; }
+  .svg_nav {
+    display: none; } }
 
 @media screen and (max-width: 600px) {
   .menu_container {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .menu img {
+  .menu .svg_nav {
     display: none; }
   .menu .skills_nav {
     margin-left: 1rem; }
-  .menu h3 {
+  .menu .nav_item {
     font-size: 0.9rem;
     padding-top: 0.4rem; } }
 
@@ -526,10 +517,10 @@ nav {
 .item_push-btn {
   width: 80px; }
 
-.sti2:active {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+.start-btn--active:active {
+  -webkit-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  transform: scale(0.92);
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
@@ -715,9 +706,9 @@ a {
 
 #show-arrow {
   opacity: 0.7;
-  -webkit-transition: opacity 0.5s 7s;
-  -o-transition: opacity 0.5s 7s;
-  transition: opacity 0.5s 7s; }
+  -webkit-transition: opacity 0.3s 8s;
+  -o-transition: opacity 0.3s 8s;
+  transition: opacity 0.3s 8s; }
 
 /* animations links */
 @-webkit-keyframes hvr-bob {
@@ -784,7 +775,7 @@ a {
   float: left;
   margin-right: 1rem; }
 
-.container-child-cache {
+.container-child-shutters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +784,7 @@ a {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.container-global-cache {
+.container_shutters {
   position: absolute;
   top: 0;
   left: 0;
@@ -802,7 +793,7 @@ a {
   height: 100vh;
   overflow: hidden; }
 
-.container-global-cache, .sous-container-global-cache {
+.container_shutters, .row-shutters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,10 +801,10 @@ a {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.box-cache {
+.item_shutter--black {
   background-color: black; }
 
-.container-cache {
+.item_shutter--circle {
   height: 450px;
   width: 225px;
   min-width: 225px;
@@ -822,27 +813,27 @@ a {
   margin: 0;
   padding: 0; }
 
-.box-cache_big {
+.item_shutter--big {
   width: 50vw;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
-.box-cache_small {
+.item_shutter--bottom {
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1; }
 
-.box-cache_small_top {
+.item_shutter--top {
   height: 223px;
   min-height: 223px;
   -ms-flex-negative: 1;
   flex-shrink: 1; }
 
-.sous-container-global-cache-left-active {
-  -webkit-animation-name: cache-slide-left;
-  animation-name: cache-slide-left;
+.row-shutter--left--active {
+  -webkit-animation-name: shutters-slide-left;
+  animation-name: shutters-slide-left;
   -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-in;
@@ -850,7 +841,7 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes cache-slide-left {
+@-webkit-keyframes shutters-slide-left {
   from {
     -webkit-transform: translateX(0vw);
     transform: translateX(0vw); }
@@ -859,7 +850,7 @@ a {
     transform: translateX(-55vw);
     z-index: -5; } }
 
-@keyframes cache-slide-left {
+@keyframes shutters-slide-left {
   from {
     -webkit-transform: translateX(0vw);
     transform: translateX(0vw); }
@@ -868,9 +859,9 @@ a {
     transform: translateX(-55vw);
     z-index: -5; } }
 
-.sous-container-global-cache-right-active {
-  -webkit-animation-name: cache-slide-right;
-  animation-name: cache-slide-right;
+.row-shutter--right--active {
+  -webkit-animation-name: shutters-slide-right;
+  animation-name: shutters-slide-right;
   -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-in;
@@ -878,7 +869,7 @@ a {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes cache-slide-right {
+@-webkit-keyframes shutters-slide-right {
   from {
     -webkit-transform: translateX(0vw);
     transform: translateX(0vw); }
@@ -887,7 +878,7 @@ a {
     transform: translateX(55vw);
     z-index: -5; } }
 
-@keyframes cache-slide-right {
+@keyframes shutters-slide-right {
   from {
     -webkit-transform: translateX(0vw);
     transform: translateX(0vw); }
@@ -895,33 +886,25 @@ a {
     -webkit-transform: translateX(55vw);
     transform: translateX(55vw);
     z-index: -5; } }
-
-.main-cache {
-  height: 100vh; }
-
-html {
-  overflow-x: hidden; }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
-  .container-cache {
+  .item_shutter--circle {
     height: 14rem;
     width: 6.8rem;
     min-width: 6.8rem; }
-  .box-cache_small_top {
+  .item_shutter--top {
     height: 2.1rem;
     min-height: 2.1rem; }
-  .box-cache_small {
+  .item_shutter--bottom {
     height: 12.5rem;
-    width: 100%; }
-  .container-global-cache {
-    overflow: hidden; } }
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
-  .container-cache {
+  .item_shutter--circle {
     height: 22rem;
     width: 10.8rem;
     min-width: 10.8rem; }
-  .box-cache_small_top {
+  .item_shutter--top {
     height: 3rem;
     min-height: 3rem; } }
 
@@ -1539,6 +1522,8 @@ footer {
   font-size: 2.3rem; }
 
 .title_2 {
+  letter-spacing: 5px;
+  text-indent: 5px;
   white-space: nowrap;
   font-family: 'Iceland', cursive;
   font-size: 3.3rem; }
@@ -1895,6 +1880,9 @@ footer {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  overflow-x: hidden; }
 
 body {
   color: #F1EDF7;
