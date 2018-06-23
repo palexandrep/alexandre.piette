@@ -30,3 +30,19 @@
 	background-color: white;
 	width: 0;
 }
+
+//------------------- media queries ------------------------------
+
+@media screen and (max-width: 1000px){
+
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+
+}
+
+@media screen and (max-width: 600px){
+	.item_skills--small{
+		padding: 0;
+	}
+}

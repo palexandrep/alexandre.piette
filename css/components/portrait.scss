@@ -45,3 +45,36 @@
 		transform: scale(1);
 	}
 }
+
+//---------------------- media queries -------------------------------------------
+
+
+//------------------- media queries ------------------------------
+
+@media screen and (max-width: 1000px){
+
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.img_portrait{
+		top: -16.4rem;
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.conatiner_portrait{
+		height: 1rem; 
+	}
+}
+
+@media screen and (max-width: 600px){
+	.conatiner_portrait{
+		height: 14rem; 
+	}
+
+	.img_portrait{
+		top: -12.9rem;
+		width: 8rem;
+		height: 8rem;
+	}
+}

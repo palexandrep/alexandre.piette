@@ -1,6 +1,6 @@
 //--------- animation title--------------------------------------
 
-.title--present {
+.title--arms {
 	height: 80px;
 	display: flex;
 	flex: 1;
@@ -11,7 +11,7 @@
 	}
 }
 
-.present{
+.arms{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -20,16 +20,23 @@
 	z-index: 5;
 }
 
+.title_1, .title_2{
+	text-align: center;
+}
+
 .title_1{
 	display: none;
 	white-space: nowrap;
+	font-family: 'Iceland', cursive;
+	font-weight: 100;
+	font-size: 2.3rem;
 }
 
 .title_2{
-	font-weight: 100;
+
 	white-space: nowrap;
-	font-family: "Blanka-Regular";
-	font-size: 2.8rem;
+	font-family: 'Iceland', cursive;
+	font-size: 3.3rem;
 }
 
 #title_1-active{
@@ -50,7 +57,7 @@
 		opacity: 1;
 	}
 	100%{
-		transform: translateX(9.5rem);
+		transform: translateX(10.2rem);
 		opacity: 1;
 	}
 }
@@ -73,7 +80,7 @@
 		opacity: 1;
 	}
 	100%{
-		transform: translateX(-10.5rem);
+		transform: translateX(-10rem);
 		opacity: 1;
 	}
 }
@@ -82,3 +89,53 @@
 	min-width: 0px;
 }
 
+//------------------------------------ media queries -------------------------------------------
+
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.title_1{
+		font-size: 1rem;
+	}
+	
+	.title_2{
+		font-size: 1.2rem;
+	}
+
+	@keyframes t-d-active{
+		100%{
+			transform: translateX(-18vw);
+			opacity: 1;
+		}
+	}
+
+	@keyframes t-g-active{
+		100%{
+			transform: translateX(37vw);
+			opacity: 1;
+		}
+	}
+}
+
+@media screen and (max-width: 600px){
+	.title_1{
+		font-size: 1.5rem;
+	}
+	
+	.title_2{
+		font-size: 2.2rem;
+	}
+
+	@keyframes t-d-active{
+		100%{
+			transform: translateX(-18.5vw);
+			opacity: 1;
+		}
+	}
+
+	@keyframes t-g-active{
+		100%{
+			transform: translateX(30.5vw);
+			opacity: 1;
+		}
+	}
+}

@@ -11,6 +11,8 @@
 	@import "components/skills.scss";
 	@import "components/title.scss";
 	@import "components/infos.scss";
+	@import "components/small-robot.scss";
+	@import "components/shutdown.scss";
 
 
 //--------------------- global-----------------------------------------
@@ -21,13 +23,9 @@
 
 body{
 	color: #F1EDF7;
-	font-family: 'Paytone One', sans-serif;
-	//font-family: 'Special Elite', cursive;
+	//font-family: 'Paytone One', sans-serif;
+	font-family: 'Iceland', cursive;
 	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
-}
-
-.section-container--size{
-	margin-bottom: 150px;
 }
 
 ul{
@@ -38,35 +36,49 @@ li{
 	list-style-type: none;
 }
 
-a{
-	color: #F1EDF7;
-	text-decoration: none;
-}
-
 .hidden{
 	display: none;
 }
 
-h1, h2, footer{
-	text-align: center;
-}
-
 header{
 	width: 100vw;
-	height: 100vh;
 	margin: auto;
+}
+
+.main-container{
+	font-size: 1.1rem;
+}
+
+
+//------------------------media queries
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	main{
+		background-image: none;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+
+	#canvas, .container_nav, .container-mechanisme-titre, .machine_container{
+		display: none;
+	}
+	section{
+		margin: 0;
+	}
 }
 
 //----------------------- main content ----------------------------
 
-.presentation{
+.container_main-content{
 	padding-bottom: 8rem;
 }
 
-.presentation h3{
+.container_main-content h3{
 	text-align: center;
 }
-.presentation section>ul,.avertissement{
+.container_main-content section>ul,.links_title--avertissement{
 	width: 55%;
 	margin: auto;
 	li{
@@ -74,38 +86,55 @@ header{
 	}
 }
 
-.presentation section, .presentation h3{
+.container_main-content section, .container_main-content h3{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
-.section--left{
+.box_main-content{
+	margin-bottom: 150px;
 	overflow: hidden;
 	opacity: 0;
-	transform: translateY(50px);
+	transform: translateY(60px);
+	position: relative;
+	z-index: 2
 }
 
-.section--right{
-	overflow: hidden;
-	opacity: 0;
-	transform: translateY(50px);
-}
-
-.show--left{
+.box_main-content--show{
 	opacity: 1;
 	transform: translateY(0px);
-	transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+	transition: opacity 0.8s ease-out, transform 0.6s ease-out;
 }
 
-.show--right{
-	opacity: 1;
-	transform: translateY(0px);
-	transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+//---------------------------- media queries
+
+@media screen and (max-width: 1000px){
+	.container_main-content section>ul,.links_title--avertissement{
+		width: 100%;
+		margin: 0;
+	}
+	section{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#links, #diplomes, #exp{
+		padding: 0 7vw;
+	}
+	
+	#comp ul{
+		justify-content: space-around;
+	
+		li{
+			padding: 2rem;
+		}
+	}
 }
 
 //---------------------------------------------------
 
-.avertissement{
+.links_title--avertissement{
 	font-size: 1.5rem;
 	padding-bottom: 2rem;
 }

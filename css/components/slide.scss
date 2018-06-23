@@ -82,3 +82,41 @@
 html {
  overflow-x: hidden;
 } 
+
+//------------------- media queries ------------------------------
+
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.container-cache{
+		height: 14rem;
+		width: 6.8rem;
+		min-width: 6.8rem;
+	}
+
+	.box-cache_small_top{
+		height: 2.1rem;
+		min-height: 2.1rem;
+	}
+
+	.box-cache_small{
+		height: 12.5rem;
+		width: 100%;
+	}
+
+	.container-global-cache{
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.container-cache{
+		height: 22rem;
+		width: 10.8rem;
+		min-width: 10.8rem;
+	}
+
+	.box-cache_small_top{
+		height: 3rem;
+		min-height: 3rem;
+	}
+}

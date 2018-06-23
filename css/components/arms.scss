@@ -1,4 +1,4 @@
-.Present {
+.container_arms {
 	display: flex;
     flex-direction: column;
     position: relative;
@@ -8,7 +8,7 @@
 	}
 }
 
-.Present-row {
+.arms-row {
 	display: flex;
 	&:first-child {
 		& .container_manche:after {
@@ -148,7 +148,7 @@
 	overflow: hidden;
 }
 
-.piston_dis{
+.piston_hidden{
 	animation-name: dissapear;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in;

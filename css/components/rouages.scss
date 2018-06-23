@@ -280,3 +280,33 @@
 		transform: rotate(0deg);
 	}
 }
+
+//---------------------- media queries -------------------------------------------
+
+
+@media screen and (max-width: 1000px){
+	.clock_animate{
+		width: 85px;
+		height: 85px;
+		transform-origin: center;
+		margin-left: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	#rouage_portrait{
+		width: 13rem;
+		top: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.clock_animate{
+		margin-left: 1.9rem;
+	}
+
+	#rouage_portrait{
+		width: 20rem;
+		top: 4rem;
+	}
+}

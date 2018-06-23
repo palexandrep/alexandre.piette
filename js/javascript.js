@@ -2,11 +2,11 @@
 
 	// next patch --> switch to js and change animation method for the robot
 
-	$(".push_btn").on("click", function () {
+	$(".item_push-btn").on("click", function () {
 
 		//--------------- nav ----------------------
 
-		$('nav section').removeClass('hidden');
+		$('nav li').removeClass('hidden');
 
 		//--------------- shutters -------------------
 
@@ -14,7 +14,7 @@
 		$('.sous-container-global-cache-right').addClass("sous-container-global-cache-right-active");
 
 		$('main').removeClass("main-cache");
-		$('.presentation').removeClass("hidden");
+		$('.container_main-content').removeClass("hidden");
 
 		function cacheHide() {
 			$('.container-global-cache').addClass('hidden');
@@ -22,7 +22,6 @@
 		setTimeout(cacheHide, 7800);
 
 		//--------------- clock -------------------
-
 
 		$('.circle_extern').addClass("circle_extern_rotate");
 		$('.img_portrait').addClass("image_portrait_fade-in");
@@ -42,13 +41,13 @@
 
 		//--------------- arms ------------------
 
-		$('.Present').removeClass('hidden');
+		$('.container_arms').removeClass('hidden');
 		$('.container-manche-g').addClass('container-manche-g-active');
 		$('.container-manche-d').addClass('container-manche-d-active');
 		$('.title_1').attr('id', 'title_1-active');
 		$('.title_2').addClass('title_2-active');
 		$('.manche-d-roll').addClass('manche-d-roll-down');
-		$('#piston').addClass("piston_dis");
+		$('#piston').addClass("piston_hidden");
 
 		function pinceG() {
 			$('.arm-left').attr('src', 'images/manche_g.svg');
@@ -69,16 +68,21 @@
 
 		//-------------------- btn ------------------
 
-		$('.push_btn').addClass('push_btn_disable');
+		$('.container_push-btn').addClass('push_btn_disable');
 		function pushHidden() {
-			$('.push_btn').addClass('hidden');
+			$('.container_push-btn').addClass('hidden');
 		}
 		setTimeout(pushHidden, 2000);
 
 		$('.slide-down-arrow').attr('id','show-arrow');
+
+
+		
 		$('#yeux').removeClass("hidden");
 
 	});
+
+	//---------------------- info robot ----------------------------------------------------------------
 
 	$(document).ready(function () {
 
@@ -100,6 +104,9 @@
 		});
 	});
 
+
+
+
 	$('.img_portrait').mouseover(function (event) {
 		event.stopPropagation();
 		$(this).attr('src', 'images/alex_bright.jpg');
@@ -110,6 +117,8 @@
 	});
 
 	var skillsWidth = $('.skills li');
+
+	//---------------------------------------- skills -------------------------------------
 
 	skillsWidth.mouseover(function () {
 
@@ -176,16 +185,16 @@
 			var scrollDocument = window.pageYOffset || document.documentElement.scrollTop;
 
 			if($('#comp').hasClass('unseen') && scrollDocument > compSectionScrollVal){
-				$('#comp').removeClass('unseen').addClass('show--left');
+				$('#comp').removeClass('unseen').addClass('box_main-content--show');
 			}
 			else if($('#links').hasClass('unseen') && scrollDocument > linksSectionScrollVal){
-				$('#links').removeClass('unseen').addClass('show--left');
+				$('#links').removeClass('unseen').addClass('box_main-content--show');
 			}
 			else if($('#diplomes').hasClass('unseen') && scrollDocument > diplomesSectionScrollVal){
-				$('#diplomes').removeClass('unseen').addClass('show--left');
+				$('#diplomes').removeClass('unseen').addClass('box_main-content--show');
 			}
 			else if($('#exp').hasClass('unseen') && scrollDocument > expSectionScrollVal){
-				$('#exp').removeClass('unseen').addClass('show--left');
+				$('#exp').removeClass('unseen').addClass('box_main-content--show');
 			}
 		},
 

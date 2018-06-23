@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 	<title>Portfolio Alexandre Piette</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Bangers|Nothing+You+Could+Do|Paytone+One|Special+Elite" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Paytone+One|Gruppo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Iceland" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
 </head>
@@ -47,7 +48,7 @@
 
 		<div class="main-container">
 
-			<header>
+			<header class="container-header">
 				<div class="machine_container">
 					<div id="animation_container">
 						<canvas id="canvas" class="over_item_info" data-info="Hello user, i am your assistant. Can i help you?"></canvas>
@@ -61,45 +62,43 @@
 					</div>
 
 					<div class="menu_container">
-						<div class="menu">
+						<ul class="menu">
 
-							<section class="hidden">
-								<a href="#comp">
-									<h3 class="over_item_info skills_nav" data-info="Do you want me to scroll you to the skills section?">SKILLS</h3>
+							<li class="hidden">
+								<a href="#comp" class="nav-link_item">
+									<h3 class="over_item_info nav_item skills_nav" data-info="Do you want me to scroll you to the skills section?">SKILLS</h3>
 									<img src="images/skills.svg" alt="Skills icon" class=" svg_nav">
 								</a>
-							</section>
+							</li>
 
-							<section class="hidden">
-								<a href="#links">
-									<h3 class="over_item_info links_nav" data-info="Do you want me to scroll you to the links section?">LINKS</h3>
+							<li class="hidden">
+								<a href="#links" class="nav-link_item">
+									<h3 class="over_item_info nav_item links_nav" data-info="Do you want me to scroll you to the links section?">LINKS</h3>
 									<img src="images/links.svg" alt="liens icon" class="svg_nav">
 								</a>
-							</section>
+							</li>
 
-							<section class="hidden">
-								<a href="#diplomes">
-									<h3 class="over_item_info diploma_nav" data-info="Do you want me to scroll you to the diplome section?">DIPLOMA</h3>
+							<li class="hidden">
+								<a href="#diplomes" class="nav-link_item">
+									<h3 class="over_item_info nav_item diploma_nav" data-info="Do you want me to scroll you to the diplome section?">DIPLOMA</h3>
 									<img src="images/diplome.svg" alt="Diplôme icon" class="svg_nav">
 								</a>
-							</section>
+							</li>
 
-							<section class="hidden">
-								<a href="#exp">
-									<h3 class="over_item_info exp_nav" data-info="Do you want me to scroll you to the experiences section?">EXPERIENCES</h3>
+							<li class="hidden">
+								<a href="#exp" class="nav-link_item">
+									<h3 class="over_item_info nav_item exp_nav" data-info="Do you want me to scroll you to the experiences section?">EXPERIENCES</h3>
 									<img src="images/xp.svg" alt="Experiences icon" class="svg_nav svg_nav-xp">
 								</a>
-							</section>
+							</li>
 
-						</div>
+						</ul>
 					</div>
-					<img src="images/nav_decoration.svg" class="nav_decoration" alt="">
 				</nav>
 
-				<div class="push_btn">
+				<div class="container_push-btn">
 					<p>PUSH TO LAUNCH</p>
-
-					<svg class="clock_animate" version="1.1" id="btn-open-gates" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					<svg class="item_push-btn" version="1.1" id="btn-open-gates" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 					 x="0px" y="0px" viewBox="498 218.2 308.9 309.9" style="enable-background:new 498 218.2 308.9 309.9;" xml:space="preserve">
 						<style type="text/css">
 							.st0 {
@@ -139,12 +138,10 @@
 					C733.4,379.6,726.5,386.5,718.1,386.5z" />
 						</g>
 					</svg>
-
 				</div>
 
-
 				<div class="conatiner_portrait">
-					<img class="img_portrait over_item_info" src="images/alex.jpg" alt="Alexandre Piette" data-info="Let me present you my Maker!">
+					<img class="img_portrait over_item_info" src="images/alex.jpg" alt="Alexandre Piette" data-info="Let me arms you my Maker!">
 
 					<svg version="1.1" id="rouage_portrait" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
 					 y="0px" viewBox="151 -35.1 897 911" style="enable-background:new 151 -35.1 897 911;" xml:space="preserve">
@@ -649,10 +646,10 @@
 					</svg>
 
 				</div>
-				<div class="Present hidden">
-					<div class="Present-row">
-						<div class="title title--present over_item_info" data-info="What a beautiful name...">
-							<h1 class="title_1">ALEXANDRE PIETTE</h1>
+				<div class="container_arms hidden">
+					<div class="arms-row">
+						<div class="title title--arms over_item_info" data-info="What a beautiful name...">
+							<h1 class="title_1">Alexandre Piette</h1>
 						</div>
 						<div class="container_manches">
 							<div class="container_manche container-manche-d">
@@ -660,20 +657,16 @@
 							</div>
 						</div>
 					</div>
-					<div class="Present-row">
+					<div class="arms-row">
 						<div class="container_manches">
 							<div class="container_manche container-manche-g">
 								<img src="images/manche_g2.svg" class="arms arm-left" alt="manche">
 							</div>
 						</div>
-						<div class="title title--present over_item_info" data-info="Do you need his services?">
+						<div class="title title--arms over_item_info" data-info="Do you need his services?">
 							<div class="box-title_2">
-								<h2 class="title_2">
-									F R O N T - E N D
-								</h2>
-								<h2 class="title_2">
-									U I / U X
-								</h2>
+								<h2 class="title_2">F R O N T - E N D</h2>
+								<h2 class="title_2">U I / U X</h2>
 							</div>
 						</div>
 					</div>
@@ -684,129 +677,129 @@
 
 			</header>
 
-			<div class="presentation hidden">
+			<div class="container_main-content hidden">
 
-				<section id="comp" class="section-container--size section--left unseen">
+				<section id="comp" class="box_main-content unseen">
 					<div class="box_title title">
 						<img src="images/skills.svg" alt="Skills icon" class="rouage_title  over_item_info" data-info="Error error error...">
 					</div>
 					<ul class='skills'>
-						<li data-width="5" class="over_item_info" data-info="Semantic:  of or relating to meaning or arising from distinctions between the meanings of different words or symbols.">
+						<li data-width="5" class="over_item_info item_skills--small" data-info="Semantic:  of or relating to meaning or arising from distinctions between the meanings of different words or symbols.">
 							HTML 5
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="5">CSS 3
+						<li data-width="5" class="item_skills--small">CSS 3
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5" class="over_item_info" data-info="console.log( 'Hello world' );">Js
+						<li data-width="4.5" class="over_item_info item_skills--small" data-info="console.log( 'Hello world' );">Js
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4" data-width="5" class="over_item_info" data-info="Hi you!">UI
+						<li data-width="4" data-width="5" class="over_item_info item_skills--small" data-info="Hi you!">UI
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4">UX
+						<li data-width="4" class="item_skills--small">UX
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3">PHP
+						<li data-width="3" class="item_skills--small">PHP
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3">AJAX
+						<li data-width="3" class="item_skills--small">AJAX
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5">jQuery
+						<li data-width="4.5" class="item_skills--small">jQuery
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3.5">Vue JS
+						<li data-width="3.5" class="item_skills--small">Vue JS
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5">Wordpress
+						<li data-width="4.5" class="item_skills--small">Wordpress
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4">Photoshop
+						<li data-width="4" class="item_skills--small">Photoshop
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5">Illustrator
+						<li data-width="4.5" class="item_skills--small">Illustrator
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3.5">Indesign
+						<li data-width="3.5" class="item_skills--small">Indesign
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3.5">SASS
+						<li data-width="3.5" class="item_skills--small">SASS
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5" class="over_item_info" data-info=".gitignore">git
+						<li data-width="4.5" class="over_item_info item_skills--small" data-info=".gitignore">git
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="3.5">npm
+						<li data-width="3.5" class="item_skills--small">npm
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4.5">Responsive
+						<li data-width="4.5" class="item_skills--small">Responsive
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4">Drawning
+						<li data-width="4" class="item_skills--small">Drawning
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="4">React js
+						<li data-width="4" class="item_skills--small">React js
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
 							</div>
 						</li>
-						<li data-width="2" class="over_item_info" data-info="Poum tchak poum poum tchak!">Bass
+						<li data-width="2" class="over_item_info item_skills--small" data-info="Poum tchak poum poum tchak!">Bass
 							<div>
 								<div class="full"></div>
 								<div class="empty"></div>
@@ -816,13 +809,13 @@
 					</ul>
 				</section>
 
-				<section id="links" class="section-container--size section--right unseen">
+				<section id="links" class="box_main-content section--right unseen">
 
 					<div class="box_title">
 						<img src="images/links.svg" alt="links icon" class="rouage_title over_item_info" data-info="Welcome to the Links section. Why dont you take a drink while you're visiting?">
 					</div>
 
-					<p class="avertissement">Remember, those links are exercises created during my training.</p>
+					<p class="links_title--avertissement">Remember, those links are exercises created during my training.</p>
 
 					<ul>
 
@@ -867,7 +860,7 @@
 
 				</section>
 
-				<section id="diplomes" class="section-container--size section--left unseen">
+				<section id="diplomes" class="box_main-content unseen">
 					<div class="box_title">
 						<img src="images/diplome.svg" alt="icon diplôme" class="rouage_title over_item_info" data-info="Achievement Unlocked!">
 					</div>
@@ -886,7 +879,7 @@
 					</ul>
 				</section>
 
-				<section id="exp" class="section-container--size section--right unseen">
+				<section id="exp" class="box_main-content section--right unseen">
 					<div class="box_title">
 						<img src="images/xp.svg" alt="Experiences icon" class="exp_title over_item_info" data-info="LVL UP!">
 					</div>
@@ -912,13 +905,23 @@
 					</ul>
 				</section>
 
+				<div class="container_shutdown">
+					<p class="item_shutdown-texte">[ Shutdown</p>
+					<ul class="box_shutdown-point">
+						<li class="item_shutdown-point"></li>
+						<li class="item_shutdown-point"></li>
+						<li class="item_shutdown-point"></li>
+					</ul>
+					<p>]</p>
+				</div>
+
 			</div>
 		</div>
 
 	</main>
 
 	<footer class="hidden">
-		<p>@ Alexandre Piette 2017</p>
+
 		<svg version="1.1" id="yeux" class="over_item_info hidden" data-info="Dont talk to him, he has fully blacked out!" xmlns="http://www.w3.org/2000/svg"
 		 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 611 514" style="enable-background:new 0 0 611 514;"
 		 xml:space="preserve">
@@ -995,6 +998,8 @@
 				<circle id="XMLID_6_" class="stu3" cx="285.5" cy="295.1" r="35.3" />
 			</g>
 		</svg>
+		<p class="footer-info">@ Alexandre Piette 2017</p>
+
 	</footer>
 
 </body>

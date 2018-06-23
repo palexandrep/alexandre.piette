@@ -2,37 +2,8 @@
 
 //------------------------------------ media queries ------------------------------------------------
 
-@media screen and (max-width: 1000px){
 
-
-	.clock_animate{
-		width: 85px;
-		height: 85px;
-		transform-origin: center;
-		margin-left: 1.7rem;
-	}
-
-	.presentation section>ul,.avertissement{
-		width: 100%;
-		margin: 0;
-	}
-
-	section{
-		margin: 0;
-	}
-
-	section>ul{
-		margin: 0 !important;
-	}
-
-	.nav_decoration{
-		display: none;
-	}
-}
-
-//------------------------------------------------------------------------------------
-
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape){
 
 	.slide-down-arrow_box{
 		display: none;
@@ -42,72 +13,9 @@
 		background-image: none;
 	}
 
-	.container-cache{
-		height: 14rem;
-		width: 6.8rem;
-		min-width: 6.8rem;
-	}
-
-	.box-cache_small_top{
-		height: 2.1rem;
-		min-height: 2.1rem;
-	}
-
-	.box-cache_small{
-		height: 12.5rem;
-		width: 100%;
-	}
-
-	.container-global-cache{
-		overflow: hidden;
-	}
-	
-	.nav_phone{
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-		h3{
-			margin-top: 0.5rem;
-		}
-		img{
-			display: none;
-		}
-	}
-
 	#animation_container{
 		width: 30px;
 		left: -5rem;
-	}
-
-	.img_portrait{
-		top: -16.4rem;
-		width: 5rem;
-		height: 5rem;
-	}
-	
-	#rouage_portrait{
-		width: 13rem;
-		top:  2.5rem;
-	}
-
-	.title_1{
-		font-size: 1rem;
-	}
-
-	.title_2{
-		font-size: 1.2rem;
-	}
-
-	.conatiner_portrait{
-		height: 1rem; 
-	}
-
-	nav{
-		height: 3rem;
-	}
-
-	footer{
-		padding-top: 2rem;
 	}
 
 	.section>ul, .skills, section>div, section>p{
@@ -118,23 +26,8 @@
 		border: solid 1px rgba(0,0,0,0);
 	}
 
-	section{
-		position: relative;
-		z-index: 2;
-	}
-
-	@keyframes t-d-active{
-		100%{
-			transform: translateX(-18vw);
-			opacity: 1;
-		}
-	}
-
-	@keyframes t-g-active{
-		100%{
-			transform: translateX(37vw);
-			opacity: 1;
-		}
+	main{
+		background-image: none;
 	}
 }
 
@@ -142,32 +35,6 @@
 
 @media screen and (max-width: 600px){
 
-	main{
-		background-image: none;
-	}
-
-	#canvas, .container_nav, .container-mechanisme-titre, .machine_container{
-		display: none;
-	}
-
-	.menu{
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-
-		img{
-			display: none;
-		}
-
-		.skills_nav{
-			margin-left: 1rem;
-		}
-			
-		h3{
-			font-size: 0.9rem;
-			padding-top: 0.4rem;
-		}
-	}
 
 	#comp li{
 		padding: 0rem;
@@ -177,80 +44,13 @@
 		width: 100%;
 	}
 
-	.presentation section>ul,.avertissement{
+	.container_main-content section>ul,.links_title--avertissement{
 		width: 100%;
-		margin: 0;
+		margin-bottom: 2rem;
 	}
 
-	section{
-		margin: 0;
+	main{
+		background-image: none;
 	}
 
-	section>ul{
-		margin: 0 !important;
-	}
-
-	#rouage_portrait{
-		width: 20rem;
-		top: 4rem;
-	}
-
-	.conatiner_portrait{
-		height: 14rem; 
-	}
-
-	.img_portrait{
-		top: -12.9rem;
-		width: 8rem;
-		height: 8rem;
-	}
-
-	.clock_animate{
-		margin-left: 1.9rem;
-	}
-
-	.title_1{
-		font-size: 1.3rem;
-	}
-
-	.title_2{
-		font-size: 1.5rem;
-	}
-
-	#links, #diplomes, #exp{
-		padding: 0 7vw;
-	}
-
-	#comp ul{
-		justify-content: space-around;
-
-		li{
-			padding: 2rem;
-		}
-	}
-
-	@keyframes t-d-active{
-		100%{
-			transform: translateX(-25vw);
-			opacity: 1;
-		}
-	}
-
-	@keyframes t-g-active{
-		100%{
-			transform: translateX(25vw);
-			opacity: 1;
-		}
-	}
-
-	.container-cache{
-		height: 22rem;
-		width: 10.8rem;
-		min-width: 10.8rem;
-	}
-
-	.box-cache_small_top{
-		height: 3rem;
-		min-height: 3rem;
-	}
 }
