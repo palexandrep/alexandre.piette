@@ -1,25 +1,23 @@
-.skills li:hover{
+.item_skills--small:hover{
 	border: 1px solid white;
 }
-.skills li{
+.item_skills--small{
 	text-align: center;
 	border: solid 1px rgba(0,0,0,0);
-	padding: 1rem;
 }
 
-.skills{
+.skills-list{
 	padding: 0 2vw;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-#links, #diplomes, #exp{
-	padding: 0 10vw;
-}
-
-.skills li>div:hover{
+.item_skills--small>div:hover{
 	border: 1px solid white;
 }
 
-.skills li>div{
+.item_skills--small>div{
 	margin-top: 1.2rem;
 	border: 1px solid white;
 	width: 5rem;
@@ -29,6 +27,14 @@
 	height: 0.8rem;
 	background-color: white;
 	width: 0;
+}
+#comp li{	
+	padding: 4rem;
+}
+
+.links_title--avertissement{
+	font-size: 1.5rem;
+	padding-bottom: 2rem;
 }
 
 //------------------- media queries ------------------------------
@@ -44,5 +50,13 @@
 @media screen and (max-width: 600px){
 	.item_skills--small{
 		padding: 0;
+	}
+
+	#comp ul{
+		justify-content: space-around;
+	
+		li{
+			padding: 2rem;
+		}
 	}
 }

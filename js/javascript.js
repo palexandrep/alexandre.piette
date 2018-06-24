@@ -116,14 +116,15 @@
 		event.stopPropagation();
 		$(this).attr('src', 'images/alex_bright.jpg');
 	});
+	
 	$('.img_portrait').mouseout(function (event) {
 		event.stopPropagation();
 		$(this).attr('src', 'images/alex.jpg');
 	});
 
-	var skillsWidth = $('.skills li');
-
 	//---------------------------------------- skills -------------------------------------
+
+	var skillsWidth = $('.item_skills--small');
 
 	skillsWidth.mouseover(function () {
 
@@ -140,6 +141,8 @@
 
 	});
 
+	//--------------------------- scroll --------------------------------------
+
 	$('a[href^="#"]').click(function () {
 		var the_id = $(this).attr("href");
 
@@ -148,8 +151,6 @@
 		}, 'slow');
 		return false;
 	});
-
-	//--------------------------- scroll --------------------------------------
 
 		//Scroll-------------- js
 			//timer du scroll

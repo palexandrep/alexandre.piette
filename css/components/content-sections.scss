@@ -1,0 +1,81 @@
+//----------------------- main content ----------------------------
+
+.container_main-content{
+	padding-bottom: 8rem;
+}
+
+
+.container_main-content section>ul,.links_title--avertissement{
+	width: 55%;
+	margin: auto;
+	li{
+		padding: 1rem 0;
+	}
+}
+
+.container_main-content section{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.box_main-content{
+	margin-bottom: 150px;
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(60px);
+	position: relative;
+	z-index: 2
+}
+
+.box_main-content--show{
+	opacity: 1;
+	transform: translateY(0px);
+	transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+}
+
+#links, #diplomes, #exp{
+	padding: 0 10vw;
+}
+
+//---------------------------------------------------
+
+.box_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4rem;
+}
+
+.container-expositions-list{
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+}
+
+.expositions-list{
+	margin: 0 15px;
+}
+
+.exp_title{
+	width: 2.5rem;
+	padding: 3rem 0;
+}
+
+//---------------------------- media queries
+
+@media screen and (max-width: 1000px){
+	.container_main-content section>ul,.links_title--avertissement{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.box_title, .links_title--avertissement{
+		padding: 4rem 0;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#links, #diplomes, #exp{
+		padding: 0 7vw;
+	}
+}

@@ -54,10 +54,6 @@
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
-	#canvas{
-		display: block;
-		transform: scale(0.5) translateY(-36rem) translateX(-22rem);
-	}
 	
 	@keyframes robot-fade-in{
 		from{

@@ -1,5 +1,17 @@
 .item_push-btn{
-	width:  80px;
+	width:  70px;
+	animation-name: push-btn-rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+}
+@keyframes push-btn-rotate{
+	form{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
 }
 
 .start-btn--active:active{
@@ -10,8 +22,8 @@
 
 .container_push-btn{
 	position: absolute;
-	top: 5rem;
-	left: 10rem;
+	top: 358px;;
+	left: calc(50vw - 60px);
 	transform: translateX (35px);
 	z-index: 55;
 	display: flex;
@@ -41,21 +53,18 @@
 
 @media screen and (max-width: 1000px){
 	.container_push-btn{
-		left: calc(50vw - 60px);
 		top: 22.3rem;
 	}
 }
 
 @media only screen and (max-width: 1000px) and (orientation: landscape){
 	.container_push-btn{
-		left: calc(50vw - 60px);
-		top: 3.5rem;
+		top: 72px;
 	}
 }
 
 @media screen and (max-width: 600px){
 	.container_push-btn{
-		left: calc(50vw - 60px);
-		top: 132px;;
+		top: 136px;
 	}
 }
