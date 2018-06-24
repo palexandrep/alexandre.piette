@@ -1,0 +1,128 @@
+.title--arms {
+  height: 80px;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title--arms:last-child {
+  justify-content: flex-start;
+}
+
+.arms {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.title_1, .title_2 {
+  text-align: center;
+}
+
+.title_1 {
+  animation-name: t-g-active;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  display: block;
+  opacity: 0;
+  white-space: nowrap;
+  font-family: 'Iceland', cursive;
+  font-weight: 100;
+  font-size: 2.3rem;
+}
+
+.title_2 {
+  letter-spacing: 5px;
+  text-indent: 5px;
+  white-space: nowrap;
+  font-family: 'Iceland', cursive;
+  font-size: 3.3rem;
+}
+
+@keyframes t-g-active {
+  0% {
+    transform: translateX(70rem);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10.5rem);
+    opacity: 1;
+  }
+}
+
+.title_2-active {
+  animation-name: t-d-active;
+  animation-duration: 3s;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes t-d-active {
+  0% {
+    transform: translateX(-100rem);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-10rem);
+    opacity: 1;
+  }
+}
+
+.box-title_2 {
+  min-width: 0px;
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .title_1 {
+    font-size: 1rem;
+  }
+  .title_2 {
+    font-size: 1.2rem;
+  }
+  @keyframes t-d-active {
+    100% {
+      transform: translateX(-18vw);
+      opacity: 1;
+    }
+  }
+  @keyframes t-g-active {
+    100% {
+      transform: translateX(37vw);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title_1 {
+    font-size: 1.5rem;
+  }
+  .title_2 {
+    font-size: 2.2rem;
+  }
+  @keyframes t-d-active {
+    100% {
+      transform: translateX(-18.5vw);
+      opacity: 1;
+    }
+  }
+  @keyframes t-g-active {
+    100% {
+      transform: translateX(30.5vw);
+      opacity: 1;
+    }
+  }
+}
+/*# sourceMappingURL=title.css.map */
