@@ -1,0 +1,90 @@
+//------------------- info bubble ----------------
+
+.info_robot{
+	background-color: #F1EDF7;
+	border-radius: 3px;
+	padding: 0rem;
+	position: fixed;
+	top: 3rem;
+	left: 20rem;
+	padding: 0.1rem 1rem;
+	display: none;
+	opacity: 0;
+	z-index: 40;
+	width: 8rem;
+	z-index: 25;
+	p{
+		text-align: center;
+		color: black;
+		margin: 0.4rem 0rem;
+		font-size: 1.2rem;
+	}
+}
+
+.info_robot-fade-in{
+	animation-name: info_fade-in;
+	animation-timing-function: ease-in;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
+}
+
+@keyframes info_fade-in{
+	0%{
+        opacity: 0;
+        transform: scale(0.8);
+	}
+	20%{
+        opacity: 1;
+        transform: scale(1.1);
+	}
+	80%{
+        opacity: 1;
+        transform: scale(1);
+	}
+	100%{
+        opacity: 0;
+        transform: scale(0.8);
+	}
+}
+
+.info_robot-fade-in-out{
+	animation-name: info_fade-in;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+@keyframes info_fade-in{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+//-------------------- media queries -------------------------------------
+
+
+@media screen and (max-width: 1700px){
+	.info_robot{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.info_robot{
+		display: block;
+		left: 3rem;
+		top: 13rem;
+		font-size: 0.7rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.info_robot{
+		display: none !important;
+	}
+}

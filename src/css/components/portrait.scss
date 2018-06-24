@@ -1,0 +1,80 @@
+.conatiner_portrait{
+	position: relative;
+	margin: 0 0 8rem 0;
+	text-align: center;
+	z-index: 1;
+}
+
+.img_portrait{
+	border-radius: 500px;
+	max-width: 10rem;
+	margin-top: 23rem;
+	position: relative;
+	z-index: 2;
+	border: solid 4px black;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 500px;
+	background-color: white;
+	opacity: 0;
+}
+
+.image_portrait_fade-in{
+	animation-name: fade-in_portrait;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.8s;
+}
+
+@keyframes fade-in_portrait{
+	0%{
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	40%{
+		opacity: 0.5;
+		transform: scale(1.05);
+	}
+	80%{
+		opacity: 1;
+		transform: scale(0.95);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+//---------------------- media queries -------------------------------------------
+
+
+//------------------- media queries ------------------------------
+
+@media screen and (max-width: 1000px){
+
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.img_portrait{
+		top: -15.4rem;
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.conatiner_portrait{
+		height: 1rem; 
+	}
+}
+
+@media screen and (max-width: 600px){
+	.conatiner_portrait{
+		height: 14rem; 
+	}
+
+	.img_portrait{
+		top: -12.9rem;
+		width: 8rem;
+		height: 8rem;
+	}
+}

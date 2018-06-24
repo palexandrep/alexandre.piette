@@ -1,0 +1,19 @@
+footer{
+	margin: 0;
+	padding: 1.5rem;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-info{
+	font-size: 1.2rem;
+}
+
+//--------------------------------- media queries -----------------------------------
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	footer{
+		padding-top: 2rem;
+	}
+}

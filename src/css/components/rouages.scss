@@ -1,0 +1,310 @@
+.rouage_title{
+	width: 4rem;
+	padding: 3rem 0;
+}
+
+#rouage_portrait{
+	position: absolute;
+	width: 27rem;
+	top: 14.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.smaller{
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-name: smallerB;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+
+	@keyframes smallerB{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.88);
+
+	}
+}
+
+.cercle_interne{
+	transform: scale(1.7);
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+
+}
+.active_cercle_interne{
+	
+	fill:#0F0F0F;
+	animation-name: smaller;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+	animation-delay: 3s;
+
+}
+@keyframes smaller{
+	0%{
+		transform: scale(1.7);
+	}
+	30%{
+		transform: scale(0.98);
+	}
+	40%{
+		transform: scale(1.03);
+	}
+	100%{
+		transform: scale(1);
+
+	}
+}
+
+.rouage_title{
+	width: 2.5rem;
+
+}
+
+//-------------------------------------------------------------------------------- clock
+
+.rotate_cercle_interne{
+	animation-name: clock_intern_rotation;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-delay:1s;
+	
+}
+@keyframes clock_intern_rotation{
+	0%{
+		transform: rotate(360deg) scale(1);
+		fill: #0F0F0F;
+
+	}
+
+	100%{
+		transform: rotate(0deg) scale(1);
+		fill: #0F0F0F;
+
+	}
+}
+
+
+.circle_extern_rotate{
+	animation-name: clock_rotation;
+	animation-timing-function: steps(60, end);
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-duration: 120s;
+	animation-iteration-count: infinite;
+	animation-delay: 2.5s;
+	fill: #0F0F0F;
+}
+@keyframes clock_rotation{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_1, .active_2, .active_3, .active_4, .active_5,
+ .active_6, .active_7, .active_8, .active_9, .active_10{
+
+	animation-timing-function: linear;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-iteration-count: infinite;
+	animation-delay: 5.5s;
+ } 
+
+
+.active_1{
+	animation-name: clock_rotation_clock_1;
+	animation-duration: 10s;
+}
+@keyframes clock_rotation_clock_1{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_2{
+	animation-name: clock_rotation_clock_2;
+	animation-duration: 30s;
+
+}
+@keyframes clock_rotation_clock_2{
+	0%{
+		transform: rotate(360deg);
+		opacity: 1;
+	}
+
+	100%{
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+}
+
+.active_3{
+	animation-name: clock_rotation_clock_3;
+	animation-duration: 7s;
+
+}
+@keyframes clock_rotation_clock_3{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_4{
+	animation-name: clock_rotation_clock_4;
+	animation-duration: 8.5s;
+}
+@keyframes clock_rotation_clock_4{
+	0%{
+		transform: rotate(0deg);	
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_5{
+	animation-name: clock_rotation_clock_5;
+	animation-duration: 12s;
+
+}
+@keyframes clock_rotation_clock_5{
+	0%{
+		transform: rotate(0deg);
+		
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_6{
+	animation-name: clock_rotation_clock_6;
+	animation-duration: 17s;
+
+}
+@keyframes clock_rotation_clock_6{
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.active_7{
+	animation-name: clock_rotation_clock_7;
+	animation-duration: 13s;
+
+}
+@keyframes clock_rotation_clock_7{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_8{
+	animation-name: clock_rotation_clock_8;
+
+	animation-duration: 10s;
+}
+@keyframes clock_rotation_clock_8{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.active_9{
+	animation-name: clock_rotation_clock_9;
+	animation-duration: 18s;
+}
+
+@keyframes clock_rotation_clock_9{
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.rond-central{
+	animation-name: central-rot;
+	animation-duration: 18s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation-timing-function: linear;
+}
+
+@keyframes central-rot{
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+//---------------------- media queries -------------------------------------------
+
+
+@media screen and (max-width: 1000px){
+	.clock_animate{
+		width: 85px;
+		height: 85px;
+		transform-origin: center;
+		margin-left: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	#rouage_portrait{
+		width: 13rem;
+		top: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.clock_animate{
+		margin-left: 1.9rem;
+	}
+
+	#rouage_portrait{
+		width: 20rem;
+		top: 4rem;
+	}
+}
