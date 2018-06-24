@@ -1,0 +1,72 @@
+//TEST
+
+.item_push-btn{
+	width:  70px;
+	animation-name: push-btn-rotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+}
+@keyframes push-btn-rotate{
+	form{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.start-btn--active:active{
+	transform: scale(0.92);
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+}
+
+.container_push-btn{
+	position: absolute;
+	top: 358px;;
+	left: calc(50vw - 60px);
+	transform: translateX (35px);
+	z-index: 55;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 120px;
+	white-space: nowrap;
+}
+
+.push_btn_disable{
+	animation-name: start-btn_fade-out;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes start-btn_fade-out{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		display: none;
+	}
+}
+
+//------------------- media queries ------------------------------
+
+@media screen and (max-width: 1000px){
+	.container_push-btn{
+		top: 22.3rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+	.container_push-btn{
+		top: 72px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.container_push-btn{
+		top: 136px;
+	}
+}

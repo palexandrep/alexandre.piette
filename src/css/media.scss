@@ -1,0 +1,47 @@
+
+
+//------------------------------------ media queries ------------------------------------------------
+
+
+@media only screen and (max-width: 1000px) and (orientation: landscape){
+
+	.slide-down-arrow_box{
+		display: none;
+	}
+
+	main{
+		background-image: none;
+	}
+
+	#animation_container{
+		width: 30px;
+		left: -5rem;
+	}
+
+	.section>ul, .skills, section>div, section>p{
+		padding-left: 30vw;
+	}
+
+	.skills li:hover{
+		border: solid 1px rgba(0,0,0,0);
+	}
+}
+
+//------------------------------------------------------------------------------------
+
+@media screen and (max-width: 600px){
+
+
+	#comp li{
+		padding: 0rem;
+	}
+
+	#comp ul{
+		width: 100%;
+	}
+
+	.container_main-content section>ul,.links_title--avertissement{
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+}
