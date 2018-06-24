@@ -38,19 +38,15 @@ nav{
 	}
 }
 
-.nav_item:hover{
-	border-bottom: solid 1px white;
-}
-
 .menu_container{
-	display: flex;
+	display: flex ;
 	justify-content: flex-end;
 }
 
 //----------------- nav hover -------------------------
 
-#comp:hover .skills_nav, #diplomes:hover .diploma_nav, #exp:hover .exp_nav_nav{
-	border-bottom: solid 1px white;
+.nav_item:hover{
+	border-bottom: solid 1px white !important;
 }
 
 //---------------------- media queries -------------------------------------------
