@@ -4,11 +4,13 @@ a{
 }
 
 .slide-down-arrow_box{
-  width:60px;
+  width: 60px;
   margin: auto;
-  display: block;
-  padding: 20px 130px 20px 20px;
+  display: flex;
+  padding: 30px;
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 
   .slide-down-arrow{
     width: 20px;
