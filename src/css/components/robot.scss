@@ -2,12 +2,12 @@
 //---------------- robot -------------------
 
 #canvas{
-	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
+	transform: scale(0.7) translateY(-30rem) translateX(-4rem);
 }
 
 .robot-light{
 	width: 25rem;
-	height: 4rem;
+	height: 50px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -24,17 +24,16 @@
 }
 @keyframes robot-fade-in{
 	from{
-		
 	}
 	to{
-		transform: scale(0.7) translateY(-5rem) translateX(-6rem);
+		transform: scale(0.7) translateY(-9rem) translateX(-4rem);
 	}
 }
 
 .machine_container{
 	position: absolute;
 	z-index: 1;
-
+	transform: scale(0.8);
 }
 
 .machine_container_fixed{

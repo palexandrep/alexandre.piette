@@ -1,5 +1,5 @@
 nav{
-	height: 65px;
+	height: 50px;
 	width: 100%;
 	background-color: black;
 	position: fixed;
@@ -30,27 +30,31 @@ nav{
 		
 		.nav_item{
 			margin-right: 1rem;
-			padding-bottom: 3px;
+			padding-bottom: 0px;
 			border-bottom: solid 1px black;
-			font-size: 1.1rem;
-			padding-top: 0.4rem;
+			font-size: 1rem;
+			font-weight: 300;
 		}
 	}
 }
 
-.nav_item:hover{
-	border-bottom: solid 1px white;
-}
-
 .menu_container{
-	display: flex;
+	display: flex ;
 	justify-content: flex-end;
 }
 
+//---------- next update: add follow content scroll in nav
+
+/*.item_nav-follow{
+	width: 3rem;
+	height: 1px;
+	background-color: #fff;
+}*/
+
 //----------------- nav hover -------------------------
 
-#comp:hover .skills_nav, #diplomes:hover .diploma_nav, #exp:hover .exp_nav_nav{
-	border-bottom: solid 1px white;
+.nav_item:hover{
+	border-bottom: solid 1px white !important;
 }
 
 //---------------------- media queries -------------------------------------------

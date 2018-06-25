@@ -37,40 +37,24 @@
 	padding: 0 10vw;
 }
 
-//---------------------------------------------------
-
-.box_title{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 4rem;
-}
-
 .container-expositions-list{
 	display: flex;
 	flex-wrap: wrap;
-	width: 70%;
+
 }
 
 .expositions-list{
-	margin: 0 15px;
+	margin: 0 20px 0 0;
+	
 }
 
-.exp_title{
-	width: 2.5rem;
-	padding: 3rem 0;
-}
 
 //---------------------------- media queries
 
 @media screen and (max-width: 1000px){
-	.container_main-content section>ul,.links_title--avertissement{
+	.container_main-content section>ul{
 		width: 100%;
 		margin: 0;
-	}
-	
-	.box_title, .links_title--avertissement{
-		padding: 4rem 0;
 	}
 }
 

@@ -27,7 +27,8 @@ html {
 }
 
 body{
-	background: linear-gradient(to bottom, #383742 0%,#131114 100%);
+	//background: linear-gradient(to bottom, #383742 0%,#131114 100%);
+	background: linear-gradient(to bottom, #323035 0%,#141114 100%);
 }
 
 ul{
@@ -42,23 +43,51 @@ li{
 	display: none;
 }
 
-header{
+.container-header{
 	width: 100vw;
 	margin: auto;
 }
 
+main{
+	position: relative;
+}
 
-
-.main-background--active{
+.container-bgd{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0rem;
 	background-image: url("/../images/dechets2.svg");
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	background-size: 55rem;
+	opacity:0.5;
 }
 
+.container-flex--row{
+	display: flex;
+}
+
+.flex--align-center{
+	align-items: center;
+}
+
+.flex--justify-center{
+	justify-content: center;
+}
+
+.item--spacing-bottom-small{
+	margin-bottom: 2rem;
+}
 
 //------------------------media queries
 
+
+@media only screen and (max-width: 1000px){
+	.container-header{
+		height: 100vh;
+	}
+}
 
 @media screen and (max-width: 600px){
 
@@ -70,7 +99,7 @@ header{
 		margin: 0;
 	}
 
-	.main-background--active{
+	.container-bgd{
 		background-image: none;
 	}
 }

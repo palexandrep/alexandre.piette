@@ -38,6 +38,12 @@
 
 .arms{
 	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	z-index: 5;
 }
 
 .container_manches {
@@ -74,20 +80,20 @@
 .container-manche-g-active{
 	animation-name: manche-g-active;
 	animation-duration: 6s;
-	animation-delay: 3.2s;
+	animation-delay: 3.3s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 }
 
 @keyframes manche-g-active{
 	0%{
-		transform: translateX(-82rem);
+		transform: translateX(-60vw);
 		opacity: 0;
 	}
 	15%{
 		opacity: 1;
 	}
-	50%{
+	33%{
 		transform: translateX(-12rem);
 
 	}
@@ -99,11 +105,10 @@
 		opacity: 1;
 	}
 	99%{
-		transform: translateX(-85rem);
 		opacity: 0;
 	}
 	100%{
-		transform: translateX(-85rem);
+		transform: translateX(-60vw);
 		opacity: 0;
 	}
 }
@@ -111,19 +116,19 @@
 .container-manche-d-active{
 	animation-name: manche-d-active;
 	animation-duration: 6s;
-	animation-delay: 3.8s;
+	animation-delay: 4.2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-out;
 }
 
 @keyframes manche-d-active{
 	0%{
-		transform: translateX(70rem);
+		transform: translateX(60vw);
 	}
 	15%{
 		opacity: 1;
 	}
-	50%{
+	38%{
 		transform: translateX(12rem);
 
 	}
@@ -135,11 +140,11 @@
 	}
 
 	99%{
-		transform: translateX(85rem);
+		transform: translateX(60vw);
 		opacity:0;
 	}
 	100%{
-		transform: translateX(85rem);
+		transform: translateX(60vw);
 		opacity:0;
 	}
 }
@@ -185,10 +190,10 @@
 			opacity: 1;
 		}
 		40%{
-			transform: translateX(33vw);
+			transform: translateX(13vw);
 		}
 		85%{
-			transform: translateX(33vw);
+			transform: translateX(13vw);
 		}
 		95%{
 			opacity:1;
