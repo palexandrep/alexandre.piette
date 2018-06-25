@@ -1,5 +1,5 @@
 nav{
-	height: 65px;
+	height: 55px;
 	width: 100%;
 	background-color: black;
 	position: fixed;
@@ -30,10 +30,9 @@ nav{
 		
 		.nav_item{
 			margin-right: 1rem;
-			padding-bottom: 3px;
+			padding-bottom: 0px;
 			border-bottom: solid 1px black;
-			font-size: 1.1rem;
-			padding-top: 0.4rem;
+			font-size: 1rem;
 		}
 	}
 }
@@ -42,6 +41,14 @@ nav{
 	display: flex ;
 	justify-content: flex-end;
 }
+
+//---------- next update: add follow content scroll in nav
+
+/*.item_nav-follow{
+	width: 3rem;
+	height: 1px;
+	background-color: #fff;
+}*/
 
 //----------------- nav hover -------------------------
 

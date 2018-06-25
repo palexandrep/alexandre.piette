@@ -2,13 +2,10 @@
 
 .info_robot{
 	background-color: #F1EDF7;
-	border-radius: 3px;
-	padding: 0rem;
 	position: fixed;
-	top: 3rem;
-	left: 20rem;
+	top: 13rem;
+	left: 3rem;
 	padding: 0.1rem 1rem;
-	display: none;
 	opacity: 0;
 	z-index: 40;
 	width: 8rem;
@@ -17,7 +14,8 @@
 		text-align: center;
 		color: black;
 		margin: 0.4rem 0rem;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+		font-weight: bolder
 	}
 }
 
@@ -68,18 +66,9 @@
 //-------------------- media queries -------------------------------------
 
 
-@media screen and (max-width: 1700px){
-	.info_robot{
-		display: none;
-	}
-}
-
 @media only screen and (max-width: 1000px) and (orientation: landscape){
 	.info_robot{
-		display: block;
-		left: 3rem;
-		top: 13rem;
-		font-size: 0.7rem;
+		display: none !important;
 	}
 }
 

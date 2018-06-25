@@ -1,5 +1,9 @@
 //--------- animation title--------------------------------------
 
+
+//---------------------------- header
+
+
 .title--arms {
 	height: 80px;
 	display: flex;
@@ -11,18 +15,9 @@
 	}
 }
 
-.arms{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	position: relative;
-	z-index: 5;
-}
-
 .title_1, .title_2{
 	text-align: center;
-	font-family: 'Iceland', cursive;
+	font-family: 'Poiret One', cursive;
 }
 
 .title_1{
@@ -41,8 +36,8 @@
 
 #title_1-active{
 	animation-name: t-g-active;
-	animation-duration: 3s;
-	animation-delay: 4s;
+	animation-duration: 3.2s;
+	animation-delay: 3.9s;
 	animation-fill-mode: forwards;
 	display: block;
 	opacity: 0;
@@ -52,10 +47,10 @@
 
 @keyframes t-g-active{
 	0%{
-		transform: translateX(70rem);
+		transform: translateX(60vw);
 		opacity: 0;
 	}
-	5%{
+	10%{
 		opacity: 1;
 	}
 	100%{
@@ -76,9 +71,8 @@
 
 @keyframes t-d-active{
 	0%{
-		transform: translateX(-100rem);
+		transform: translateX(-100vw);
 		opacity: 0;
-
 	}
 	5%{
 		opacity: 1;
@@ -89,10 +83,34 @@
 	}
 }
 
+//---------------------------- main
+
+.box_title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4rem;
+}
+
+.item_title-section--spacing{
+	margin: 0 30px;
+}
+
+.title-decoration{
+	width: 25vw;
+	height: 1px;
+	background-color: white;
+}
+
 .box-title_2{
 	position: absolute;
 	width: 100%;
 	left: 0;
+}
+
+.exp_title{
+	width: 2.5rem;
+	padding: 3rem 0;
 }
 
 //------------------------------------ media queries -------------------------------------------
@@ -100,14 +118,24 @@
 
 @media only screen and (max-width: 1000px) and (orientation: landscape){
 	.title_1{
-		font-size: 1rem;
+		font-size: 2rem;
+		text-shadow: 0 0 55px black;
 	}
 
 	.title_2{
 		font-size: 1.2rem;
 	}
+}
 
+@media only screen and (max-width: 1000px){
+	.box_title, .links_title--avertissement{
+		padding: 4rem 0;
+	}
 
+	.links_title--avertissement{
+		width: 100%;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -118,6 +146,4 @@
 	.title_2{
 		font-size: 2.2rem;
 	}
-
-
 }

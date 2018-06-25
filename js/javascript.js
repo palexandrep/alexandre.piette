@@ -75,7 +75,11 @@
 
 		//-------------------- down arrow -------------------
 
-		$('.slide-down-arrow').attr('id','show-arrow');
+		$('.slide-down-arrow_box').removeClass('hidden');
+		function arrowShow() {
+			$('.slide-down-arrow').attr('id','show-arrow');
+		}
+		setTimeout(arrowShow, 10);
 
 		//-------------------- small robot --------------
 		
@@ -134,14 +138,28 @@
 		select.find('.full').animate({
 			width: dataWidth + 'rem'
 		}, 400, function () { });
+
 		var calcWidth = 5 - dataWidth;
+		
 		select.find('.empty').animate({
 			width: calcWidth + 'rem'
 		}, 400, function () { });
 
 	});
 
+	//---------------------------------------- nav animate -------------------------------------
+
+	$('.nav_item').mouseover(function (event) {
+		event.stopPropagation();
+		$(this).siblings().addClass('nav-icon_item-animate');
+	});
+	$('.nav_item').mouseout(function (event) {
+		event.stopPropagation();
+		$(this).siblings().removeClass('nav-icon_item-animate');
+	});
+
 	//--------------------------- scroll --------------------------------------
+
 
 	$('a[href^="#"]').click(function () {
 		var the_id = $(this).attr("href");
@@ -211,7 +229,7 @@
 		// quand on scroll
 
 		window.addEventListener('scroll', function(){
-			window.requestAnimationFrame( onScrolling );		
+			window.requestAnimationFrame( onScrolling );
 		});
 
 })()

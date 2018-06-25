@@ -1,4 +1,4 @@
-	//@import "components/fonts.scss";
+	@import "components/fonts.scss";
 	@import "components/nav.scss";
 	@import "components/rouages.scss";
 	@import "components/button.scss";
@@ -42,12 +42,10 @@ li{
 	display: none;
 }
 
-header{
+.container-header{
 	width: 100vw;
 	margin: auto;
 }
-
-
 
 .main-background--active{
 	background-image: url("/../images/dechets2.svg");
@@ -56,9 +54,30 @@ header{
 	background-size: 55rem;
 }
 
+.container-flex--row{
+	display: flex;
+}
+
+.flex--align-center{
+	align-items: center;
+}
+
+.flex--justify-center{
+	justify-content: center;
+}
+
+.item--spacing-bottom-small{
+	margin-bottom: 2rem;
+}
 
 //------------------------media queries
 
+
+@media only screen and (max-width: 1000px){
+	.container-header{
+		height: 100vh;
+	}
+}
 
 @media screen and (max-width: 600px){
 

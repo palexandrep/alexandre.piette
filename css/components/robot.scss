@@ -2,12 +2,12 @@
 //---------------- robot -------------------
 
 #canvas{
-	transform: scale(0.7) translateY(-30rem) translateX(-6rem);
+	transform: scale(0.7) translateY(-30rem) translateX(-4rem);
 }
 
 .robot-light{
 	width: 25rem;
-	height: 4rem;
+	height: 50px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -27,7 +27,7 @@
 		
 	}
 	to{
-		transform: scale(0.7) translateY(-5rem) translateX(-6rem);
+		transform: scale(0.7) translateY(-7rem) translateX(-4rem);
 	}
 }
 

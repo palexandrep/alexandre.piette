@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 	<title>Portfolio Alexandre Piette</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Iceland" rel="stylesheet">
-	<link rel="stylesheet" href="dist/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="images/favicon.ico">
 </head>
 
@@ -44,6 +44,7 @@
 	</div>
 
 	<header class="container-header">
+
 		<div class="machine_container">
 			<div id="animation_container">
 				<canvas id="canvas" class="over_item_info" data-info="Hello user, i am your assistant. Can i help you?"></canvas>
@@ -51,6 +52,7 @@
 				</div>
 			</div>
 		</div>
+
 		<nav>
 			<div class="info_robot">
 				<p></p>
@@ -59,28 +61,28 @@
 			<div class="menu_container">
 				<ul class="menu">
 
-					<li class="hidden">
+					<li class="hidden nav-link_box--skills">
 						<a href="#comp" class="nav-link_item">
 							<h3 class="over_item_info nav_item skills_nav" data-info="Do you want me to scroll you to the skills section?">SKILLS</h3>
 							<img src="images/skills.svg" alt="Skills icon" class="svg_nav">
 						</a>
 					</li>
 
-					<li class="hidden">
+					<li class="hidden nav-link_box--links">
 						<a href="#links" class="nav-link_item">
 							<h3 class="over_item_info nav_item links_nav" data-info="Do you want me to scroll you to the links section?">LINKS</h3>
 							<img src="images/links.svg" alt="liens icon" class="svg_nav">
 						</a>
 					</li>
 
-					<li class="hidden">
+					<li class="hidden nav-link_box--grade">
 						<a href="#diplomes" class="nav-link_item">
 							<h3 class="over_item_info nav_item diploma_nav" data-info="Do you want me to scroll you to the diplome section?">DIPLOMA</h3>
 							<img src="images/diplome.svg" alt="Diplôme icon" class="svg_nav">
 						</a>
 					</li>
 
-					<li class="hidden">
+					<li class="hidden nav-link_box--exp">
 						<a href="#exp" class="nav-link_item">
 							<h3 class="over_item_info nav_item exp_nav" data-info="Do you want me to scroll you to the experiences section?">EXPERIENCES</h3>
 							<img src="images/xp.svg" alt="Experiences icon" class="svg_nav svg_nav-xp">
@@ -89,6 +91,7 @@
 
 				</ul>
 			</div>
+			<div class="item_nav-follow"></div>
 		</nav>
 
 		<div class="container_push-btn">
@@ -669,7 +672,7 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 			</div>
 		</div>
 		
-		<a href="#comp" class="slide-down-arrow_box">
+		<a href="#comp" class="slide-down-arrow_box hidden">
 			<img src="images/slide-down-arrow.svg" alt="scroll down" class="slide-down-arrow">
 		</a>
 
@@ -681,9 +684,11 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 
 			<div class="container_main-content hidden">
 
-				<section id="comp" class="box_main-content unseen">
+				<section id="comp" class="box_main-content unseen" data-link="nav-link_box--skills">
 					<div class="box_title title">
-						<img src="images/skills.svg" alt="Skills icon" class="rouage_title  over_item_info" data-info="Error error error...">
+						<div class="title-decoration"></div>
+							<img src="images/skills.svg" alt="Skills icon" class="rouage_title item_title-section--spacing  over_item_info" data-info="Error error error...">
+						<div class="title-decoration"></div>
 					</div>
 					<ul class='content-list skills-list'>
 						<li data-width="5" class="over_item_info item_skills--small" data-info="Semantic:  of or relating to meaning or arising from distinctions between the meanings of different words or symbols.">
@@ -811,10 +816,12 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 					</ul>
 				</section>
 
-				<section id="links" class="box_main-content unseen">
+				<section id="links" class="box_main-content unseen" data-link="nav-link_box--links">
 
 					<div class="box_title">
-						<img src="images/links.svg" alt="links icon" class="rouage_title over_item_info" data-info="Welcome to the Links section. Why dont you take a drink while you're visiting?">
+						<div class="title-decoration"></div>
+							<img src="images/links.svg" alt="links icon" class="rouage_title item_title-section--spacing over_item_info" data-info="Welcome to the Links section. Why dont you take a drink while you're visiting?">
+						<div class="title-decoration"></div>
 					</div>
 
 					<p class="links_title--avertissement">Remember, those links are exercises created during my training.</p>
@@ -823,35 +830,39 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 
 						<li class="over_item_info" data-info="This Web app was made during my Front-End training and it was developed only for Ipad.">
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="https://killer-cepegra.xyz/badges/htdocs" target="blank">Front-End Workshop
+							<a href="https://killer-cepegra.xyz/badges/htdocs" >Front-End Workshop
 							</a>
 						</li>
 						<li class="over_item_info" data-info="Exercice with wordpress build on a personal theme.">
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="https://killer-cepegra.xyz/skills2/zoo/" target="blank">Front End exercice
+							<a href="https://killer-cepegra.xyz/skills2/zoo/" >Front End exercice
 							</a>
 						</li>
 						<li class="over_item_info" data-info="Exercice made in Web Desing training. Mobile version only.">
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="links/kechoix-v2/index.html" target="blank">Web Design exercice
+							<a href="links/kechoix-v2/index.html" >Web Design exercice
+							</a>
+						</li>
+						<li class="item--spacing-bottom-small">
+							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
+							<a href="links/test-chargement-formulaire2/index.html" > Animation form exercice
 							</a>
 						</li>
 						<li>
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="links/test-chargement-formulaire2/index.html" target="blank"> Animation form exercice
-							</a>
+							<a href="https://www.behance.net/ALEXANDREPIETTE" >Behance</a>
 						</li>
 						<li>
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="https://www.behance.net/ALEXANDREPIETTE" target="blank">Behance</a>
+							<a href="https://www.linkedin.com/in/alexandre-piette-846684b5/" >LinkedIn</a>
 						</li>
 						<li>
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="https://www.linkedin.com/in/alexandre-piette-846684b5/" target="blank">LinkedIn</a>
+							<a href="https://codepen.io/Smog/" >Codepen</a>
 						</li>
 						<li>
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
-							<a href="https://codepen.io/Smog/" target="blank">Codepen</a>
+							<a href="https://github.com/palexandrep" >github</a>
 						</li>
 						<li class="over_item_info" data-info="Follow this link if you want to contact my master.">
 							<img src="images/link.svg" alt="link icon" class="link_icon hvr-bob">
@@ -862,9 +873,11 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 
 				</section>
 
-				<section id="diplomes" class="box_main-content unseen">
+				<section id="diplomes" class="box_main-content unseen" data-link="nav-link_box--grade">
 					<div class="box_title">
-						<img src="images/diplome.svg" alt="icon diplôme" class="rouage_title over_item_info" data-info="Achievement Unlocked!">
+						<div class="title-decoration"></div>
+							<img src="images/diplome.svg" alt="icon diplôme" class="rouage_title item_title-section--spacing over_item_info" data-info="Achievement Unlocked!">
+						<div class="title-decoration"></div>
 					</div>
 
 					<ul class="content-list diplomes-list">
@@ -881,9 +894,11 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 					</ul>
 				</section>
 
-				<section id="exp" class="box_main-content unseen">
+				<section id="exp" class="box_main-content unseen" data-link="nav-link_box--exp">
 					<div class="box_title">
-						<img src="images/xp.svg" alt="Experiences icon" class="exp_title over_item_info" data-info="LVL UP!">
+						<div class="title-decoration"></div>
+							<img src="images/xp.svg" alt="Experiences icon" class="exp_title item_title-section--spacing over_item_info" data-info="LVL UP!">
+						<div class="title-decoration"></div>
 					</div>
 					<ul class="content-list experiences-list">
 						<li>UI et intégration de newsletters pour YAKimmo</li>
@@ -907,15 +922,24 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 					</ul>
 				</section>
 
-				<div class="container_shutdown">
-					<p class="item_shutdown-texte">[ Shutdown</p>
-					<ul class="box_shutdown-point">
-						<li class="item_shutdown-point"></li>
-						<li class="item_shutdown-point"></li>
-						<li class="item_shutdown-point"></li>
-					</ul>
-					<p>]</p>
+				<div class="box_thanks-message">
+					<div class="container-flex--row flex--align-center flex--justify-center">
+						<div class="title-decoration"></div>
+							<p class="thanks-message">Thanks for the visit!</p>
+						<div class="title-decoration"></div>
+					</div>
+				
+					<div class="container_shutdown">
+							<p class="item_shutdown-texte">[ Shutdown</p>
+							<ul class="box_shutdown-point">
+								<li class="item_shutdown-point"></li>
+								<li class="item_shutdown-point"></li>
+								<li class="item_shutdown-point"></li>
+							</ul>
+							<p>]</p>
+						</div>
 				</div>
+				
 
 			</div>
 		</div>
@@ -929,12 +953,12 @@ c126.9,0,229.8-102.9,229.8-229.8S726.2,190.6,599.3,190.6z" />
 		 xml:space="preserve">
 			<style type="text/css">
 				.stu0 {
-					fill: #010202;
+					fill: #000000;
 				}
 
 				.stu1 {
-					fill: #010202;
-					stroke: #010202;
+					fill: #000000;
+					stroke: #000000;
 					stroke-miterlimit: 10;
 				}
 

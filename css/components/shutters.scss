@@ -8,8 +8,7 @@
 	left: 0;
 	z-index: 40;
 	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
+	min-height: 100vh;
 }
 .container_shutters, .row-shutters{
 	display: flex;
@@ -82,8 +81,8 @@
 @media only screen and (max-width: 1000px) and (orientation: landscape){
 	.item_shutter--circle{
 		height: 14rem;
-		width: 6.8rem;
-		min-width: 6.8rem;
+		width: 112px;
+		min-width: 112px;
 	}
 
 	.item_shutter--top{
@@ -99,9 +98,9 @@
 
 @media screen and (max-width: 600px){
 	.item_shutter--circle{
-		height: 22rem;
-		width: 10.8rem;
-		min-width: 10.8rem;
+		height: 356px;
+		width: 178px;
+		min-width: 178px;
 	}
 
 	.item_shutter--top{

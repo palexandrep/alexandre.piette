@@ -36,7 +36,7 @@ a{
 
 #show-arrow{
   opacity: 0.7;
-  transition: opacity 0.3s 8s;
+  transition: opacity 0.3s 7.9s;
 }
 
 /* animations links */
@@ -83,7 +83,7 @@ a{
   box-shadow: 0 0 1px transparent;
 }
 
-#links li:hover .hvr-bob, .hvr-bob:focus, .hvr-bob:active {
+#links li:hover .hvr-bob, .hvr-bob:focus, .hvr-bob:active, .nav-icon_item-animate {
   animation-name: hvr-bob-float, hvr-bob;
   animation-duration: .3s, 1.5s;
   animation-delay: 0s, .3s;
