@@ -24,17 +24,16 @@
 }
 @keyframes robot-fade-in{
 	from{
-		
 	}
 	to{
-		transform: scale(0.7) translateY(-7rem) translateX(-4rem);
+		transform: scale(0.7) translateY(-9rem) translateX(-4rem);
 	}
 }
 
 .machine_container{
 	position: absolute;
 	z-index: 1;
-
+	transform: scale(0.8);
 }
 
 .machine_container_fixed{

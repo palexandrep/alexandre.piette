@@ -97,9 +97,14 @@
 }
 
 .title-decoration{
-	width: 25vw;
+	width: 5vw;
 	height: 1px;
 	background-color: white;
+}
+
+.title-decoration--expand{
+	width: 25vw;
+	transition: width 0.9s;
 }
 
 .box-title_2{
@@ -111,6 +116,12 @@
 .exp_title{
 	width: 2.5rem;
 	padding: 3rem 0;
+}
+
+.item-skills-text{
+	margin: 0;
+	font-size: 1rem;
+	opacity: 0.6;
 }
 
 //------------------------------------ media queries -------------------------------------------

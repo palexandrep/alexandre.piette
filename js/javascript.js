@@ -4,6 +4,10 @@
 
 	$(".item_push-btn").on("click", function () {
 
+		//-------------- bgd -----------------
+		
+		$('.container-bgd').removeClass('hidden');
+
 		//--------------- nav ----------------------
 
 		$('nav li').removeClass('hidden');
@@ -201,24 +205,28 @@
 				
 		scrolled = function() {
 
-			var compSectionScrollVal = document.querySelector('#comp').offsetTop-600;
-			var linksSectionScrollVal = document.querySelector('#links').offsetTop-600;
-			var diplomesSectionScrollVal = document.querySelector('#diplomes').offsetTop-600;
-			var expSectionScrollVal = document.querySelector('#exp').offsetTop-600;
+			var compSectionScrollVal = document.querySelector('#comp').offsetTop+300;
+			var linksSectionScrollVal = document.querySelector('#links').offsetTop+300;
+			var diplomesSectionScrollVal = document.querySelector('#diplomes').offsetTop+300;
+			var expSectionScrollVal = document.querySelector('#exp').offsetTop+300;
 
 			var scrollDocument = window.pageYOffset || document.documentElement.scrollTop;
 
 			if($('#comp').hasClass('unseen') && scrollDocument > compSectionScrollVal){
 				$('#comp').removeClass('unseen').addClass('box_main-content--show');
+				$('#comp .title-decoration').addClass('title-decoration--expand');
 			}
 			else if($('#links').hasClass('unseen') && scrollDocument > linksSectionScrollVal){
 				$('#links').removeClass('unseen').addClass('box_main-content--show');
+				$('#links .title-decoration').addClass('title-decoration--expand');
 			}
 			else if($('#diplomes').hasClass('unseen') && scrollDocument > diplomesSectionScrollVal){
 				$('#diplomes').removeClass('unseen').addClass('box_main-content--show');
+				$('#diplomes .title-decoration').addClass('title-decoration--expand');
 			}
 			else if($('#exp').hasClass('unseen') && scrollDocument > expSectionScrollVal){
 				$('#exp').removeClass('unseen').addClass('box_main-content--show');
+				$('#exp .title-decoration').addClass('title-decoration--expand');
 			}
 		},
 
