@@ -1439,14 +1439,13 @@ footer {
   z-index: 5; }
 
 .title_1, .title_2 {
-  text-align: center;
-  font-family: 'Iceland', cursive; }
+  text-align: center; }
 
 .title_1 {
   display: none;
   white-space: nowrap;
   font-weight: 100;
-  font-size: 2.3rem; }
+  font-size: 4.3rem; }
 
 .title_2 {
   letter-spacing: 5px;
